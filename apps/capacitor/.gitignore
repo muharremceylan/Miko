@@ -1,0 +1,14 @@
+node_modules/
+www/
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+ios/App/Pods/
+ios/App/build/
+.DS_Store
+
+test-artifacts/
+web-release/

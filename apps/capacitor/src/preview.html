@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akademi AI · Mobil web önizlemesi</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#1c2742;background:#edf1f8;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0}header{background:#fff;border-bottom:1px solid #dce3f0;padding:16px 24px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{font-size:20px;margin:0 0 4px;letter-spacing:-.5px}header p{margin:0;color:#64728e;font-size:12px}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}select,button,a{font:inherit;font-size:13px;border-radius:10px;padding:10px 12px;min-height:42px}select,button{border:1px solid #d3dced;background:white;color:#243450}button{cursor:pointer}a{background:#5265d8;color:white;text-decoration:none;display:inline-flex;align-items:center}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #8391ed;outline-offset:2px}
+    main{height:calc(100dvh - var(--toolbar-height,88px));min-height:350px;padding:18px 16px 14px;display:flex;align-items:center;flex-direction:column;gap:12px;overflow:auto;background:radial-gradient(ellipse at center,#f9fbff 0,#e6ecf7 100%)}
+    .device-space{position:relative;flex-shrink:0}.device{box-sizing:content-box;width:390px;height:844px;transform-origin:top left;border:12px solid #182340;border-radius:38px;box-shadow:0 14px 42px #1c2f5526;background:#182340;overflow:hidden}.device iframe{width:100%;height:100%;border:0;display:block;border-radius:25px;background:#f8faff}footer{font-size:12px;line-height:1.6;text-align:center;color:#63718c;max-width:540px;flex-shrink:0}#dimensions{font-weight:700;color:#344775}label{font-size:12px;font-weight:600}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:600px){header{padding:12px 14px;gap:12px}.controls{gap:6px}select,button,a{font-size:12px;padding:8px}header p{font-size:11px}main{padding-top:12px}}
+  </style>
+</head>
+<body>
+<header id="toolbar">
+  <div><h1>✦ Akademi AI</h1><p>Mobil web önizlemesi</p></div>
+  <div class="controls">
+    <label for="device" class="sr">Telefon ekranı boyutu</label>
+    <select id="device" aria-label="Telefon ekranı boyutu">
+      <option value="360x800">Küçük telefon · 360 × 800</option>
+      <option value="390x844" selected>Standart telefon · 390 × 844</option>
+      <option value="412x915">Büyük telefon · 412 × 915</option>
+    </select>
+    <button id="scaleToggle" type="button" aria-pressed="false">1:1 boyut</button>
+    <a href="./index.html" target="_blank" rel="noopener">Uygulamayı aç ↗</a>
+  </div>
+</header>
+<main id="stage">
+  <div class="device-space" id="deviceSpace"><div class="device" id="phone"><iframe src="./index.html" title="Akademi AI çalışan uygulama" id="appFrame"></iframe></div></div>
+  <footer><span id="dimensions" aria-live="polite">390 × 844</span><br>Telefon boyutunda çalışan web sürümü. Kamera ve ses desteği tarayıcınıza bağlıdır.</footer>
+</main>
+<script src="./preview.js"></script>
+</body>
+</html>

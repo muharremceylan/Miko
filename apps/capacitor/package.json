@@ -1,0 +1,27 @@
+{
+  "name": "akademi-ai-mobile",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sync": "npm run build && cap sync",
+    "android": "cap open android",
+    "test": "node --test test/*.test.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "dev": "npm start",
+    "export:web": "npm run build && node scripts/export_web.mjs"
+  },
+  "dependencies": {
+    "@capacitor-community/text-to-speech": "8.0.2",
+    "@capacitor/android": "8.5.3",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/camera": "8.2.5",
+    "@capacitor/core": "8.5.3",
+    "@capacitor/ios": "8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3",
+    "esbuild": "0.28.2"
+  }
+}

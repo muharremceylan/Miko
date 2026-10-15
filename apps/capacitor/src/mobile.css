@@ -1,0 +1,14 @@
+:root { color-scheme: light; }
+button, .upload { touch-action: manipulation; }
+button:focus-visible, .upload:focus-visible { outline: 3px solid #7282f0; outline-offset: 3px; }
+/* Capacitor 8 injects these variables for older Android WebViews. On iOS,
+   standard env() values remain the fallback. */
+.header { padding-top: calc(24px + var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); }
+.nav {
+  height: calc(76px + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)));
+  padding-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+}
+.app { padding-bottom: calc(92px + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); }
+.answer { min-height: 52px; }
+body { overscroll-behavior-y: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

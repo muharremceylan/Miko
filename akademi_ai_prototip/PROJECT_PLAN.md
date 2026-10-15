@@ -1,0 +1,213 @@
+# AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
+
+## Güncel öncelik — web üzerinde telefon görünümü
+
+Kullanıcının yeni tercihi önce web üzerinden mobil ekranı görerek geliştirmek, Android/iOS paketlerini sonra hazırlamaktır. `apps/capacitor/src/preview.html` ve `preview.js` ile etkileşimli telefon çerçevesi, üç ekran boyutu, 1:1/sığdırma ve uygulamayı ayrı sekmede açma eklendi. `npm start` ile yerel sunucu başlatıldı; iframe içinde ders/soru, boyut geçişi ve mevcut 11 regresyon grubu doğrulandı. Statik yayın paketi ve tek dosyalık sürüm HTTP üzerinden kontrol edildi. file:// açılışı bu bulut tarayıcısının yönetici politikası nedeniyle doğrulanamadı.
+
+GitHub hesabı/depo `muharremceylan/Miko` olarak belirlendi; alan adı satın alma gerekmez. GitHub Pages iş akışı hazırlandı ancak uzak depoya yükleme, Pages ayarları ve gerçek HTTPS yayın henüz doğrulanmadı. Git okuma erişimi var; GitHub ayar API'si ağ politikasından 403 alıyor. `api.github.com` ve `muharremceylan.github.io` izinleri ortam taslağına eklendi; ayarlarda uygulanması bekleniyor. Parola/token sohbetten istenmez. Ayrıntılar `apps/capacitor/WEB_PREVIEW.md` içinde; hazır APK önceki sürüme aittir, bu web önizleme güncellemesi için tekrar derlenmedi.
+
+## Aktif mobil yol — v0.4 Capacitor (15 Ekim 2026)
+
+Kullanıcının Flutter kullanmama talebiyle aktif uygulama `../apps/capacitor` altında Capacitor 8 + HTML/CSS/JavaScript olarak kuruldu. Düzeltmeleri yapılmış HTML kaynak olarak korunuyor; build scripti onu mobil pakete kopyalıyor. Flutter denemesi tarihsel kaynak olarak duruyor ve aktif kurulumda kullanılmıyor. Flutter indirme ağ izni bu yol için ön koşul değildir.
+
+Android hostu, iOS Xcode/SPM hostu, yerel kamera/galeri, cihaz TTS, Android geri tuşu ve güvenli alan katmanı oluşturuldu. Tarayıcıda 11 regresyon grubu ve 24 px güvenli alan kontrolü; native API'leri taklit eden 11 köprü testi geçti. Gerçek kamera/TTS ve Android/iOS cihaz davranışı henüz doğrulanmadı. Android debug APK başarıyla üretildi (187 derleme görevi); v2 imzası ve dört paketlenmiş web varlığının eşleşmesi doğrulandı. Cihazda açılış testi henüz yapılmadı. APK derleme sonucu ve komutları `../apps/capacitor/README.md` içindedir.
+
+Görsel çizgi: lacivert gradyan üst alan, beyaz yuvarlak kartlar, indigo vurgu; alt menü Ana sayfa/Dersler/Sorular/Dinle/Analiz. Telefon boyutunda gerçek web arayüzü görüntüleri `/workspace/outputs/akademi-ai-ana-sayfa.png`, `akademi-ai-ders.png` ve `akademi-ai-test.png` olarak hazırlandı. Bunlar cihaz/emülatör görüntüsü değildir; ana ekrandaki üç cevap test verisidir.
+
+Bu sürüm orijinal dört ders/on soru havuzuna dayanır. Flutter denemesinde yazılan fakat çalıştırılmayan yanlış defteri, bu Capacitor sürümüne aktarılmış sayılmaz. Yanlış defteri, koç, gerçek AI ve backend sonraki geliştirmelerdir. FastAPI/PostgreSQL ve sunucuda AI hedefi korunur; mobil istemci API sözleşmesi Capacitor'a göre uygulanacaktır.
+
+## Mobil geliştirme başladı — v0.3 kaynak aşaması
+
+Kullanıcının mobil uygulamaya geçiş talebiyle `../apps/mobile` altında Flutter kaynakları, yerel veri arayüzü ve 14 test hazırlandı. Ana sayfa, ders/özet, test/sonuç, analiz, yanlış defteri, ses ve açıkça etiketli fotoğraf demosu kaynakları oluşturuldu. HTML sürümü korunuyor.
+
+Flutter stable 3.47.7 kaynak SDK'sı ve Android SDK 36/build-tools kuruldu. Dart/engine indirmesi `storage.googleapis.com` için ağ politikasından 403 aldı; gerekli ağ eklemesi ortam taslağına kaydedildi. Android/iOS host oluşturma, Flutter analiz/test ve APK derleme henüz yürütülmedi. Hazır veya cihazda çalışır mobil uygulama iddiası yapılmaz. Ağ erişimi açılınca `scripts/setup_mobile.sh` ve `scripts/prepare_mobile.sh` ile bu adımlar tamamlanacak. Ayrıntılı durum `../apps/mobile/README.md` içindedir.
+
+## Son geliştirme durumu — v0.2
+
+Kullanıcının inceleme sonrası düzeltme talebiyle HTML üzerinde sınırlı değişiklikler yapıldı. Aşağıdaki ilk inceleme bulguları tarihsel rapordur; güncel durum şudur:
+
+- Günlük sayaçlar cihazın yerel tarihine göre ayrı tutuluyor; analiz toplamları korunuyor. 10 ve üzeri cevapta hedef çubuğu %100 kalıyor.
+- JSON/şema ve depolama erişim hataları yönetiliyor; eski biçimdeki toplamlar taşınıyor. Eski kayıtlarda tarih olmadığı için geçmiş cevaplar bugüne yazılmıyor. Bozuk kayıt açılışta değiştirilmez; yeni cevap/sıfırlama sağlıklı kayıt oluşturur.
+- Fisher–Yates karıştırma ve sonlu test oturumu eklendi. Havuz bitince doğru/yanlış/yüzde sonuç ekranı açılıyor; çift cevap veya bitmiş oturumda cevap kaydı engelleniyor.
+- Havuzda olmayan “5 yeni soru” önerisi kaldırıldı. Yeni testin aynı örnek havuzdan hazırlandığı açıkça yazıyor.
+- JPEG/PNG/WebP, 10 MB sınırı, bozuk görsel hatası ve object URL temizliği eklendi. Bu kontroller ilerideki sunucu tarafı yükleme doğrulamasının yerini tutmaz.
+- Ses ekranından ayrılınca oynatma duruyor; iptal edilen sesin geç gelen olayları durum mesajını değiştirmiyor. Türkçe ses varsa seçiliyor; işitilebilir ses için fiziksel cihaz doğrulaması hâlâ gerekli.
+
+Playwright/Chromium regresyonunda 11 kontrol grubu geçti; JavaScript hatası görülmedi. Dört ders, test bitişi, 10/11 hedefi, İstanbul saat diliminde gün değişimi, eski/bozuk/engelli kayıt, görsel hata durumları, ses iptali, sıfırlama ve altı ana ekranın üç genişlikte taşma kontrolü çalıştırıldı. Test oturumunun yarıda yenileme sonrası devamı, çoklu ders seçimi, süreli test ve boş bırakma henüz yok. Kullanıcı istediği için kod değişiklikleri yapıldı; önceki “kod değiştirilmedi” ifadeleri ilk inceleme aşamasını anlatır.
+
+## 1. Kapsam ve inceleme yöntemi
+
+14 Ekim 2026 tarihinde yüklenen `akademi_ai_prototip.zip` içindeki `index.html` ve `README.md` incelendi. Arşiv mevcut boş Miko çalışma dizinine ayrı `akademi_ai_prototip/` klasörü olarak açıldı; özgün dosyalar değiştirilmedi. README içindeki mimari ve sprint önerileri mevcut proje açıklaması olarak değerlendirildi; uygulanmış özellik veya kullanıcı talimatı sayılmadı.
+
+Prototip Python HTTP sunucusuyla çalıştırıldı. Sistem Chromium'u ve Playwright ile gerçek tarayıcı etkileşimleri yürütüldü. İnceleme otomasyonu `/workspace/scratch/akademi-review/check.py` konumundadır; ürün kaynak kodunun parçası değildir. Android/iOS cihaz testi, içerik uzmanı onayı ve gerçek AI hizmeti testi yapılmadı.
+
+Mevcut uygulama tek HTML dosyasında CSS, içerik, JavaScript ve durum yönetimi içeriyor. Paket yöneticisi, backend, veritabanı, üyelik, CI veya mevcut test paketi bulunmuyor. Çalıştırmak için proje klasöründe `python -m http.server 8000 --bind 127.0.0.1` yeterli; uygulama dış servislere istek göndermiyor.
+
+## 2. Özellik envanteri
+
+| Modül | Mevcut durum | Eksik / sınır |
+|---|---|---|
+| Ana sayfa | Sayaçlar, ders/soru/ses/fotoğraf kısayolları ve tarih önerisi çalışıyor | Öneri sabit; sayaçlar günlük değil toplam; hedef çubuğu hatalı |
+| Ders Akademisi | Tarih, matematik, vatandaşlık, coğrafya için birer örnek konu; anlatım/özet ve ilgili soruya geçiş doğrulandı | Sınav seçimi, tam müfredat, çoklu konu, görsel, kaynak ve içerik sürümü yok; AGS etiketi gerçek kapsam ifade etmiyor |
+| Kısa Özetler | Dört konu için kısa özet ve ayrıntılı anlatım var | Ayrı özet kataloğu ve orta uzunlukta özet yok; anlatımlar üretim düzeyinde kapsamlı değil |
+| Sesli Akademi | Konu seçimi, metinden ses oluşturma ve durdurma kodu var; konu başlığı değişimi doğrulandı | Ortamda Türkçe ses yok; işitilebilir çıktı doğrulanmadı. Podcast, indirme, süre/ilerleme/hız kontrolü yok |
+| Soru Bankası | 10 özgün örnek, dört ders filtresi, cevap kilidi, doğru/yanlış renklendirme ve açıklamalar doğrulandı | Ders içi konu, zorluk, sınav filtresi, soru kimliği, onay ve sürümleme yok |
+| Çıkmış Sorular | Yok | Lisans/izinli içerik ve yıl/konu kataloğu gerekir; izinsiz kopyalama yapılmayacak |
+| Rastgele Test | Tüm sorular veya tek ders için karışık dolaşım var | Birden fazla ders seçimi, süre, soru sayısı, bitiş ve sonuç ekranı yok; havuz döngüsel tekrar ediyor |
+| Fotoğraftan AI Çözümü | Görsel seçme ve önizleme doğrulandı; sabit denklem çözümü demo olarak açıkça belirtiliyor | OCR, yükleme API'si, görsel analizi, doğrulanmış çözüm, şekil/formül üretimi yok; mobil kamera davranışı cihazda denenmedi |
+| Yapay Zekâ Öğretmen | Yok | Sohbet, ipucu, alternatif yöntem, geçmiş ve doğrulama gerekir |
+| Yanlış Defteri | Yok | Yanlış sorular tutulmuyor; yalnızca ders bazlı toplam sayaçlar saklanıyor |
+| Kişisel Çalışma Koçu | En düşük ders doğruluğuna göre basit tekrar önerisi var | Sınav tarihi, süre uygunluğu, günlük görevler, tekrar aralığı ve uyarlama yok; öneri AI değil |
+| Başarı Analizi | Toplam doğru/yanlış, ders doğruluğu, yenileme sonrası kalıcılık ve sıfırlama doğrulandı | Net, boş, süre, günlük seri, konu düzeyi ve gelişim eğrisi yok |
+| Yönetim Paneli | Yok | Rol yetkileri, inceleme, yayın ve denetim kaydı gerekir |
+
+## 3. Doğrulama sonuçları ve kusurlar
+
+### Başarılı kontroller
+
+- Dört dersin detaylı anlatımı, kısa özeti ve ilgili ders soru filtresine geçişi.
+- On örnek sorunun cevaplanması; 5 doğru, 5 yanlış, toplam 10 cevap ve ders dağılımlarının analizde görünmesi. Cevaptan sonra dört seçenek de kilitleniyor ve açıklama gösteriliyor.
+- İstatistiklerin sayfa yenilemesinden sonra korunması; onaylı sıfırlamada tüm sayaçların temizlenmesi.
+- Görsel dosyasının yüklenip tarayıcıda çözülmesi ve sabit örnek çözüm ekranının açılması.
+- Ses konusu değişimi ve seslendirme başarısızlığı mesajı.
+- İncelenen ekran durumunda 320, 390 ve 768 piksel genişliklerde yatay taşma görülmemesi. Bu kontrol tüm ekran/cihaz kombinasyonları için erişilebilirlik veya mobil uygunluk onayı değildir.
+- Normal akışlarda JavaScript çalışma zamanı hatası görülmedi.
+
+### Doğrulanmış hatalar
+
+1. **Günlük hedef yanlış hesaplanıyor:** `drawHome()` içinde `stats.solved % 10` kullanılıyor; 10 cevapta çubuk `%0` oldu. Hedef tamamlanınca dolu kalmalı; günlük sayaç tarih ve kullanıcı saat dilimiyle hesaplanmalı.
+2. **Bozuk kayıt açılışı durduruyor:** `akademi_stats_v1` geçersiz JSON olduğunda korunmasız `JSON.parse` hata verdi ve başlangıç kodu kesildi. Güvenli ayrıştırma, şema kontrolü ve kurtarma gerekir.
+
+### Kod incelemesiyle belirlenen sınırlamalar / riskler
+
+- “Bugünkü ilerlemen” toplam cihaz sayacını gösteriyor; günlük yenilenme yok. “Hazırsın” etiketi sabit.
+- `shuffle()` rastgele karşılaştırmalı `sort` kullanıyor; dengeli karıştırma garantisi yok. Fisher–Yates tercih edilmeli.
+- Test havuzu sona erince bitmiyor; aynı sorular yeni cevap olarak tekrar sayılıyor. Oturum ve benzersiz soru/cevap kayıtları yok.
+- “5 yeni soru” önerisi bazı derslerde yalnızca 2–3 soruluk havuz bulunduğunu hesaba katmıyor.
+- localStorage yazma/okuma engeli ve kota hataları yönetilmiyor; kayıt yapısı doğrulanmıyor. Sunucu güvenilirliği ve çok cihaz senkronizasyonu yok.
+- Görsel boyutu/türü uygulama tarafından doğrulanmıyor; eski object URL'leri serbest bırakılmıyor. `accept` seçici ipucu güvenlik doğrulaması değildir.
+- Ses üretimi cihaz bağımlı; sekme değişiminde devam edebilir. Türkçe ses seçimi, kullanım durumu ve erişilebilir alternatif gerekir.
+- Bazı içerikler `innerHTML` ile yerleştiriliyor. Şimdiki kaynaklar sabit; ileride editör/AI içeriği güvenli biçimde temizlenmeli. Bu bulgu tek başına mevcut dış kaynaklı XSS açığı kanıtı değildir.
+- API anahtarı ve sunucu entegrasyonu yok; gerçek AI sonucu iddiası yapılmıyor. Sabit çözüm fotoğraf seçilmeden de açılabiliyor; demo için anlamlı, gerçek çözüm için ayrı giriş koşulu gerekir.
+- Soru ve anlatımlar uzman tarafından doğrulanmış sayılmaz. Özellikle mevzuat ve sınav kapsamı resmî güncel kaynaklarla kontrol edilmeli.
+
+Bu kusurlar raporlandı; ilk görev kapsamı gereği uygulama kodu düzeltilmedi.
+
+## 4. Teknik mimari önerisi
+
+### Mobil: Flutter
+
+Flutter, Android/iOS için ortak Türkçe arayüz, kamera, yerel veri, ses oynatma ve çevrimdışı kullanım nedeniyle uygun adaydır. HTML doğrudan Flutter'a dönüşmez; tasarım ve kullanıcı akışları referans alınarak ekranlar modüler taşınır. Mevcut prototip korunur. Riverpod gibi bir durum yönetimi, go_router ile gezinme ve typed API istemcisi değerlendirilebilir; seçim küçük bir dikey dilimde doğrulanır. Formül için KaTeX/LaTeX uyumlu güvenli renderer ve şekil için izinli SVG/çizim şeması prototipi gerekir; AI'nin keyfi HTML/JavaScript'i render edilmez.
+
+Riskler: Türkçe TTS kalitesi cihazlar arasında değişir; kamera izinleri, ses oturumu ve offline senkronizasyon fiziksel cihazlarda doğrulanmalıdır. Android geliştirme Linux ortamında yapılabilir; iOS derleme, imzalama ve mağaza yayını için macOS/Xcode ve geliştirici hesabı gerekir. WebView ile ambalajlama yalnızca geçici demo seçeneği; nihai mobil mimari önerisi Flutter'dır.
+
+### Backend: FastAPI + PostgreSQL
+
+Başlangıçta modüler monolit yeterli. FastAPI, Pydantic şemaları, SQLAlchemy ve Alembic ile PostgreSQL üzerinde işlem bütünlüğü sağlanır. İçerik, soru oturumu, ilerleme, koç, AI ve yönetim modülleri açık sınırlarla ayrılır. Gerektiğinde Redis ve ayrı işçi süreci uzun AI/podcast işlerini yürütür; bunlar ilk ders/soru dikey diliminin zorunlu bileşeni değildir. Medya özel S3 uyumlu depoda; erişim kısa ömürlü imzalı URL ile sağlanır.
+
+Mobil istemci → HTTPS API → PostgreSQL / özel medya deposu. AI işleri API → kuyruk/işçi → sunucudaki sağlayıcı adaptörü üzerinden yürür. İstemciye AI sağlayıcı anahtarı konulmaz. Sağlayıcı seçimi kalite, Türkçe matematik/görsel başarısı, maliyet ve veri işleme koşulları pilotuyla yapılır.
+
+Yönetim paneli ayrı web istemcisidir; API'nin editör/uzman/yönetici izinlerini kullanır. İnceleme ve yayın yetkileri ayrılır. Başlangıçta mikroservis zorunluluğu yoktur.
+
+### Veri modeli ve API sınırları
+
+- Müfredat: `exam`, `subject`, `exam_subject`, `topic`, `exam_topic`, `lesson`, `lesson_revision`, `summary_revision`. İçerik kaynağı, son kontrol tarihi ve taslak/onaylı/yayınlı/arşiv durumu tutulur.
+- Sorular: `question`, `question_revision`, `answer_choice`, `question_source`, `content_review`. Sınav/konu/zorluk etiketleri, lisans/izin, çözüm ve yayın sürümü gerekir.
+- Kullanıcı: `user`, `profile`, `exam_goal`, `consent`, `device`, `study_session`.
+- Çalışma: `test_session`, `test_item`, `attempt`, `wrong_entry`, `review_schedule`, `study_plan`, `study_task`, `daily_progress`. Denemeler belirli soru sürümüne bağlanır; yinelenen gönderimler idempotency anahtarıyla engellenir. Atlanan soru ve süre ayrı tutulur.
+- Medya/AI: `audio_asset`, `upload`, `ai_job`, `ai_solution`, `chat_session`, `chat_message`, `validation_result`. Saklama süresi, kaynak, model/prompt sürümü ve doğrulama durumu kaydedilir.
+- Yönetim: `role`, `user_role`, `audit_event`. Değişiklik geçmişi içerik sürümlemeyle ilişkilendirilir.
+
+API v1: `/auth`, `/exams`, `/subjects`, `/topics`, `/lessons`, `/questions`, `/test-sessions`, `/attempts`, `/wrong-notebook`, `/study-plans`, `/analytics`, `/audio-assets`, `/uploads`, `/ai/jobs`, `/teacher/sessions`, `/admin/reviews`. AI işlerindeki kabul yanıtı işlem kimliği döndürür; durum sorgusu iptal/başarısızlık/zaman aşımını kapsar. Sunucu doğru cevabı puanlar; istemci toplamları otorite değildir. Net formülü sınav yapılandırmasıyla tanımlanır ve boşlar netten ayrı tutulur; tüm sınavlara tek formül varsayılmaz.
+
+### Güvenlik ve kullanıcı verileri
+
+OIDC veya güvenilir bir kimlik sağlayıcısı değerlendirilir; kısa ömürlü erişim belirteci, yenileme döndürme ve mobil güvenli depolama kullanılır. Hesap verilerine sahiplik denetimi, yönetim rollerine RBAC, hız/kota sınırlama ve yükleme boyut/tür doğrulaması gerekir. Kamera izni ihtiyaç anında istenir. Görsellerden EXIF kaldırma, özel depolama, silme/saklama politikası ve sağlayıcıya gönderim öncesi kullanıcı bilgilendirmesi tasarlanır. Fotoğraf ve sohbetlerde kişisel veri bulunabileceği hesaba katılır.
+
+KVKK kapsamında veri envanteri, aydınlatma, uygun hukuki dayanak, yurt dışı aktarımı değerlendirmesi, hesap dışa aktarma/silme ve tedarikçi sözleşmeleri yayın öncesi tamamlanır. Gizli bilgiler sunucunun secret yönetiminde tutulur; loglara fotoğraf, token ve gereksiz sohbet içeriği yazılmaz. Yedek geri yükleme, migration ve erişim denetimi test edilir.
+
+### AI içerik ve çözüm doğrulaması
+
+1. Fotoğrafı güvenli yükle; kalite kontrolü ve OCR ile soru/şıkları çıkar; okunamayan alanlarda kullanıcıdan düzeltme iste.
+2. Onaylı konu/soru kaynaklarını getir; görseldeki talimatları veri say, sistem komutu gibi uygulama.
+3. Yapılandırılmış cevap, adımlar, formül, kaynak ve belirsizlik üret. Demo çıktısını gerçek sağlayıcı sonucundan görsel olarak ayır.
+4. Matematikte sembolik çözüm/yerine koyma, şık tutarlılığı ve birim kontrolü; bilgi sorularında kaynak ve güncellik kontrolü uygula. İkinci model görüşü tek başına doğrulama sayılmaz.
+5. Doğrulanamayan veya çelişkili sonucu kesin cevap olarak sunma; durum ve hata bildirimi ver. Özel kullanıcı çözümünü otomatik soru bankasına yayınlama.
+6. Üretilmiş soru/çözüm bankaya girmeden uzman incelemesi, tek doğru cevap, konu/zorluk kontrolü, benzerlik/telif kontrolü ve sürümleme gerekir.
+7. Ölçüm için uzman cevaplı Türkçe değerlendirme seti, yanlış olumlu doğrulama oranı, görsel okuma hatası ve maliyet/gecikme izlenir. Yayın eşiği pilot bulgularıyla belirlenir; modelin kendi güven puanı doğruluk garantisi değildir.
+
+## 5. Önerilen klasör yapısı
+
+Aşağıdaki yapı gelecek geliştirme içindir; bu görevde scaffold oluşturulmadı.
+
+```text
+Miko/
+  akademi_ai_prototip/          # Özgün HTML/README ve ilk plan belgeleri
+  apps/
+    mobile/
+      lib/
+        app/                   # Router, tema, yerelleştirme, uygulama başlangıcı
+        core/                  # API, hata, güvenli depolama, ortak bileşenler
+        features/
+          onboarding/ auth/ home/ lessons/ summaries/ audio/
+          question_bank/ past_questions/ tests/ photo_solver/
+          ai_teacher/ wrong_notebook/ coach/ analytics/ settings/
+      test/ integration_test/
+    admin/                     # İçerik ve inceleme web arayüzü
+  services/
+    api/
+      app/
+        core/ db/ modules/     # Ayarlar, auth, model ve alan modülleri
+        integrations/          # AI sağlayıcıları, depolama, kimlik
+      migrations/ tests/
+    worker/                    # Gerektiğinde AI/ses işleri
+  packages/
+    api_contracts/             # OpenAPI kaynaklı istemci sözleşmeleri
+    content_schemas/           # İçerik, çözüm ve çizim şemaları
+  content/
+    samples/                   # Onaylanmamış örnekler açık etiketle
+    reviewed/                  # Kaynak/lisans kayıtlı yayın içerikleri
+  infra/                       # Yerel servisler, CI ve dağıtım tanımları
+  docs/                        # Mimari kararlar, ekranlar, veri/AI politikaları
+```
+
+## 6. Ekranlar ve kullanıcı akışları
+
+Ana alt gezinme: **Ana Sayfa, Akademi, Testler, Koç, Profil**. Sesli çalışma, yanlış defteri ve AI araçları ilgili ana sayfalardan ve kısayollardan erişilebilir. Yönetim ayrı web arayüzündedir. Aşağıdaki liste planlanan kapsamdır; mevcut HTML'de uygulandığı anlamına gelmez.
+
+| Alan | Ekranlar | Temel akış ve özel durumlar |
+|---|---|---|
+| Başlangıç | Karşılama, sınav seçimi, hedef tarihi, günlük süre, seviye değerlendirmesi | Misafir deneme veya hesap; sınav kapsamını seç → hedef belirle → ana sayfa. Kapsam/tarih değiştirilebilir |
+| Hesap | Giriş, kayıt, doğrulama, şifre kurtarma | Seçilen kimlik yöntemine göre doğrula → devam et; iptal, geçersiz giriş ve oturum süresi dolması |
+| Ana sayfa | Günlük plan, ilerleme, devam et, araç kısayolları | Yarım kalan ders/teste dönüş; henüz veri yoksa başlangıç yönlendirmesi |
+| Akademi | Sınav/ders listesi, konu listesi, konu detayı, kaynak/güncellik | Ders → konu → anlatım/örnek/görsel → özet/ses/ilgili sorular; kilitli veya yayınlanmamış içerik durumu |
+| Özetler | Katalog, kısa/orta/ayrıntılı özet, favoriler | Konu → uzunluk seç → oku/dinle/tekrar listesine ekle |
+| Sesli Akademi | Katalog, bölüm detayı, oynatıcı, indirmeler | Bölüm → oynat → duraklat/hız/konum → devam; indirme/silme ve çevrimdışı hata |
+| Soru Bankası | Filtreler, soru, açıklama/kaynak, hata bildirimi | Sınav/ders/konu/zorluk → soru → cevap → açıklama → yanlış defteri/konu |
+| Çıkmış Sorular | Lisans açıklaması, yıl/sınav/konu seçimi, soru/çözüm veya resmî kaynak bağlantısı | Yalnızca izinli içerik; izin yoksa erişim bağlantısı, kopyalanmış soru sunulmaz |
+| Rastgele Test | Çoklu ders/sayı/süre ayarı, test, bitirme onayı, sonuç, cevap incelemesi | Uygun havuzu göster → başlat → cevapla/boş bırak → süre biter/bitir → net/doğruluk/süre → yanlışları tekrar et. Yarım oturum kurtarma |
+| Fotoğraf Çözümü | Kamera izin açıklaması, çek/yükle, kırp/kalite, OCR kontrol, işlem durumu, adımlı çözüm | Görsel → okunan metni doğrula → AI işi → doğrulama durumu/formül/şekil → geri bildirim/sil. İzin reddi, okunamama, kota, zaman aşımı ve iptal |
+| AI Öğretmen | Konu seçimi, sohbet, ipucu/alternatif yöntem, geçmiş | Konu/soru bağlamı → mesaj → kaynaklı yanıt → takip sorusu; doğrulanamama, uygunsuz içerik ve bağlantı hatası |
+| Yanlış Defteri | Ders/konu filtreli liste, soru detayı, tekrar testi, tekrar takvimi | Yanlış cevap → sürümüyle kaydet → açıklama/konu → yeniden çöz → tekrar planını güncelle |
+| Çalışma Koçu | Hedef düzenleme, günlük/haftalık plan, görev, yeniden planlama | Hedef+uygun süre+performans → plan → tamamla/ertele → kalan işleri uyarla. Veri yoksa açık kural tabanlı başlangıç planı |
+| Analiz | Genel, ders, konu, zaman aralığı, oturum detayı | Net/doğruluk/boş/süre → zayıf konu → ders/tekrar. Veri yetersizken kesin öneri üretme |
+| Profil/Ayarlar | Hedef, erişilebilirlik, ses, bildirim, offline/senkronizasyon, gizlilik, veri dışa aktarma, hesap silme, yardım | İzinleri yönet → veriyi yönet; hesap silmede onay ve iş durumu |
+| Yönetim | Giriş, içerik listesi/editörü, soru/çözüm editörü, kaynak/izin kaydı, podcast varlığı, AI üretim taslakları, inceleme kuyruğu, yayın geçmişi, kullanıcı rolü, raporlar | Taslak → otomatik kontrol → uzman inceleme → onay/yayın veya gerekçeli ret; yayın geri alma ve denetim izi |
+
+Ortak durumlar: yükleniyor, boş içerik, bağlantı kesildi, yeniden dene, erişim reddi, hesap oturumu yenileme, sürüm uyuşmazlığı ve işlem iptali. Türkçe karakterler, ekran okuyucu etiketleri, metin büyütme, kontrast ve dokunma hedefleri ekran kabul kriteridir. Fotoğraf/AI kotası ve sonuç kaynağı açık gösterilir.
+
+## 7. Aşamalı geliştirme ve yayın sınırı
+
+1. **Prototip sağlamlaştırma:** doğrulanmış sayaç/kayıt hataları, oturum sınırı ve erişilebilirlik; yalnızca ayrı kodlama göreviyle. Ürün kapsamı ve sınav müfredatı resmî kaynaklarla kesinleştirilir.
+2. **MVP dikey dilim:** Flutter sınav/ders/konu/özet ekranları + FastAPI/PostgreSQL + onaylı sorular + test oturumu/sonuç + yanlış defteri + temel analiz + asgari editör onay paneli. Misafir/hızlı hesap modeli ve senkronizasyon kararı bu aşamada verilir.
+3. **Çalışma alışkanlığı:** kural tabanlı koç, tekrar programı, TTS/izinli ses dosyaları, güvenilir offline önbellek. Gerçek podcast, izinli çıkmış sorular ve geniş müfredat içerik kapasitesine bağlıdır.
+4. **Doğrulanmış AI pilotu:** önce fotoğraf/OCR ve kontrollü çözüm; ardından bağlamlı öğretmen. Sağlayıcı anahtarları ve kalite testleri tamamlanmadan gerçek AI özelliği olarak yayınlanmaz.
+5. **Mobil pilot ve yayın:** README'deki 15–30 kişilik pilot önerisi uygulanabilir başlangıçtır. Android/iOS fiziksel cihazlarda kullanılabilirlik, ekran okuyucu, Türkçe ses, kamera, bağlantı kesilmesi ve performans ölçülür. Gizlilik/izinler, lisanslar, yedekleme, mağaza koşulları ve imzalama tamamlanır.
+
+Takvim ve maliyet ekip kapasitesi, içerik kapsamı, AI sağlayıcısı ve platform hesapları belirlendikten sonra tahmin edilir. On iki modül nihai yol haritasında tutulur; tamamı ilk MVP'ye sıkıştırılmaz. Ayrıntılı görevler `TASKS.md` içindedir.
+
+## 8. Hazır olma ölçütleri ve mevcut sınırlar
+
+Şu anda yalnızca HTML demo akışları yukarıdaki kontrollerle doğrulanmıştır. Çalışan backend, PostgreSQL, Flutter projesi, Android/iOS paketi veya gerçek AI entegrasyonu yoktur. Çalışır mobil ürün iddiası yapılmaz.
+
+MVP: onaylı içerik uçtan uca okunmalı, cevap sunucuda değerlendirilip tekil kaydedilmeli, yanlış defteri ve analiz aynı veriyi göstermeli, sahiplik/rol erişimleri engellenmeli ve cihazlar arası senkronizasyon seçilen kapsamda test edilmelidir. AI sürümü ayrıca uzman değerlendirme seti ve doğrulanamayan cevap akışını geçmelidir. İzinli içerik ve veri politikaları yayın ön koşuludur.

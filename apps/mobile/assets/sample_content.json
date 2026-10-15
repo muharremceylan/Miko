@@ -1,0 +1,164 @@
+{
+  "course": {
+    "tarih": {
+      "name": "Tarih · İlk Türk Devletleri",
+      "emoji": "🏛️",
+      "full": "<h3>Orta Asya'da Türk Devletleri</h3><p>Asya Hun Devleti, Türk tarihinin erken dönemindeki önemli siyasi oluşumlardandır. Mete Han'ın askeri teşkilatlanma alanındaki çalışmaları ve onlu sistemle ilişkilendirilmesi sık karşılaşılan bir sınav bilgisidir.</p><h3>Göktürkler</h3><p>Göktürk Devleti, devlet adında “Türk” ifadesini kullanan ilk siyasi teşkilat olarak öğretilir. Orhun Yazıtları, İkinci Göktürk Kağanlığı dönemiyle bağlantılıdır.</p><h3>Uygurlar</h3><p>Uygurlar şehirleşme, tarım, sanat ve yazılı kültür alanındaki gelişmeleriyle öne çıkar. Manihaizm'in benimsenmesi yaşam tarzlarında değişime yol açmıştır.</p><h3>Nasıl çalışmalı?</h3><ul><li>Devlet–kurucu–özellik eşleştirmeleri yap.</li><li>Orhun Yazıtları ile Göktürkler arasındaki bağı kur.</li><li>Uygurların yerleşik hayat özelliklerini karşılaştır.</li></ul>",
+      "short": "<ul><li><b>Asya Hun:</b> Mete Han ve onlu ordu sistemi.</li><li><b>Göktürk:</b> Devlet adında “Türk” ifadesi; Orhun Yazıtları.</li><li><b>Uygur:</b> Yerleşik hayat, tarım ve yazılı kültürde gelişme.</li></ul><p><b>Hatırlama tekniği:</b> Hun = Ordu, Göktürk = Türk adı/yazıt, Uygur = Yerleşim.</p>",
+      "id": "tarih"
+    },
+    "matematik": {
+      "name": "Matematik · Birinci Dereceden Denklemler",
+      "emoji": "➗",
+      "full": "<h3>Temel mantık</h3><p>Bilinmeyen içeren ve bilinmeyenin en yüksek kuvveti 1 olan denklemler birinci dereceden denklemlerdir.</p><h3>Örnek</h3><p>3x + 5 = 26 denkleminde her iki taraftan 5 çıkarılır: 3x = 21. Sonra her iki taraf 3'e bölünür ve x = 7 bulunur.</p><h3>Kontrol</h3><p>3 × 7 + 5 = 26 olduğu için sonuç doğrudur.</p>",
+      "short": "<ul><li>Eşitliğin iki tarafına aynı işlem uygulanır.</li><li>Önce sabit sayıları ayır.</li><li>Sonra bilinmeyenin katsayısına böl.</li><li>Bulduğun sayıyı denklemde kontrol et.</li></ul>",
+      "id": "matematik"
+    },
+    "vatandaslik": {
+      "name": "Vatandaşlık · Yasama",
+      "emoji": "⚖️",
+      "full": "<h3>Yasama organı</h3><p>Türkiye'de yasama yetkisi, Türk Milleti adına Türkiye Büyük Millet Meclisinindir. Bu yetki devredilemez (Anayasa m. 7).</p><h3>Meclis yapısı</h3><p>TBMM genel oyla seçilen 600 milletvekilinden oluşur (Anayasa m. 75).</p><h3>Dikkat</h3><p>Mevzuat konuları çalışılırken yürürlükteki güncel metin kontrol edilmelidir. Gerçek üründe ilgili madde ve son kontrol tarihi gösterilecektir.</p>",
+      "short": "<ul><li><b>Madde 7:</b> Yasama yetkisi TBMM'nindir ve devredilemez.</li><li><b>Madde 75:</b> TBMM 600 milletvekilinden oluşur.</li><li>Anayasa sorularında güncel metne bak.</li></ul>",
+      "id": "vatandaslik"
+    },
+    "cografya": {
+      "name": "Coğrafya · Türkiye İklimi",
+      "emoji": "🌍",
+      "full": "<h3>İklimi belirleyen faktörler</h3><p>Türkiye'de enlem, yükselti, denize uzaklık ve yer şekilleri iklim üzerinde etkilidir.</p><h3>Genel özellikler</h3><p>Karadeniz kıyılarında yıl boyunca yağış görülür. Akdeniz kıyılarında yazlar sıcak ve kurak, kışlar ılık ve yağışlıdır. İç kesimlerde karasallık belirginleşir.</p><h3>Çalışma yöntemi</h3><p>İklim tiplerini yağış rejimi, sıcaklık, bitki örtüsü ve görüldükleri yerlerle birlikte karşılaştır.</p>",
+      "short": "<ul><li><b>Karadeniz:</b> Her mevsim yağış.</li><li><b>Akdeniz:</b> Yaz kuraklığı.</li><li><b>İç kesimler:</b> Karasallık, sıcaklık farkı.</li></ul>",
+      "id": "cografya"
+    }
+  },
+  "questions": [
+    {
+      "topic": "tarih",
+      "q": "Devlet adında “Türk” kelimesini kullanan ilk siyasi teşkilat hangisidir?",
+      "a": [
+        "Asya Hun Devleti",
+        "Göktürk Devleti",
+        "Uygur Devleti",
+        "Avar Kağanlığı"
+      ],
+      "c": 1,
+      "e": "Göktürkler, devlet adında Türk kelimesini kullanan ilk siyasi teşkilat olarak kabul edilir.",
+      "id": "sample-1"
+    },
+    {
+      "topic": "tarih",
+      "q": "Orhun Yazıtları aşağıdaki devletlerden hangisiyle ilişkilidir?",
+      "a": [
+        "İkinci Göktürk Kağanlığı",
+        "Uygur Kağanlığı",
+        "Büyük Selçuklu Devleti",
+        "Karahanlı Devleti"
+      ],
+      "c": 0,
+      "e": "Orhun Yazıtları, İkinci Göktürk Kağanlığı dönemine ait Türkçe yazılı kaynaklardandır.",
+      "id": "sample-2"
+    },
+    {
+      "topic": "tarih",
+      "q": "Onlu ordu sistemiyle ilişkilendirilen hükümdar kimdir?",
+      "a": [
+        "Bilge Kağan",
+        "Mete Han",
+        "Bumin Kağan",
+        "Kutluk Kağan"
+      ],
+      "c": 1,
+      "e": "Mete Han, Türk askeri tarihinde onlu sistemle ilişkilendirilir.",
+      "id": "sample-3"
+    },
+    {
+      "topic": "matematik",
+      "q": "3x + 5 = 26 denkleminde x kaçtır?",
+      "a": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "c": 2,
+      "e": "3x = 26 − 5 = 21, dolayısıyla x = 21 ÷ 3 = 7.",
+      "id": "sample-4"
+    },
+    {
+      "topic": "matematik",
+      "q": "2(x + 4) = 22 denkleminde x kaçtır?",
+      "a": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "c": 1,
+      "e": "Önce iki tarafı 2’ye böleriz: x+4=11. Ardından 4 çıkarırız: x=7.",
+      "id": "sample-5"
+    },
+    {
+      "topic": "matematik",
+      "q": "5x − 10 = 15 denkleminde x kaçtır?",
+      "a": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "c": 2,
+      "e": "5x = 25 olur, 5’e bölünce x = 5 bulunur.",
+      "id": "sample-6"
+    },
+    {
+      "topic": "vatandaslik",
+      "q": "Türkiye Cumhuriyeti Anayasası’na göre yasama yetkisi hangi organa aittir?",
+      "a": [
+        "Cumhurbaşkanlığı",
+        "Anayasa Mahkemesi",
+        "Türkiye Büyük Millet Meclisi",
+        "Danıştay"
+      ],
+      "c": 2,
+      "e": "1982 Anayasası madde 7’ye göre yasama yetkisi TBMM’nindir.",
+      "id": "sample-7"
+    },
+    {
+      "topic": "vatandaslik",
+      "q": "Anayasa’ya göre TBMM kaç milletvekilinden oluşur?",
+      "a": [
+        "450",
+        "500",
+        "550",
+        "600"
+      ],
+      "c": 3,
+      "e": "Anayasa madde 75 uyarınca TBMM 600 milletvekilinden oluşur.",
+      "id": "sample-8"
+    },
+    {
+      "topic": "cografya",
+      "q": "Aşağıdaki iklim tiplerinden hangisinde yaz kuraklığı belirgindir?",
+      "a": [
+        "Akdeniz iklimi",
+        "Ekvatoral iklim",
+        "Okyanusal iklim",
+        "Tundra iklimi"
+      ],
+      "c": 0,
+      "e": "Akdeniz ikliminin tipik özelliği yazların sıcak ve kurak olmasıdır.",
+      "id": "sample-9"
+    },
+    {
+      "topic": "cografya",
+      "q": "Türkiye’de deniz etkisinden uzaklaştıkça genellikle hangi özellik artar?",
+      "a": [
+        "Nem oranı",
+        "Karasallık",
+        "Yıllık yağışın düzenliliği",
+        "Denizellik"
+      ],
+      "c": 1,
+      "e": "Deniz etkisinden uzaklaştıkça karasallık ve yıllık sıcaklık farkı genellikle artar.",
+      "id": "sample-10"
+    }
+  ]
+}
