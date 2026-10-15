@@ -65,3 +65,32 @@ jobs:
       - name: GitHub Pages yayını
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Canlı web sayfalarını doğrula
+        env:
+          PREVIEW_URL: ${{ steps.deployment.outputs.page_url }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os
+          import time
+          import urllib.error
+          import urllib.request
+          from urllib.parse import urljoin
+          base = os.environ['PREVIEW_URL'].rstrip('/') + '/'
+          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'Akademi AI'), ('preview.js', 'resizePreview')]
+          for path, expected in checks:
+              url = urljoin(base, path)
+              for attempt in range(6):
+                  try:
+                      request = urllib.request.Request(url, headers={'Cache-Control': 'no-cache'})
+                      with urllib.request.urlopen(request, timeout=20) as response:
+                          body = response.read().decode('utf-8')
+                          if response.status != 200 or expected not in body:
+                              raise RuntimeError('Beklenen web içeriği bulunamadı: ' + path)
+                      break
+                  except (urllib.error.URLError, RuntimeError):
+                      if attempt == 5:
+                          raise
+                      time.sleep(5)
+          print('::notice title=Canlı web önizlemesi doğrulandı::' + base)
+          PY
