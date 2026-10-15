@@ -99,7 +99,7 @@ jobs:
           import urllib.request
           from urllib.parse import urljoin
           base = os.environ['PREVIEW_URL'].rstrip('/') + '/'
-          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('app.js', 'mathTopicScreen'), ('mobile.css', 'AkademiNotes'), ('preview.js', 'resizePreview')]
+          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('app.js', 'mathTopicScreen'), ('app.js', 'mathMistakesTitle'), ('app.js', 'sayilar-faktoriyel'), ('mobile.css', 'AkademiNotes'), ('preview.js', 'resizePreview')]
           for path, expected in checks:
               url = urljoin(base, path) + '?build=' + os.environ['GITHUB_SHA']
               for attempt in range(6):

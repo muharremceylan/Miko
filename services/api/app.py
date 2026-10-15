@@ -21,8 +21,8 @@ from .verification import verify
 ROOT=Path(__file__).resolve().parents[2]
 CONTENT=ROOT/'akademi_ai_prototip/content/kpss/lisans/matematik'
 TOPICS={t['id']:t['title'] for t in json.loads((CONTENT/'curriculum.json').read_text())['topics']}
-LESSON=json.loads((CONTENT/'topics/temel.json').read_text())
-AUDIO=json.loads((CONTENT/'topics/temel-audio.json').read_text())
+SAYILAR=json.loads((CONTENT/'topics/sayilar.json').read_text())
+AUDIO={'temel':json.loads((CONTENT/'topics/temel-audio.json').read_text()),**SAYILAR['audio']}
 MAX_BODY=6*1024*1024
 
 class Settings:
@@ -151,11 +151,12 @@ def create_app(settings=None,provider=None):
     @app.post('/v1/speech')
     async def speech(body:Speech,request:Request):
         authorize(request)
-        if body.topic_id!='temel' or body.level not in LESSON['summaries']:raise HTTPException(422,'Bu özetin ses metni henüz hazır değil.')
-        cache_key=(AUDIO['version'],body.level)
+        if body.topic_id not in AUDIO or body.level not in AUDIO[body.topic_id]['summaries']:raise HTTPException(422,'Bu özetin ses metni henüz hazır değil.')
+        audio=AUDIO[body.topic_id]
+        cache_key=(body.topic_id,audio['version'],body.level)
         if cache_key not in speech_cache:
             # Yalnız sunucudaki eğitim metni seslendirilir; sınırsız serbest metin üretimi yok.
-            text=AUDIO['summaries'][body.level]
+            text=audio['summaries'][body.level]
             if len(text)>4096:raise HTTPException(422,'Bu özetin ses üretimi için daha kısa bir metin hazırlanmalı.')
             use_budget('speech')
             try:speech_cache[cache_key]=await provider.speak(text)

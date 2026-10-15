@@ -1,0 +1,284 @@
+[
+  {
+    "id": "sayilar-sayma-sistemleri-01",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Kolay",
+    "text": "(1011)₂ sayısının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "answer": 2,
+    "steps": [
+      "Basamak ağırlıkları sağdan 1, 2, 4, 8.",
+      "1 × 8 + 0 × 4 + 1 × 2 + 1 = 11."
+    ],
+    "formula": "Her rakamı tabanın ilgili kuvvetiyle çarp ve topla.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "1*2**3+0*2**2+1*2+1"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-02",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Kolay",
+    "text": "(234)₅ sayısının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "68",
+      "69",
+      "70",
+      "71",
+      "67"
+    ],
+    "answer": 1,
+    "steps": [
+      "2 × 5² + 3 × 5 + 4 yaz.",
+      "50 + 15 + 4 = 69."
+    ],
+    "formula": "(abc)ₜ = a·t² + b·t + c.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "2*5**2+3*5+4"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-03",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Kolay",
+    "text": "(42)₇ sayısının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "30",
+      "31",
+      "32",
+      "28",
+      "29"
+    ],
+    "answer": 0,
+    "steps": [
+      "4 × 7 + 2 yaz.",
+      "28 + 2 = 30."
+    ],
+    "formula": "(ab)ₜ = a·t + b.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "4*7+2"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-04",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "(120)₃ sayısının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "16",
+      "17",
+      "13",
+      "14",
+      "15"
+    ],
+    "answer": 4,
+    "steps": [
+      "1 × 3² + 2 × 3 + 0 yaz.",
+      "9 + 6 = 15."
+    ],
+    "formula": "Sıfır olan basamak değer katmaz; yerini korur.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "1*3**2+2*3"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-05",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "(23)ₜ = 15 eşitliğinde t tabanı kaçtır?",
+    "options": [
+      "8",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 3,
+    "steps": [
+      "2t + 3 = 15; 2t = 12.",
+      "t = 6 ve tüm rakamlar 6’dan küçük: taban uygundur."
+    ],
+    "formula": "Taban tam sayıdır ve her rakamdan büyüktür.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "base",
+      "args": [
+        2,
+        3,
+        15
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-06",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "4 tabanında yazılabilen iki basamaklı kaç sayı vardır?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "answer": 2,
+    "steps": [
+      "İlk rakam 1, 2, 3: üç seçim.",
+      "İkinci rakam 0, 1, 2, 3: dört seçim; 3 × 4 = 12."
+    ],
+    "formula": "t tabanında iki basamaklı sayı adedi (t − 1)t.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        4,
+        15,
+        "True"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-07",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "5 tabanındaki en büyük iki basamaklı sayının onluk değeri kaçtır?",
+    "options": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "22"
+    ],
+    "answer": 1,
+    "steps": [
+      "En büyük rakam 4; sayı (44)₅.",
+      "4 × 5 + 4 = 24."
+    ],
+    "formula": "t tabanında en büyük rakam t − 1.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "4*5+4"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-08",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "(101)₂ + (11)₂ toplamının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "6",
+      "7"
+    ],
+    "answer": 0,
+    "steps": [
+      "(101)₂ = 5 ve (11)₂ = 3.",
+      "Onluk değerleri topla: 5 + 3 = 8."
+    ],
+    "formula": "Farklı gösterimleri önce aynı tabana getir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "(1*2**2+1)+(1*2+1)"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-09",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "(304)₅ sayısının onluk sistemdeki değeri kaçtır?",
+    "options": [
+      "80",
+      "81",
+      "77",
+      "78",
+      "79"
+    ],
+    "answer": 4,
+    "steps": [
+      "3 × 25 + 0 × 5 + 4.",
+      "75 + 4 = 79."
+    ],
+    "formula": "Ortadaki sıfır basamağını atlama.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "3*5**2+4"
+    }
+  },
+  {
+    "id": "sayilar-sayma-sistemleri-10",
+    "version": 1,
+    "topicId": "sayilar-sayma-sistemleri",
+    "skill": "Sayma Sistemleri",
+    "difficulty": "Orta",
+    "text": "(32)ₜ = 20 eşitliğinde t tabanı kaçtır?",
+    "options": [
+      "8",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 3,
+    "steps": [
+      "3t + 2 = 20; t = 6.",
+      "6 > 3 koşulu da sağlanır."
+    ],
+    "formula": "Denklemi çöz ve rakam < taban şartını denetle.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "base",
+      "args": [
+        3,
+        2,
+        20
+      ]
+    }
+  }
+]

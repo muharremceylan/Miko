@@ -1,0 +1,312 @@
+[
+  {
+    "id": "sayilar-sayi-kumeleri-01",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Kolay",
+    "text": "−4 ≤ x ≤ 3 aralığında kaç tam sayı vardır?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": 2,
+    "steps": [
+      "İki sınır da dahildir.",
+      "3 − (−4) + 1 = 8."
+    ],
+    "formula": "İki uç dahil tam sayı adedi: son − ilk + 1.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -4,
+        3,
+        "True"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-02",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Kolay",
+    "text": "−3 ≤ x ≤ 5 aralığında kaç doğal sayı vardır? (0 doğal sayıdır.)",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "steps": [
+      "Doğal sayılar negatif değildir.",
+      "Uygun sayılar 0, 1, 2, 3, 4, 5; toplam 6 tane."
+    ],
+    "formula": "Bu içerikte N = {0, 1, 2, …}.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -3,
+        5,
+        "x >= 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-03",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Kolay",
+    "text": "−5 < x < 2 koşulunu sağlayan kaç tam sayı vardır?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "4",
+      "5"
+    ],
+    "answer": 0,
+    "steps": [
+      "Sınırlar dışarıda: −4, −3, −2, −1, 0, 1.",
+      "Altı sayı vardır."
+    ],
+    "formula": "Açık aralıkta uç noktalar alınmaz.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -4,
+        1,
+        "True"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-04",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "A = {−2, −1, 0, 1, 2, 3} kümesindeki pozitif tam sayıların sayısı kaçtır?",
+    "options": [
+      "4",
+      "5",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 4,
+    "steps": [
+      "Pozitif olmak sıfırdan büyük olmaktır.",
+      "1, 2 ve 3 uygundur; sayı 3."
+    ],
+    "formula": "Pozitif tam sayılar 1 ile başlar.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -2,
+        3,
+        "x > 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-05",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "−7 ≤ x ≤ 7 aralığında kaç negatif tam sayı vardır?",
+    "options": [
+      "9",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 3,
+    "steps": [
+      "Negatifler −7 ile −1 arasındadır.",
+      "−1 − (−7) + 1 = 7."
+    ],
+    "formula": "Sıfır negatif değildir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -7,
+        7,
+        "x < 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-06",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "A = {1, 2, 3, 4, 5}, B = {4, 5, 6, 7} ise A ∩ B kümesinin eleman sayısı kaçtır?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "steps": [
+      "Kesişim her iki kümede bulunan elemanlardan oluşur.",
+      "Ortak elemanlar 4 ve 5: iki eleman."
+    ],
+    "formula": "Kesişim: ortak elemanlar.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        1,
+        7,
+        "x in [1,2,3,4,5] and x in [4,5,6,7]"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-07",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "A = {0, 1, 2, 3}, B = {2, 3, 4, 5} ise A ∪ B kümesinin eleman sayısı kaçtır?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "steps": [
+      "Birleşimde tekrar eden eleman bir kez sayılır.",
+      "Birleşim {0, 1, 2, 3, 4, 5}; 6 eleman."
+    ],
+    "formula": "Birleşim tüm farklı elemanları içerir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        5,
+        "x in [0,1,2,3] or x in [2,3,4,5]"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-08",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "−6 ≤ x < 5 koşulunu sağlayan çift tam sayıların sayısı kaçtır?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "4",
+      "5"
+    ],
+    "answer": 0,
+    "steps": [
+      "Çiftler −6, −4, −2, 0, 2, 4.",
+      "Sıfır da çifttir; toplam 6."
+    ],
+    "formula": "Çift tam sayı 2k biçimindedir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -6,
+        4,
+        "x % 2 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-09",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "A = {−3, −2, −1, 0, 1, 2}, B = {−1, 0, 1, 2, 3} ise A \\ B kaç elemanlıdır?",
+    "options": [
+      "3",
+      "4",
+      "0",
+      "1",
+      "2"
+    ],
+    "answer": 4,
+    "steps": [
+      "A’dan B’de bulunanları çıkar.",
+      "Geriye −3 ve −2 kalır: 2 eleman."
+    ],
+    "formula": "A \\ B: A’da olup B’de olmayanlar.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -3,
+        3,
+        "x in [-3,-2,-1,0,1,2] and x not in [-1,0,1,2,3]"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-sayi-kumeleri-10",
+    "version": 1,
+    "topicId": "sayilar-sayi-kumeleri",
+    "skill": "Sayı Kümeleri",
+    "difficulty": "Orta",
+    "text": "−8 ≤ x ≤ 8 aralığında, doğal sayı olmayan kaç tam sayı vardır? (0 doğal sayıdır.)",
+    "options": [
+      "10",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 3,
+    "steps": [
+      "Bu aralıktaki doğal olmayan tam sayılar negatiflerdir.",
+      "−8, −7, …, −1; toplam 8."
+    ],
+    "formula": "N, Z’nin alt kümesidir; Z \\ N negatif tam sayılardır.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        -8,
+        8,
+        "x < 0"
+      ]
+    }
+  }
+]

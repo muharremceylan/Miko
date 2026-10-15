@@ -1,0 +1,1740 @@
+{
+  "version": 1,
+  "lessons": {
+    "sayilar-sayi-kumeleri": {
+      "topicId": "sayilar-sayi-kumeleri",
+      "version": 1,
+      "title": "Sayı Kümeleri",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Sayıların adresleri konusunu örnekle açıklayabilmek.",
+        "İç içe kümeler konusunu örnekle açıklayabilmek.",
+        "Kesişim, birleşim ve fark konusunu örnekle açıklayabilmek.",
+        "Aralığı çiz, koşulu süz konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Sayıların adresleri",
+          "paragraphs": [
+            "Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N = {0, 1, 2, …}; tam sayılar Z = {…, −2, −1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.",
+            "Rasyonel sayılar Q, a ve b tam sayı ve b ≠ 0 iken a/b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir: −3 = −3/1. Sonlu ve devirli ondalıklar rasyoneldir."
+          ]
+        },
+        {
+          "title": "İç içe kümeler",
+          "paragraphs": [
+            "N ⊂ Z ⊂ Q ⊂ R ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1/2 rasyoneldir ama tam sayı değildir.",
+            "İrrasyonel sayılar kesir olarak yazılamaz; √2 ve π örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur. √9 = 3 olduğundan kök işareti görmek irrasyonel demek değildir."
+          ]
+        },
+        {
+          "title": "Kesişim, birleşim ve fark",
+          "paragraphs": [
+            "Kesişim A ∩ B, iki kümenin ortak elemanlarını; birleşim A ∪ B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A \\ B ise A’da olup B’de olmayanlardır.",
+            "A = {1, 2, 3}, B = {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A \\ B = {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır."
+          ]
+        },
+        {
+          "title": "Aralığı çiz, koşulu süz",
+          "paragraphs": [
+            "Tam sayı sayarken önce uçları belirle. −2 < x ≤ 3 için ilk uygun tam sayı −1, sonuncu 3’tür; sayı adedi 3 − (−1) + 1 = 5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.",
+            "KPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1/2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "N → Z → Q → R",
+          "tip": "Küçük kümenin her elemanı büyük kümede de yaşar.",
+          "example": "−2 tam sayı ve rasyoneldir.",
+          "warning": "Ters yönü otomatik doğru sayma.",
+          "question": "1/2 tam sayı mıdır?",
+          "answer": "Hayır; rasyoneldir."
+        },
+        {
+          "key": "Kökü gör, önce sadeleştir",
+          "tip": "Kök işareti tek başına sayı türünü belirlemez.",
+          "example": "√9 = 3 ama √2 irrasyoneldir.",
+          "warning": "π ile 22/7 tam eşit değildir.",
+          "question": "√16 irrasyonel midir?",
+          "answer": "Hayır. √16 = 4 doğal sayıdır."
+        },
+        {
+          "key": "Ortak → ∩ · Hepsi → ∪",
+          "tip": "Bir elemanı iki kümede görünce iki kez sayma.",
+          "example": "{1,2} ∪ {2,3} = {1,2,3}.",
+          "warning": "A \\ B ile B \\ A genelde farklıdır.",
+          "question": "{1,2} ∩ {2,3} nedir?",
+          "answer": "{2}."
+        },
+        {
+          "key": "Önce uçlar, sonra koşul",
+          "tip": "Açık uç dahil değil; kapalı uç dahildir.",
+          "example": "−1 < x ≤ 2 için tam sayılar 0, 1, 2.",
+          "warning": "Doğal sayılarda bu içerikte sıfır var.",
+          "question": "−2 < x < 2 için kaç tam sayı var?",
+          "answer": "−1, 0, 1: üç tane."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "N → Z → Q → R. −2 tam sayı ve rasyoneldir. Ters yönü otomatik doğru sayma.",
+            "Kökü gör, önce sadeleştir. √9 = 3 ama √2 irrasyoneldir. π ile 22/7 tam eşit değildir.",
+            "Ortak → ∩ · Hepsi → ∪. {1,2} ∪ {2,3} = {1,2,3}. A \\ B ile B \\ A genelde farklıdır.",
+            "Önce uçlar, sonra koşul. −1 < x ≤ 2 için tam sayılar 0, 1, 2. Doğal sayılarda bu içerikte sıfır var."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N = {0, 1, 2, …}; tam sayılar Z = {…, −2, −1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.",
+            "N ⊂ Z ⊂ Q ⊂ R ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1/2 rasyoneldir ama tam sayı değildir.",
+            "Kesişim A ∩ B, iki kümenin ortak elemanlarını; birleşim A ∪ B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A \\ B ise A’da olup B’de olmayanlardır.",
+            "Tam sayı sayarken önce uçları belirle. −2 < x ≤ 3 için ilk uygun tam sayı −1, sonuncu 3’tür; sayı adedi 3 − (−1) + 1 = 5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.",
+            "Rasyonel sayılar Q, a ve b tam sayı ve b ≠ 0 iken a/b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir: −3 = −3/1. Sonlu ve devirli ondalıklar rasyoneldir.",
+            "İrrasyonel sayılar kesir olarak yazılamaz; √2 ve π örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur. √9 = 3 olduğundan kök işareti görmek irrasyonel demek değildir.",
+            "A = {1, 2, 3}, B = {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A \\ B = {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır.",
+            "KPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1/2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "N → Z → Q → R",
+            "Kökü gör, önce sadeleştir",
+            "Ortak → ∩ · Hepsi → ∪",
+            "Önce uçlar, sonra koşul",
+            "N → Z → Q → R",
+            "Kökü gör, önce sadeleştir",
+            "Ortak → ∩ · Hepsi → ∪",
+            "Önce uçlar, sonra koşul"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N = {0, 1, 2, …}; tam sayılar Z = {…, −2, −1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.",
+            "Rasyonel sayılar Q, a ve b tam sayı ve b ≠ 0 iken a/b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir: −3 = −3/1. Sonlu ve devirli ondalıklar rasyoneldir.",
+            "N ⊂ Z ⊂ Q ⊂ R ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1/2 rasyoneldir ama tam sayı değildir.",
+            "İrrasyonel sayılar kesir olarak yazılamaz; √2 ve π örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur. √9 = 3 olduğundan kök işareti görmek irrasyonel demek değildir.",
+            "Kesişim A ∩ B, iki kümenin ortak elemanlarını; birleşim A ∪ B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A \\ B ise A’da olup B’de olmayanlardır.",
+            "A = {1, 2, 3}, B = {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A \\ B = {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır.",
+            "Tam sayı sayarken önce uçları belirle. −2 < x ≤ 3 için ilk uygun tam sayı −1, sonuncu 3’tür; sayı adedi 3 − (−1) + 1 = 5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.",
+            "KPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1/2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "N → Z → Q → R",
+            "N → Z → Q → R",
+            "Kökü gör, önce sadeleştir",
+            "Kökü gör, önce sadeleştir",
+            "Ortak → ∩ · Hepsi → ∪",
+            "Ortak → ∩ · Hepsi → ∪",
+            "Önce uçlar, sonra koşul",
+            "Önce uçlar, sonra koşul",
+            "Önce uçlar, sonra koşul"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Kapsama",
+          "expression": "N ⊂ Z ⊂ Q ⊂ R",
+          "conditions": "Bu içerikte 0 doğal sayıdır.",
+          "example": "−4 = −4/1 ∈ Q."
+        },
+        {
+          "name": "Tam sayı adedi",
+          "expression": "b − a + 1",
+          "conditions": "a ve b tam sayı; iki uç dahil, a ≤ b.",
+          "example": "−3 ile 4 arasında 8 tam sayı."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-sayi-kumeleri-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-sayi-kumeleri",
+          "skill": "Sayı Kümeleri",
+          "difficulty": "Kolay",
+          "text": "−2 ≤ x ≤ 2 aralığında kaç tam sayı vardır?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 2,
+          "steps": [
+            "−2, −1, 0, 1, 2 sıralanır.",
+            "Beş eleman sayılır."
+          ],
+          "formula": "Uçlar dahilse +1 ekle.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "count",
+            "args": [
+              -2,
+              2,
+              "True"
+            ]
+          }
+        },
+        {
+          "id": "sayilar-sayi-kumeleri-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-sayi-kumeleri",
+          "skill": "Sayı Kümeleri",
+          "difficulty": "Orta",
+          "text": "A = {1, 3, 5, 7, 9}, B = {3, 6, 9} ise A ∩ B kaç elemanlıdır?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "0"
+          ],
+          "answer": 1,
+          "steps": [
+            "Her iki listede de bulunanları seç.",
+            "3 ve 9 ortaktır; iki eleman."
+          ],
+          "formula": "Aynı elemanı iki kez sayma.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "count",
+            "args": [
+              1,
+              9,
+              "x in [1,3,5,7,9] and x in [3,6,9]"
+            ]
+          }
+        }
+      ],
+      "audioScript": "Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N = {0, 1, 2, …}; tam sayılar Z = {…, −2, −1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.\n\nN ⊂ Z ⊂ Q ⊂ R ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1/2 rasyoneldir ama tam sayı değildir.\n\nKesişim A ∩ B, iki kümenin ortak elemanlarını; birleşim A ∪ B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A \\ B ise A’da olup B’de olmayanlardır.\n\nTam sayı sayarken önce uçları belirle. −2 < x ≤ 3 için ilk uygun tam sayı −1, sonuncu 3’tür; sayı adedi 3 − (−1) + 1 = 5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.\n\nRasyonel sayılar Q, a ve b tam sayı ve b ≠ 0 iken a/b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir: −3 = −3/1. Sonlu ve devirli ondalıklar rasyoneldir.\n\nİrrasyonel sayılar kesir olarak yazılamaz; √2 ve π örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur. √9 = 3 olduğundan kök işareti görmek irrasyonel demek değildir.\n\nA = {1, 2, 3}, B = {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A \\ B = {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır.\n\nKPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1/2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla."
+    },
+    "sayilar-dogal-sayilar": {
+      "topicId": "sayilar-dogal-sayilar",
+      "version": 1,
+      "title": "Doğal Sayılar",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Sıfırdan başlayan sayma konusunu örnekle açıklayabilmek.",
+        "Ardışık dizide boşlukları say konusunu örnekle açıklayabilmek.",
+        "Toplamı eşleştirerek bul konusunu örnekle açıklayabilmek.",
+        "Basamak ve sınav kontrolü konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Sıfırdan başlayan sayma",
+          "paragraphs": [
+            "Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2 − 5 = −3; 1/2 doğal değildir.",
+            "En küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n + 1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır."
+          ]
+        },
+        {
+          "title": "Ardışık dizide boşlukları say",
+          "paragraphs": [
+            "Ardışık doğal sayılar n, n + 1, n + 2 biçimindedir. 4’ten 12’ye iki uç dahil 12 − 4 + 1 = 9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.",
+            "Eşit aralıklı dizide terim sayısı (son − ilk)/adım + 1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24 − 3)/3 + 1 = 8 terim vardır."
+          ]
+        },
+        {
+          "title": "Toplamı eşleştirerek bul",
+          "paragraphs": [
+            "1 + … + n toplamında ilk ve sonu eşleştir: her çift n + 1 verir. Toplam n(n + 1)/2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.",
+            "İlk n pozitif çiftin toplamı n(n + 1), ilk n pozitif tekin toplamı n²’dir. 2 + 4 + 6 + 8 = 4 × 5 = 20; 1 + 3 + 5 + 7 = 4² = 16."
+          ]
+        },
+        {
+          "title": "Basamak ve sınav kontrolü",
+          "paragraphs": [
+            "İki basamaklı ab sayısı 10a + b’dir; a ∈ {1, …, 9}, b ∈ {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9 × 9 = 81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.",
+            "Toplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a + b = 11 için 5 × 6 = 30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Doğalın başlangıcı: 0",
+          "tip": "Pozitif dendiğinde ise 1’den başla.",
+          "example": "0 ∈ N; −1 ∉ N.",
+          "warning": "Bölme doğal sayılarda kapalı değildir.",
+          "question": "3/2 doğal sayı mı?",
+          "answer": "Hayır; sonuç tam sayı değildir."
+        },
+        {
+          "key": "Adet = aralık + 1",
+          "tip": "Uçların ikisi de dahil mi diye sor.",
+          "example": "5’ten 9’a 5 sayı var.",
+          "warning": "9 − 5 yalnız aralık sayısıdır.",
+          "question": "2, 5, 8, 11 kaç terim?",
+          "answer": "(11 − 2)/3 + 1 = 4."
+        },
+        {
+          "key": "Çiftler n(n+1), tekler n²",
+          "tip": "Önce terim adedini bul.",
+          "example": "İlk 5 pozitif tek toplamı 25.",
+          "warning": "Son terim ile terim sayısını karıştırma.",
+          "question": "İlk 4 pozitif çiftin toplamı?",
+          "answer": "4 × 5 = 20."
+        },
+        {
+          "key": "İlk rakam sıfır olamaz",
+          "tip": "Sayıyı basamaklarına ayır.",
+          "example": "38 = 3 × 10 + 8.",
+          "warning": "Rakamlar farklı denmediyse eşit olabilir.",
+          "question": "İki basamaklı kaç sayı var?",
+          "answer": "9 × 10 = 90."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Doğalın başlangıcı: 0. 0 ∈ N; −1 ∉ N. Bölme doğal sayılarda kapalı değildir.",
+            "Adet = aralık + 1. 5’ten 9’a 5 sayı var. 9 − 5 yalnız aralık sayısıdır.",
+            "Çiftler n(n+1), tekler n². İlk 5 pozitif tek toplamı 25. Son terim ile terim sayısını karıştırma.",
+            "İlk rakam sıfır olamaz. 38 = 3 × 10 + 8. Rakamlar farklı denmediyse eşit olabilir."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2 − 5 = −3; 1/2 doğal değildir.",
+            "Ardışık doğal sayılar n, n + 1, n + 2 biçimindedir. 4’ten 12’ye iki uç dahil 12 − 4 + 1 = 9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.",
+            "1 + … + n toplamında ilk ve sonu eşleştir: her çift n + 1 verir. Toplam n(n + 1)/2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.",
+            "İki basamaklı ab sayısı 10a + b’dir; a ∈ {1, …, 9}, b ∈ {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9 × 9 = 81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.",
+            "En küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n + 1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır.",
+            "Eşit aralıklı dizide terim sayısı (son − ilk)/adım + 1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24 − 3)/3 + 1 = 8 terim vardır.",
+            "İlk n pozitif çiftin toplamı n(n + 1), ilk n pozitif tekin toplamı n²’dir. 2 + 4 + 6 + 8 = 4 × 5 = 20; 1 + 3 + 5 + 7 = 4² = 16.",
+            "Toplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a + b = 11 için 5 × 6 = 30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "Doğalın başlangıcı: 0",
+            "Adet = aralık + 1",
+            "Çiftler n(n+1), tekler n²",
+            "İlk rakam sıfır olamaz",
+            "Doğalın başlangıcı: 0",
+            "Adet = aralık + 1",
+            "Çiftler n(n+1), tekler n²",
+            "İlk rakam sıfır olamaz"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2 − 5 = −3; 1/2 doğal değildir.",
+            "En küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n + 1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır.",
+            "Ardışık doğal sayılar n, n + 1, n + 2 biçimindedir. 4’ten 12’ye iki uç dahil 12 − 4 + 1 = 9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.",
+            "Eşit aralıklı dizide terim sayısı (son − ilk)/adım + 1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24 − 3)/3 + 1 = 8 terim vardır.",
+            "1 + … + n toplamında ilk ve sonu eşleştir: her çift n + 1 verir. Toplam n(n + 1)/2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.",
+            "İlk n pozitif çiftin toplamı n(n + 1), ilk n pozitif tekin toplamı n²’dir. 2 + 4 + 6 + 8 = 4 × 5 = 20; 1 + 3 + 5 + 7 = 4² = 16.",
+            "İki basamaklı ab sayısı 10a + b’dir; a ∈ {1, …, 9}, b ∈ {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9 × 9 = 81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.",
+            "Toplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a + b = 11 için 5 × 6 = 30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "Doğalın başlangıcı: 0",
+            "Doğalın başlangıcı: 0",
+            "Adet = aralık + 1",
+            "Adet = aralık + 1",
+            "Çiftler n(n+1), tekler n²",
+            "Çiftler n(n+1), tekler n²",
+            "İlk rakam sıfır olamaz",
+            "İlk rakam sıfır olamaz",
+            "İlk rakam sıfır olamaz"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Ardışık toplam",
+          "expression": "1 + … + n = n(n + 1)/2",
+          "conditions": "n pozitif tam sayı.",
+          "example": "1 + … + 12 = 78."
+        },
+        {
+          "name": "Eşit aralıklı toplam",
+          "expression": "Toplam = adet × (ilk + son)/2",
+          "conditions": "Terimler eşit aralıklı.",
+          "example": "4 + 6 + 8 = 3 × 6 = 18."
+        },
+        {
+          "name": "Özel toplamlar",
+          "expression": "İlk n pozitif çift: n(n + 1); ilk n pozitif tek: n²",
+          "conditions": "Başlangıç sırasıyla 2 ve 1.",
+          "example": "İlk 3 çift: 12; ilk 3 tek: 9."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-dogal-sayilar-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-dogal-sayilar",
+          "skill": "Doğal Sayılar",
+          "difficulty": "Kolay",
+          "text": "İlk 8 pozitif tam sayının toplamı kaçtır?",
+          "options": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ],
+          "answer": 2,
+          "steps": [
+            "8 terimin ortalaması (1 + 8)/2 = 4,5.",
+            "8 × 4,5 = 36."
+          ],
+          "formula": "1 + … + n = n(n + 1)/2.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "8*9/2"
+          }
+        },
+        {
+          "id": "sayilar-dogal-sayilar-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-dogal-sayilar",
+          "skill": "Doğal Sayılar",
+          "difficulty": "Orta",
+          "text": "İki basamaklı, rakamları toplamı 9 olan kaç doğal sayı vardır?",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "7"
+          ],
+          "answer": 1,
+          "steps": [
+            "Onlar rakamı 1’den 9’a kadar seçilir.",
+            "Her biri için birler rakamı 9 − onlar rakamıdır: 18, 27, …, 90."
+          ],
+          "formula": "Rakam koşulunu tüm uygun basamaklarda denetle.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "count",
+            "args": [
+              10,
+              99,
+              "x // 10 + x % 10 == 9"
+            ]
+          }
+        }
+      ],
+      "audioScript": "Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2 − 5 = −3; 1/2 doğal değildir.\n\nArdışık doğal sayılar n, n + 1, n + 2 biçimindedir. 4’ten 12’ye iki uç dahil 12 − 4 + 1 = 9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.\n\n1 + … + n toplamında ilk ve sonu eşleştir: her çift n + 1 verir. Toplam n(n + 1)/2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.\n\nİki basamaklı ab sayısı 10a + b’dir; a ∈ {1, …, 9}, b ∈ {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9 × 9 = 81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.\n\nEn küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n + 1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır.\n\nEşit aralıklı dizide terim sayısı (son − ilk)/adım + 1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24 − 3)/3 + 1 = 8 terim vardır.\n\nİlk n pozitif çiftin toplamı n(n + 1), ilk n pozitif tekin toplamı n²’dir. 2 + 4 + 6 + 8 = 4 × 5 = 20; 1 + 3 + 5 + 7 = 4² = 16.\n\nToplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a + b = 11 için 5 × 6 = 30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy."
+    },
+    "sayilar-tam-sayilar": {
+      "topicId": "sayilar-tam-sayilar",
+      "version": 1,
+      "title": "Tam Sayılar",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Sayı doğrusunda yön konusunu örnekle açıklayabilmek.",
+        "İşaretleri işlemin türüne göre oku konusunu örnekle açıklayabilmek.",
+        "Parantez kuvvetin sınırıdır konusunu örnekle açıklayabilmek.",
+        "Karşıtları eşleştir, yerine koy konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Sayı doğrusunda yön",
+          "paragraphs": [
+            "Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden −2 > −7; negatiflerde mutlak değeri büyük olan daha küçüktür.",
+            "İki sayı arasındaki uzaklık negatif olamaz: |a − b| ile hesaplanır. −3 ve 5 arası uzaklık |−3 − 5| = 8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir."
+          ]
+        },
+        {
+          "title": "İşaretleri işlemin türüne göre oku",
+          "paragraphs": [
+            "Toplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al: −9 + 4 = −5.",
+            "Çıkarma ters işaretliyi eklemektir: 3 − (−5) = 8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0/5 = 0 ise tanımlıdır."
+          ]
+        },
+        {
+          "title": "Parantez kuvvetin sınırıdır",
+          "paragraphs": [
+            "(−4)² = 16; tabanın tamamı karesi alınır. −4² = −16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.",
+            "Öncelik: parantez, kuvvet, çarpma/bölme, toplama/çıkarma. Aynı düzeyde soldan sağa ilerle: 18 / 3 × 2 = 12; önce 3 × 2 yapmak yanlıştır."
+          ]
+        },
+        {
+          "title": "Karşıtları eşleştir, yerine koy",
+          "paragraphs": [
+            "−6’dan 6’ya toplamda −6 ile 6, −5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle. −2’den 4’e toplam 3 + 4 = 7.",
+            "KPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a = −2 için 3a² = 3 × (−2)² = 12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Sağdaki daha büyük",
+          "tip": "Negatif sayılarda sıfıra yakın olan büyüktür.",
+          "example": "−2 > −8.",
+          "warning": "Uzaklık ile değeri karıştırma.",
+          "question": "−5 ile 3 arası uzaklık?",
+          "answer": "8 birim."
+        },
+        {
+          "key": "Çıkarmak → tersini eklemek",
+          "tip": "İki eksi farklı görevlerde olabilir.",
+          "example": "4 − (−3) = 4 + 3 = 7.",
+          "warning": "Toplamada iki eksi artı olmaz.",
+          "question": "−4 + (−3) kaçtır?",
+          "answer": "−7."
+        },
+        {
+          "key": "Parantez tabanı sarar",
+          "tip": "Kuvvetin neye uygulandığını gör.",
+          "example": "(−2)² = 4; −2² = −4.",
+          "warning": "Çarpma ve bölme eş önceliklidir.",
+          "question": "12 / 3 × 2 kaçtır?",
+          "answer": "8."
+        },
+        {
+          "key": "Karşıtlar birbirini siler",
+          "tip": "Simetrik aralıkta çiftleri eşleştir.",
+          "example": "−3 + 3 = 0.",
+          "warning": "Aralığın dışında kalanları unutma.",
+          "question": "−2’den 3’e toplam?",
+          "answer": "3."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Sağdaki daha büyük. −2 > −8. Uzaklık ile değeri karıştırma.",
+            "Çıkarmak → tersini eklemek. 4 − (−3) = 4 + 3 = 7. Toplamada iki eksi artı olmaz.",
+            "Parantez tabanı sarar. (−2)² = 4; −2² = −4. Çarpma ve bölme eş önceliklidir.",
+            "Karşıtlar birbirini siler. −3 + 3 = 0. Aralığın dışında kalanları unutma."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden −2 > −7; negatiflerde mutlak değeri büyük olan daha küçüktür.",
+            "Toplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al: −9 + 4 = −5.",
+            "(−4)² = 16; tabanın tamamı karesi alınır. −4² = −16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.",
+            "−6’dan 6’ya toplamda −6 ile 6, −5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle. −2’den 4’e toplam 3 + 4 = 7.",
+            "İki sayı arasındaki uzaklık negatif olamaz: |a − b| ile hesaplanır. −3 ve 5 arası uzaklık |−3 − 5| = 8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir.",
+            "Çıkarma ters işaretliyi eklemektir: 3 − (−5) = 8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0/5 = 0 ise tanımlıdır.",
+            "Öncelik: parantez, kuvvet, çarpma/bölme, toplama/çıkarma. Aynı düzeyde soldan sağa ilerle: 18 / 3 × 2 = 12; önce 3 × 2 yapmak yanlıştır.",
+            "KPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a = −2 için 3a² = 3 × (−2)² = 12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "Sağdaki daha büyük",
+            "Çıkarmak → tersini eklemek",
+            "Parantez tabanı sarar",
+            "Karşıtlar birbirini siler",
+            "Sağdaki daha büyük",
+            "Çıkarmak → tersini eklemek",
+            "Parantez tabanı sarar",
+            "Karşıtlar birbirini siler"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden −2 > −7; negatiflerde mutlak değeri büyük olan daha küçüktür.",
+            "İki sayı arasındaki uzaklık negatif olamaz: |a − b| ile hesaplanır. −3 ve 5 arası uzaklık |−3 − 5| = 8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir.",
+            "Toplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al: −9 + 4 = −5.",
+            "Çıkarma ters işaretliyi eklemektir: 3 − (−5) = 8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0/5 = 0 ise tanımlıdır.",
+            "(−4)² = 16; tabanın tamamı karesi alınır. −4² = −16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.",
+            "Öncelik: parantez, kuvvet, çarpma/bölme, toplama/çıkarma. Aynı düzeyde soldan sağa ilerle: 18 / 3 × 2 = 12; önce 3 × 2 yapmak yanlıştır.",
+            "−6’dan 6’ya toplamda −6 ile 6, −5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle. −2’den 4’e toplam 3 + 4 = 7.",
+            "KPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a = −2 için 3a² = 3 × (−2)² = 12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "Sağdaki daha büyük",
+            "Sağdaki daha büyük",
+            "Çıkarmak → tersini eklemek",
+            "Çıkarmak → tersini eklemek",
+            "Parantez tabanı sarar",
+            "Parantez tabanı sarar",
+            "Karşıtlar birbirini siler",
+            "Karşıtlar birbirini siler",
+            "Karşıtlar birbirini siler"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Çıkarma",
+          "expression": "a − b = a + (−b)",
+          "conditions": "a, b tam sayı.",
+          "example": "−2 − (−5) = 3."
+        },
+        {
+          "name": "İşaret",
+          "expression": "(−a)(−b) = ab; (−a)b = −ab",
+          "conditions": "a, b pozitif.",
+          "example": "(−3) × (−4) = 12."
+        },
+        {
+          "name": "Uzaklık",
+          "expression": "|a − b|",
+          "conditions": "Sayı doğrusu üzerinde.",
+          "example": "−1 ile 5 arası 6 birim."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-tam-sayilar-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-tam-sayilar",
+          "skill": "Tam Sayılar",
+          "difficulty": "Kolay",
+          "text": "−6 + 2·(−3) işleminin sonucu kaçtır?",
+          "options": [
+            "-14",
+            "-13",
+            "-12",
+            "-11",
+            "-10"
+          ],
+          "answer": 2,
+          "steps": [
+            "Önce 2 × (−3) = −6.",
+            "−6 + (−6) = −12."
+          ],
+          "formula": "Önce çarpma, sonra toplama.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "-6+2*(-3)"
+          }
+        },
+        {
+          "id": "sayilar-tam-sayilar-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-tam-sayilar",
+          "skill": "Tam Sayılar",
+          "difficulty": "Orta",
+          "text": "−5’ten 5’e kadar olan tam sayıların toplamı kaçtır?",
+          "options": [
+            "-1",
+            "0",
+            "1",
+            "2",
+            "-2"
+          ],
+          "answer": 1,
+          "steps": [
+            "Her pozitifin negatif karşılığı vardır.",
+            "Karşıt çiftlerin toplamı ve ortadaki sıfır 0 verir."
+          ],
+          "formula": "Simetrik tam sayıların toplamı sıfırdır.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "sum(range(-5,6))"
+          }
+        }
+      ],
+      "audioScript": "Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden −2 > −7; negatiflerde mutlak değeri büyük olan daha küçüktür.\n\nToplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al: −9 + 4 = −5.\n\n(−4)² = 16; tabanın tamamı karesi alınır. −4² = −16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.\n\n−6’dan 6’ya toplamda −6 ile 6, −5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle. −2’den 4’e toplam 3 + 4 = 7.\n\nİki sayı arasındaki uzaklık negatif olamaz: |a − b| ile hesaplanır. −3 ve 5 arası uzaklık |−3 − 5| = 8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir.\n\nÇıkarma ters işaretliyi eklemektir: 3 − (−5) = 8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0/5 = 0 ise tanımlıdır.\n\nÖncelik: parantez, kuvvet, çarpma/bölme, toplama/çıkarma. Aynı düzeyde soldan sağa ilerle: 18 / 3 × 2 = 12; önce 3 × 2 yapmak yanlıştır.\n\nKPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a = −2 için 3a² = 3 × (−2)² = 12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama."
+    },
+    "sayilar-faktoriyel": {
+      "topicId": "sayilar-faktoriyel",
+      "version": 1,
+      "title": "Faktöriyel",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Çarpımın kısa adı konusunu örnekle açıklayabilmek.",
+        "Hepsini açma, ortak yere kadar aç konusunu örnekle açıklayabilmek.",
+        "Sondaki sıfır bir 2 ve bir 5 ister konusunu örnekle açıklayabilmek.",
+        "Asal çarpan üssü ve sınav tekniği konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Çarpımın kısa adı",
+          "paragraphs": [
+            "Pozitif tam sayı n için n! = n × (n − 1) × … × 2 × 1 olarak tanımlanır. Örneğin 4! = 24. Ayrıca 0! = 1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.",
+            "Faktöriyel bir toplama değildir. 4! + 3! = 24 + 6 = 30; 7! etmez. n! = n(n − 1)! bağıntısı n ≥ 1 için geçerlidir ve sadeleştirmede kullanılır."
+          ]
+        },
+        {
+          "title": "Hepsini açma, ortak yere kadar aç",
+          "paragraphs": [
+            "8!/6! için 8! = 8 × 7 × 6! yaz. Ortak 6! sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.",
+            "(7! + 6!)/6! ifadesinde önce 6! ortak çarpanını ayır: 6!(7 + 1)/6! = 8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir."
+          ]
+        },
+        {
+          "title": "Sondaki sıfır bir 2 ve bir 5 ister",
+          "paragraphs": [
+            "Bir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10 = 2 × 5. n! içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.",
+            "n! için ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + … topla. Bölümler sıfır olunca dur. 30! için 6 + 1 = 7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır."
+          ]
+        },
+        {
+          "title": "Asal çarpan üssü ve sınav tekniği",
+          "paragraphs": [
+            "Genel olarak asal p’nin n! içindeki üssü ⌊n/p⌋ + ⌊n/p²⌋ + … olur. 10! içindeki 2 üssü 5 + 2 + 1 = 8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.",
+            "n! = 1 ise hem n = 0 hem n = 1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "0! = 1",
+          "tip": "Çarpım zincirini doğru yerde bitir.",
+          "example": "3! = 3 × 2 × 1 = 6.",
+          "warning": "0! sıfır değildir.",
+          "question": "0! + 1! kaçtır?",
+          "answer": "2."
+        },
+        {
+          "key": "Ortak yere kadar aç",
+          "tip": "Faktöriyel zinciri gereksiz uzamasın.",
+          "example": "6!/4! = 6 × 5 = 30.",
+          "warning": "Toplamın içinden doğrudan sadeleştirme yapma.",
+          "question": "(5! + 4!)/4! kaçtır?",
+          "answer": "5 + 1 = 6."
+        },
+        {
+          "key": "Sıfır için 5’leri say",
+          "tip": "İkişer ve beşer eşleşip 10 olur.",
+          "example": "25! → 5 + 1 = 6 sıfır.",
+          "warning": "25’in ikinci 5’ini unutma.",
+          "question": "20! kaç sıfırla biter?",
+          "answer": "4 sıfır."
+        },
+        {
+          "key": "Asal kuvvetleri böl, topla",
+          "tip": "Tam kısımları al, kesirleri at.",
+          "example": "8! içinde 2 üssü 4 + 2 + 1 = 7.",
+          "warning": "Bu formülde p asal olmalıdır.",
+          "question": "n! = 1 için n tek değer mi?",
+          "answer": "Hayır; 0 ve 1 olabilir."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "0! = 1. 3! = 3 × 2 × 1 = 6. 0! sıfır değildir.",
+            "Ortak yere kadar aç. 6!/4! = 6 × 5 = 30. Toplamın içinden doğrudan sadeleştirme yapma.",
+            "Sıfır için 5’leri say. 25! → 5 + 1 = 6 sıfır. 25’in ikinci 5’ini unutma.",
+            "Asal kuvvetleri böl, topla. 8! içinde 2 üssü 4 + 2 + 1 = 7. Bu formülde p asal olmalıdır."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Pozitif tam sayı n için n! = n × (n − 1) × … × 2 × 1 olarak tanımlanır. Örneğin 4! = 24. Ayrıca 0! = 1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.",
+            "8!/6! için 8! = 8 × 7 × 6! yaz. Ortak 6! sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.",
+            "Bir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10 = 2 × 5. n! içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.",
+            "Genel olarak asal p’nin n! içindeki üssü ⌊n/p⌋ + ⌊n/p²⌋ + … olur. 10! içindeki 2 üssü 5 + 2 + 1 = 8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.",
+            "Faktöriyel bir toplama değildir. 4! + 3! = 24 + 6 = 30; 7! etmez. n! = n(n − 1)! bağıntısı n ≥ 1 için geçerlidir ve sadeleştirmede kullanılır.",
+            "(7! + 6!)/6! ifadesinde önce 6! ortak çarpanını ayır: 6!(7 + 1)/6! = 8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir.",
+            "n! için ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + … topla. Bölümler sıfır olunca dur. 30! için 6 + 1 = 7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır.",
+            "n! = 1 ise hem n = 0 hem n = 1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "0! = 1",
+            "Ortak yere kadar aç",
+            "Sıfır için 5’leri say",
+            "Asal kuvvetleri böl, topla",
+            "0! = 1",
+            "Ortak yere kadar aç",
+            "Sıfır için 5’leri say",
+            "Asal kuvvetleri böl, topla"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Pozitif tam sayı n için n! = n × (n − 1) × … × 2 × 1 olarak tanımlanır. Örneğin 4! = 24. Ayrıca 0! = 1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.",
+            "Faktöriyel bir toplama değildir. 4! + 3! = 24 + 6 = 30; 7! etmez. n! = n(n − 1)! bağıntısı n ≥ 1 için geçerlidir ve sadeleştirmede kullanılır.",
+            "8!/6! için 8! = 8 × 7 × 6! yaz. Ortak 6! sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.",
+            "(7! + 6!)/6! ifadesinde önce 6! ortak çarpanını ayır: 6!(7 + 1)/6! = 8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir.",
+            "Bir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10 = 2 × 5. n! içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.",
+            "n! için ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + … topla. Bölümler sıfır olunca dur. 30! için 6 + 1 = 7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır.",
+            "Genel olarak asal p’nin n! içindeki üssü ⌊n/p⌋ + ⌊n/p²⌋ + … olur. 10! içindeki 2 üssü 5 + 2 + 1 = 8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.",
+            "n! = 1 ise hem n = 0 hem n = 1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "0! = 1",
+            "0! = 1",
+            "Ortak yere kadar aç",
+            "Ortak yere kadar aç",
+            "Sıfır için 5’leri say",
+            "Sıfır için 5’leri say",
+            "Asal kuvvetleri böl, topla",
+            "Asal kuvvetleri böl, topla",
+            "Asal kuvvetleri böl, topla"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Açılım",
+          "expression": "n! = n(n − 1)!; 0! = 1",
+          "conditions": "n ≥ 1 tam sayı.",
+          "example": "5! = 5 × 4!."
+        },
+        {
+          "name": "Asal çarpan üssü",
+          "expression": "vₚ(n!) = ⌊n/p⌋ + ⌊n/p²⌋ + …",
+          "conditions": "p asal; pozitif tam kuvvetler.",
+          "example": "10! için v₂ = 5 + 2 + 1 = 8."
+        },
+        {
+          "name": "Son sıfırlar",
+          "expression": "⌊n/5⌋ + ⌊n/25⌋ + …",
+          "conditions": "Onluk sistemde n!.",
+          "example": "30! sonunda 7 sıfır."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-faktoriyel-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-faktoriyel",
+          "skill": "Faktöriyel",
+          "difficulty": "Kolay",
+          "text": "4! + 2! kaçtır?",
+          "options": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28"
+          ],
+          "answer": 2,
+          "steps": [
+            "4! = 24 ve 2! = 2.",
+            "24 + 2 = 26."
+          ],
+          "formula": "Faktöriyelleri önce ayrı hesapla.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "factorial(4)+factorial(2)"
+          }
+        },
+        {
+          "id": "sayilar-faktoriyel-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-faktoriyel",
+          "skill": "Faktöriyel",
+          "difficulty": "Orta",
+          "text": "15! sayısının sonunda kaç sıfır vardır?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "1"
+          ],
+          "answer": 1,
+          "steps": [
+            "5, 10 ve 15 birer 5 çarpanı verir.",
+            "15 / 5 tam kısmı 3; 25’ten küçük olduğu için başka katkı yok."
+          ],
+          "formula": "Son sıfır adedi, 5 çarpanlarının sayısıdır.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "15//5"
+          }
+        }
+      ],
+      "audioScript": "Pozitif tam sayı n için n! = n × (n − 1) × … × 2 × 1 olarak tanımlanır. Örneğin 4! = 24. Ayrıca 0! = 1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.\n\n8!/6! için 8! = 8 × 7 × 6! yaz. Ortak 6! sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.\n\nBir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10 = 2 × 5. n! içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.\n\nGenel olarak asal p’nin n! içindeki üssü ⌊n/p⌋ + ⌊n/p²⌋ + … olur. 10! içindeki 2 üssü 5 + 2 + 1 = 8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.\n\nFaktöriyel bir toplama değildir. 4! + 3! = 24 + 6 = 30; 7! etmez. n! = n(n − 1)! bağıntısı n ≥ 1 için geçerlidir ve sadeleştirmede kullanılır.\n\n(7! + 6!)/6! ifadesinde önce 6! ortak çarpanını ayır: 6!(7 + 1)/6! = 8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir.\n\nn! için ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + … topla. Bölümler sıfır olunca dur. 30! için 6 + 1 = 7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır.\n\nn! = 1 ise hem n = 0 hem n = 1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say."
+    },
+    "sayilar-sayma-sistemleri": {
+      "topicId": "sayilar-sayma-sistemleri",
+      "version": 1,
+      "title": "Sayma Sistemleri",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Taban, kullanılabilir rakamları belirler konusunu örnekle açıklayabilmek.",
+        "Basamak ağırlıkları sağdan büyür konusunu örnekle açıklayabilmek.",
+        "Onluktan başka tabana konusunu örnekle açıklayabilmek.",
+        "Tabanı bul, rakam koşuluna dön konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Taban, kullanılabilir rakamları belirler",
+          "paragraphs": [
+            "Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t − 1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.",
+            "(23)₅ gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır."
+          ]
+        },
+        {
+          "title": "Basamak ağırlıkları sağdan büyür",
+          "paragraphs": [
+            "Sağdaki rakam t⁰ = 1, yanındaki t¹, sonra t² ile çarpılır. (abc)ₜ = a·t² + b·t + c. Örneğin (132)₄ = 1 × 16 + 3 × 4 + 2 = 30.",
+            "Sıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101)₂ = 4 + 0 + 1 = 5. Sıfırı silerek (11)₂ yazarsan değer 3’e dönüşür."
+          ]
+        },
+        {
+          "title": "Onluktan başka tabana",
+          "paragraphs": [
+            "Pozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101)₂.",
+            "Sıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8 + 4 + 0 + 1 = 13."
+          ]
+        },
+        {
+          "title": "Tabanı bul, rakam koşuluna dön",
+          "paragraphs": [
+            "(24)ₜ = 18 için 2t + 4 = 18, t = 7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.",
+            "t tabanında iki basamaklı sayı için ilk rakam t − 1, ikinci rakam t seçim alır: (t − 1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Rakam < taban",
+          "tip": "Taban sınırını her rakama uygula.",
+          "example": "5 tabanında 0, 1, 2, 3, 4 var.",
+          "warning": "5 rakamı 5 tabanında kullanılamaz.",
+          "question": "(25)₅ geçerli mi?",
+          "answer": "Hayır; 5 tabandan küçük değil."
+        },
+        {
+          "key": "Sağdan: 1, t, t²",
+          "tip": "Her rakamı kendi ağırlığıyla çarp.",
+          "example": "(12)₃ = 1 × 3 + 2 = 5.",
+          "warning": "Ortadaki sıfırı silme.",
+          "question": "(101)₂ kaçtır?",
+          "answer": "5."
+        },
+        {
+          "key": "Böl, kalanları tersten oku",
+          "tip": "Bölüm sıfır olana kadar ilerle.",
+          "example": "6 → (110)₂.",
+          "warning": "Kalanları ilkten sona okumak yanlıştır.",
+          "question": "(110)₂ onluk kaç?",
+          "answer": "6."
+        },
+        {
+          "key": "Denklem + rakam kontrolü",
+          "tip": "Bulduğun tabanı gösterime geri koy.",
+          "example": "(21)ₜ = 11 → t = 5.",
+          "warning": "Taban kesirli ya da rakama eşit olamaz.",
+          "question": "3 tabanında iki basamaklı kaç sayı?",
+          "answer": "(3 − 1) × 3 = 6."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Rakam < taban. 5 tabanında 0, 1, 2, 3, 4 var. 5 rakamı 5 tabanında kullanılamaz.",
+            "Sağdan: 1, t, t². (12)₃ = 1 × 3 + 2 = 5. Ortadaki sıfırı silme.",
+            "Böl, kalanları tersten oku. 6 → (110)₂. Kalanları ilkten sona okumak yanlıştır.",
+            "Denklem + rakam kontrolü. (21)ₜ = 11 → t = 5. Taban kesirli ya da rakama eşit olamaz."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t − 1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.",
+            "Sağdaki rakam t⁰ = 1, yanındaki t¹, sonra t² ile çarpılır. (abc)ₜ = a·t² + b·t + c. Örneğin (132)₄ = 1 × 16 + 3 × 4 + 2 = 30.",
+            "Pozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101)₂.",
+            "(24)ₜ = 18 için 2t + 4 = 18, t = 7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.",
+            "(23)₅ gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır.",
+            "Sıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101)₂ = 4 + 0 + 1 = 5. Sıfırı silerek (11)₂ yazarsan değer 3’e dönüşür.",
+            "Sıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8 + 4 + 0 + 1 = 13.",
+            "t tabanında iki basamaklı sayı için ilk rakam t − 1, ikinci rakam t seçim alır: (t − 1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "Rakam < taban",
+            "Sağdan: 1, t, t²",
+            "Böl, kalanları tersten oku",
+            "Denklem + rakam kontrolü",
+            "Rakam < taban",
+            "Sağdan: 1, t, t²",
+            "Böl, kalanları tersten oku",
+            "Denklem + rakam kontrolü"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t − 1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.",
+            "(23)₅ gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır.",
+            "Sağdaki rakam t⁰ = 1, yanındaki t¹, sonra t² ile çarpılır. (abc)ₜ = a·t² + b·t + c. Örneğin (132)₄ = 1 × 16 + 3 × 4 + 2 = 30.",
+            "Sıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101)₂ = 4 + 0 + 1 = 5. Sıfırı silerek (11)₂ yazarsan değer 3’e dönüşür.",
+            "Pozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101)₂.",
+            "Sıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8 + 4 + 0 + 1 = 13.",
+            "(24)ₜ = 18 için 2t + 4 = 18, t = 7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.",
+            "t tabanında iki basamaklı sayı için ilk rakam t − 1, ikinci rakam t seçim alır: (t − 1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "Rakam < taban",
+            "Rakam < taban",
+            "Sağdan: 1, t, t²",
+            "Sağdan: 1, t, t²",
+            "Böl, kalanları tersten oku",
+            "Böl, kalanları tersten oku",
+            "Denklem + rakam kontrolü",
+            "Denklem + rakam kontrolü",
+            "Denklem + rakam kontrolü"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Basamak açılımı",
+          "expression": "(abc)ₜ = a·t² + b·t + c",
+          "conditions": "t ≥ 2 tam sayı; rakamlar t’den küçük; a ≠ 0.",
+          "example": "(123)₄ = 27."
+        },
+        {
+          "name": "İki basamaklı adet",
+          "expression": "(t − 1)t",
+          "conditions": "Rakamlar tekrar edebilir.",
+          "example": "5 tabanında 20 sayı."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-sayma-sistemleri-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-sayma-sistemleri",
+          "skill": "Sayma Sistemleri",
+          "difficulty": "Kolay",
+          "text": "(110)₂ sayısının onluk sistemdeki değeri kaçtır?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 2,
+          "steps": [
+            "1 × 4 + 1 × 2 + 0.",
+            "4 + 2 = 6."
+          ],
+          "formula": "Sağdan basamak ağırlıkları 1, 2, 4, … .",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "expression",
+            "args": "1*2**2+1*2"
+          }
+        },
+        {
+          "id": "sayilar-sayma-sistemleri-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-sayma-sistemleri",
+          "skill": "Sayma Sistemleri",
+          "difficulty": "Orta",
+          "text": "(41)ₜ = 29 ise t kaçtır?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "5"
+          ],
+          "answer": 1,
+          "steps": [
+            "4t + 1 = 29; 4t = 28.",
+            "t = 7; 4 ve 1 rakamları 7’den küçüktür."
+          ],
+          "formula": "Taban çözümünün rakamlardan büyük olduğunu doğrula.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "base",
+            "args": [
+              4,
+              1,
+              29
+            ]
+          }
+        }
+      ],
+      "audioScript": "Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t − 1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.\n\nSağdaki rakam t⁰ = 1, yanındaki t¹, sonra t² ile çarpılır. (abc)ₜ = a·t² + b·t + c. Örneğin (132)₄ = 1 × 16 + 3 × 4 + 2 = 30.\n\nPozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101)₂.\n\n(24)ₜ = 18 için 2t + 4 = 18, t = 7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.\n\n(23)₅ gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır.\n\nSıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101)₂ = 4 + 0 + 1 = 5. Sıfırı silerek (11)₂ yazarsan değer 3’e dönüşür.\n\nSıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8 + 4 + 0 + 1 = 13.\n\nt tabanında iki basamaklı sayı için ilk rakam t − 1, ikinci rakam t seçim alır: (t − 1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle."
+    },
+    "sayilar-bolme": {
+      "topicId": "sayilar-bolme",
+      "version": 1,
+      "title": "Bölme",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Dört parçayı tanı konusunu örnekle açıklayabilmek.",
+        "Kalanın sınırı en güçlü ipucu konusunu örnekle açıklayabilmek.",
+        "Aynı kalanlı sayıları sırala konusunu örnekle açıklayabilmek.",
+        "Negatif bölünen ve son kontrol konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Dört parçayı tanı",
+          "paragraphs": [
+            "Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A = bq + r yazılır; bölüm q tam sayı, kalan r için 0 ≤ r < b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.",
+            "Örnek: 53 = 7 × 7 + 4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir."
+          ]
+        },
+        {
+          "title": "Kalanın sınırı en güçlü ipucu",
+          "paragraphs": [
+            "Kalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.",
+            "Kalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir."
+          ]
+        },
+        {
+          "title": "Aynı kalanlı sayıları sırala",
+          "paragraphs": [
+            "7’ye bölümünden kalan 3 olan doğal sayılar 7k + 3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.",
+            "20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır."
+          ]
+        },
+        {
+          "title": "Negatif bölünen ve son kontrol",
+          "paragraphs": [
+            "Negatif bölünende de kalan kuralını koru: −11 = 4 × (−3) + 1. Bölüm −3, kalan 1’dir. −11 = 4 × (−2) − 3 eşitliği doğru olsa da kalan −3 olduğundan Öklid bölmesi değildir.",
+            "KPSS’de bilinmeyen bölüneni önce A = bq + r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0 ≤ r < b koşulunu kontrol et."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Bölünen = bölen × bölüm + kalan",
+          "tip": "Önce dört parçanın yerini bul.",
+          "example": "43 = 6 × 7 + 1.",
+          "warning": "Bölen sıfır olamaz.",
+          "question": "Bölen 5, bölüm 3, kalan 2 ise sayı?",
+          "answer": "17."
+        },
+        {
+          "key": "Kalan < bölen",
+          "tip": "En büyük kalan bir eksiğidir.",
+          "example": "8’e bölmede en çok 7 kalır.",
+          "warning": "Kalan bölen kadar olursa bölüm artar.",
+          "question": "Kalan 4 ise bölen en az kaç?",
+          "answer": "5."
+        },
+        {
+          "key": "Aynı kalan, eşit adım",
+          "tip": "Bölen kadar ilerle.",
+          "example": "5k + 2 → 2, 7, 12, … .",
+          "warning": "Aralığın dışındaki ilk ve son değeri sayma.",
+          "question": "10–20 içinde 5’e göre kalan 2 verenler?",
+          "answer": "12 ve 17."
+        },
+        {
+          "key": "Negatifte de kalan ≥ 0",
+          "tip": "Bölümü, kalanı uygun kılacak şekilde seç.",
+          "example": "−9 = 4 × (−3) + 3.",
+          "warning": "Negatif kalanı son cevap bırakma.",
+          "question": "−7’nin 3’e göre kalanı?",
+          "answer": "2; −7 = 3 × (−3) + 2."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Bölünen = bölen × bölüm + kalan. 43 = 6 × 7 + 1. Bölen sıfır olamaz.",
+            "Kalan < bölen. 8’e bölmede en çok 7 kalır. Kalan bölen kadar olursa bölüm artar.",
+            "Aynı kalan, eşit adım. 5k + 2 → 2, 7, 12, … . Aralığın dışındaki ilk ve son değeri sayma.",
+            "Negatifte de kalan ≥ 0. −9 = 4 × (−3) + 3. Negatif kalanı son cevap bırakma."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A = bq + r yazılır; bölüm q tam sayı, kalan r için 0 ≤ r < b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.",
+            "Kalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.",
+            "7’ye bölümünden kalan 3 olan doğal sayılar 7k + 3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.",
+            "Negatif bölünende de kalan kuralını koru: −11 = 4 × (−3) + 1. Bölüm −3, kalan 1’dir. −11 = 4 × (−2) − 3 eşitliği doğru olsa da kalan −3 olduğundan Öklid bölmesi değildir.",
+            "Örnek: 53 = 7 × 7 + 4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir.",
+            "Kalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir.",
+            "20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır.",
+            "KPSS’de bilinmeyen bölüneni önce A = bq + r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0 ≤ r < b koşulunu kontrol et."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "Bölünen = bölen × bölüm + kalan",
+            "Kalan < bölen",
+            "Aynı kalan, eşit adım",
+            "Negatifte de kalan ≥ 0",
+            "Bölünen = bölen × bölüm + kalan",
+            "Kalan < bölen",
+            "Aynı kalan, eşit adım",
+            "Negatifte de kalan ≥ 0"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A = bq + r yazılır; bölüm q tam sayı, kalan r için 0 ≤ r < b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.",
+            "Örnek: 53 = 7 × 7 + 4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir.",
+            "Kalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.",
+            "Kalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir.",
+            "7’ye bölümünden kalan 3 olan doğal sayılar 7k + 3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.",
+            "20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır.",
+            "Negatif bölünende de kalan kuralını koru: −11 = 4 × (−3) + 1. Bölüm −3, kalan 1’dir. −11 = 4 × (−2) − 3 eşitliği doğru olsa da kalan −3 olduğundan Öklid bölmesi değildir.",
+            "KPSS’de bilinmeyen bölüneni önce A = bq + r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0 ≤ r < b koşulunu kontrol et.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "Bölünen = bölen × bölüm + kalan",
+            "Bölünen = bölen × bölüm + kalan",
+            "Kalan < bölen",
+            "Kalan < bölen",
+            "Aynı kalan, eşit adım",
+            "Aynı kalan, eşit adım",
+            "Negatifte de kalan ≥ 0",
+            "Negatifte de kalan ≥ 0",
+            "Negatifte de kalan ≥ 0"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Bölme bağıntısı",
+          "expression": "A = bq + r; 0 ≤ r < b",
+          "conditions": "A, q tam sayı; b pozitif tam sayı.",
+          "example": "−11 = 4 × (−3) + 1."
+        },
+        {
+          "name": "Aynı kalanlılar",
+          "expression": "A = bk + r",
+          "conditions": "0 ≤ r < b; k uygun tam sayı.",
+          "example": "7k + 2: 2, 9, 16, … ."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-bolme-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-bolme",
+          "skill": "Bölme",
+          "difficulty": "Kolay",
+          "text": "89 sayısı 7’ye bölündüğünde kalan kaçtır?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 2,
+          "steps": [
+            "7 × 12 = 84.",
+            "89 − 84 = 5."
+          ],
+          "formula": "Bölünen = bölen × bölüm + kalan.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "remainder",
+            "args": [
+              89,
+              7
+            ]
+          }
+        },
+        {
+          "id": "sayilar-bolme-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-bolme",
+          "skill": "Bölme",
+          "difficulty": "Orta",
+          "text": "Bölen 6, bölüm 15, kalan 2 ise bölünen kaçtır?",
+          "options": [
+            "91",
+            "92",
+            "93",
+            "94",
+            "90"
+          ],
+          "answer": 1,
+          "steps": [
+            "6 × 15 = 90.",
+            "90 + 2 = 92 ve 2 < 6."
+          ],
+          "formula": "Kalanı çarpıma ekle.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "dividend",
+            "args": [
+              6,
+              15,
+              2
+            ]
+          }
+        }
+      ],
+      "audioScript": "Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A = bq + r yazılır; bölüm q tam sayı, kalan r için 0 ≤ r < b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.\n\nKalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.\n\n7’ye bölümünden kalan 3 olan doğal sayılar 7k + 3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.\n\nNegatif bölünende de kalan kuralını koru: −11 = 4 × (−3) + 1. Bölüm −3, kalan 1’dir. −11 = 4 × (−2) − 3 eşitliği doğru olsa da kalan −3 olduğundan Öklid bölmesi değildir.\n\nÖrnek: 53 = 7 × 7 + 4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir.\n\nKalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir.\n\n20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır.\n\nKPSS’de bilinmeyen bölüneni önce A = bq + r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0 ≤ r < b koşulunu kontrol et."
+    },
+    "sayilar-bolunebilme-kurallari": {
+      "topicId": "sayilar-bolunebilme-kurallari",
+      "version": 1,
+      "title": "Bölünebilme Kuralları",
+      "learningReady": true,
+      "reviewStatus": "demo-math-checked",
+      "goals": [
+        "Son basamağın söyledikleri konusunu örnekle açıklayabilmek.",
+        "Rakamları topla: 3 ve 9 konusunu örnekle açıklayabilmek.",
+        "Birleşik kurallar ve 11 konusunu örnekle açıklayabilmek.",
+        "Bilinmeyen rakamı koşulla bul konusunu örnekle açıklayabilmek."
+      ],
+      "prerequisites": "Temel Kavramlar; dört işlem ve basamak bilgisi.",
+      "sections": [
+        {
+          "title": "Son basamağın söyledikleri",
+          "paragraphs": [
+            "Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.",
+            "4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür."
+          ]
+        },
+        {
+          "title": "Rakamları topla: 3 ve 9",
+          "paragraphs": [
+            "3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.",
+            "Bu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma."
+          ]
+        },
+        {
+          "title": "Birleşik kurallar ve 11",
+          "paragraphs": [
+            "6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.",
+            "11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8 + 7) − (2 + 2) = 11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir."
+          ]
+        },
+        {
+          "title": "Bilinmeyen rakamı koşulla bul",
+          "paragraphs": [
+            "3a4 sayısının 3’e bölünmesi için 7 + a, 3’ün katı olmalı; a = 2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.",
+            "Soruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "2 ve 5: son rakam",
+          "tip": "10 için son rakam sıfır olmalı.",
+          "example": "135, 5’e bölünür ama 2’ye bölünmez.",
+          "warning": "4 için son iki basamak gerekir.",
+          "question": "132, 4’e bölünür mü?",
+          "answer": "Evet; 32, 4’ün katı."
+        },
+        {
+          "key": "3 ve 9: rakam toplamı",
+          "tip": "Sayı uzunsa bile toplam kısadır.",
+          "example": "451 → 10; 3’e kalan 1.",
+          "warning": "3’e bölünmek 9’a yetmez.",
+          "question": "123, 9’a bölünür mü?",
+          "answer": "Hayır; toplam 6."
+        },
+        {
+          "key": "6 = 2 ve 3",
+          "tip": "Aralarında asal çarpanları birlikte denetle.",
+          "example": "42 çift ve rakam toplamı 6.",
+          "warning": "2 ve 4’ten 8 sonucu çıkarma.",
+          "question": "12 hem 2 hem 4’e bölünür; 8’e de mi?",
+          "answer": "Hayır."
+        },
+        {
+          "key": "Rakamı bul → isteneni oku",
+          "tip": "Değer sayısı ile değer toplamı farklıdır.",
+          "example": "a = 2, 5, 8 → adet 3, toplam 15.",
+          "warning": "Başta sıfır olamaz.",
+          "question": "3a4, 3’e bölünüyorsa a kaç değer alır?",
+          "answer": "3 değer: 2, 5, 8."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "2 ve 5: son rakam. 135, 5’e bölünür ama 2’ye bölünmez. 4 için son iki basamak gerekir.",
+            "3 ve 9: rakam toplamı. 451 → 10; 3’e kalan 1. 3’e bölünmek 9’a yetmez.",
+            "6 = 2 ve 3. 42 çift ve rakam toplamı 6. 2 ve 4’ten 8 sonucu çıkarma.",
+            "Rakamı bul → isteneni oku. a = 2, 5, 8 → adet 3, toplam 15. Başta sıfır olamaz."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.",
+            "3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.",
+            "6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.",
+            "3a4 sayısının 3’e bölünmesi için 7 + a, 3’ün katı olmalı; a = 2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.",
+            "4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür.",
+            "Bu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma.",
+            "11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8 + 7) − (2 + 2) = 11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir.",
+            "Soruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir."
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+          ],
+          "headings": [
+            "2 ve 5: son rakam",
+            "3 ve 9: rakam toplamı",
+            "6 = 2 ve 3",
+            "Rakamı bul → isteneni oku",
+            "2 ve 5: son rakam",
+            "3 ve 9: rakam toplamı",
+            "6 = 2 ve 3",
+            "Rakamı bul → isteneni oku"
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.",
+            "4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür.",
+            "3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.",
+            "Bu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma.",
+            "6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.",
+            "11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8 + 7) − (2 + 2) = 11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir.",
+            "3a4 sayısının 3’e bölünmesi için 7 + a, 3’ün katı olmalı; a = 2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.",
+            "Soruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir.",
+            "Tekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "headings": [
+            "2 ve 5: son rakam",
+            "2 ve 5: son rakam",
+            "3 ve 9: rakam toplamı",
+            "3 ve 9: rakam toplamı",
+            "6 = 2 ve 3",
+            "6 = 2 ve 3",
+            "Rakamı bul → isteneni oku",
+            "Rakamı bul → isteneni oku",
+            "Rakamı bul → isteneni oku"
+          ]
+        }
+      },
+      "formulas": [
+        {
+          "name": "Son basamak kuralları",
+          "expression": "2: çift son rakam; 5: 0 veya 5; 10: 0",
+          "conditions": "Onluk sistemde tam sayılar.",
+          "example": "340, 2, 5 ve 10’a bölünür."
+        },
+        {
+          "name": "Son iki / üç",
+          "expression": "4: son iki basamak; 8: son üç basamak",
+          "conditions": "Onluk sistem.",
+          "example": "1128, 8’e bölünür; 128 / 8 = 16."
+        },
+        {
+          "name": "Rakam toplamı",
+          "expression": "3 veya 9 için rakamlar toplamını kontrol et",
+          "conditions": "Yalnız belirtilen bölenler için.",
+          "example": "729 → 18; 9’a tam bölünür."
+        },
+        {
+          "name": "11 kuralı",
+          "expression": "Dönüşümlü rakam toplamlarının farkı 11’in katı",
+          "conditions": "Tam bölünmede farkın işareti önemli değildir.",
+          "example": "121 → 1 − 2 + 1 = 0."
+        }
+      ],
+      "examples": [
+        {
+          "id": "sayilar-bolunebilme-kurallari-ornek-01",
+          "version": 1,
+          "topicId": "sayilar-bolunebilme-kurallari",
+          "skill": "Bölünebilme Kuralları",
+          "difficulty": "Kolay",
+          "text": "1234 sayısının 3’e bölümünden kalan kaçtır?",
+          "options": [
+            "-1",
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "answer": 2,
+          "steps": [
+            "Rakamlar toplamı 1 + 2 + 3 + 4 = 10.",
+            "10’un 3’e bölümünden kalan 1."
+          ],
+          "formula": "3’te rakamlar toplamının kalanını al.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "remainder",
+            "args": [
+              1234,
+              3
+            ]
+          }
+        },
+        {
+          "id": "sayilar-bolunebilme-kurallari-ornek-02",
+          "version": 1,
+          "topicId": "sayilar-bolunebilme-kurallari",
+          "skill": "Bölünebilme Kuralları",
+          "difficulty": "Orta",
+          "text": "6a2 sayısı 4’e tam bölünüyorsa a kaç farklı rakam olabilir?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "3"
+          ],
+          "answer": 1,
+          "steps": [
+            "Son iki basamak a2, 4’ün katı olmalı.",
+            "12, 32, 52, 72, 92 uygundur; a için beş değer."
+          ],
+          "formula": "Son iki basamağı incele.",
+          "alternative": null,
+          "reviewStatus": "demo-math-checked",
+          "verification": {
+            "kind": "count",
+            "args": [
+              0,
+              9,
+              "(602+10*x) % 4 == 0"
+            ]
+          }
+        }
+      ],
+      "audioScript": "Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.\n\n3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.\n\n6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.\n\n3a4 sayısının 3’e bölünmesi için 7 + a, 3’ün katı olmalı; a = 2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.\n\n4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür.\n\nBu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma.\n\n11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8 + 7) − (2 + 2) = 11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir.\n\nSoruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir."
+    }
+  },
+  "audio": {
+    "sayilar-sayi-kumeleri": {
+      "topicId": "sayilar-sayi-kumeleri",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Sayı Kümeleri. N ,  Z ,  Q ,  R.  eksi 2 tam sayı ve rasyoneldir. Ters yönü otomatik doğru sayma.\n\nKökü gör, önce sadeleştir.  karekök 9  eşittir  3 ama  karekök 2 irrasyoneldir.  pi  ile 22 bölü 7 tam eşit değildir.\n\nOrtak ,   kesişim   çarpı  Hepsi ,   birleşim . {1,2}  birleşim  {2,3}  eşittir  {1,2,3}. A  fark  B ile B  fark  A genelde farklıdır.\n\nÖnce uçlar, sonra koşul.  eksi 1  küçüktür  x  küçük eşittir  2 için tam sayılar 0, 1, 2. Doğal sayılarda bu içerikte sıfır var.",
+        "standard": "Sayı Kümeleri. Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N  eşittir  {0, 1, 2, …}; tam sayılar Z  eşittir  {…,  eksi 2,  eksi 1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.\n\nDoğal sayılar tam sayıların; tam sayılar rasyonellerin; rasyoneller gerçek sayıların alt kümesidir ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1 bölü 2 rasyoneldir ama tam sayı değildir.\n\nKesişim A  kesişim  B, iki kümenin ortak elemanlarını; birleşim A  birleşim  B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A  fark  B ise A’da olup B’de olmayanlardır.\n\nTam sayı sayarken önce uçları belirle.  eksi 2  küçüktür  x  küçük eşittir  3 için ilk uygun tam sayı  eksi 1, sonuncu 3’tür; sayı adedi 3  eksi  ( eksi 1)  artı  1  eşittir  5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.\n\nRasyonel sayılar Q, a ve b tam sayı ve b  eşit değildir  0 iken a bölü b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir:  eksi 3  eşittir   eksi 3 bölü 1. Sonlu ve devirli ondalıklar rasyoneldir.\n\nİrrasyonel sayılar kesir olarak yazılamaz;  karekök 2 ve  pi  örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur.  karekök 9  eşittir  3 olduğundan kök işareti görmek irrasyonel demek değildir.\n\nA  eşittir  {1, 2, 3}, B  eşittir  {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A  fark  B  eşittir  {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır.\n\nKPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1 bölü 2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla.",
+        "detailed": "Sayı Kümeleri. Bir sayıyı tanımak, hangi işlemleri güvenle yapabileceğini belirler. Bu içerikte doğal sayılar N  eşittir  {0, 1, 2, …}; tam sayılar Z  eşittir  {…,  eksi 2,  eksi 1, 0, 1, 2, …} olarak kullanılır. Bazı kaynaklar doğal sayıları 1’den başlatır; soruda verilen tanımı esas al.\n\nRasyonel sayılar Q, a ve b tam sayı ve b  eşit değildir  0 iken a bölü b biçiminde yazılabilen sayılardır. Her tam sayı rasyoneldir:  eksi 3  eşittir   eksi 3 bölü 1. Sonlu ve devirli ondalıklar rasyoneldir.\n\nDoğal sayılar tam sayıların; tam sayılar rasyonellerin; rasyoneller gerçek sayıların alt kümesidir ilişkisi, soldaki her sayının sağdaki kümede de yer aldığını söyler. Tersi her zaman doğru değildir: 1 bölü 2 rasyoneldir ama tam sayı değildir.\n\nİrrasyonel sayılar kesir olarak yazılamaz;  karekök 2 ve  pi  örnektir. Rasyonel ve irrasyonel sayılar ayrıdır ve birlikte gerçek sayıları oluşturur.  karekök 9  eşittir  3 olduğundan kök işareti görmek irrasyonel demek değildir.\n\nKesişim A  kesişim  B, iki kümenin ortak elemanlarını; birleşim A  birleşim  B, en az birinde olanları içerir. Kümede aynı eleman yalnız bir kez yazılır. A  fark  B ise A’da olup B’de olmayanlardır.\n\nA  eşittir  {1, 2, 3}, B  eşittir  {3, 4} için kesişim {3}, birleşim {1, 2, 3, 4}, A  fark  B  eşittir  {1, 2}. Kümeler ana konusuna geçerken bu dil kullanılacaktır.\n\nTam sayı sayarken önce uçları belirle.  eksi 2  küçüktür  x  küçük eşittir  3 için ilk uygun tam sayı  eksi 1, sonuncu 3’tür; sayı adedi 3  eksi  ( eksi 1)  artı  1  eşittir  5. Sonra doğal, pozitif veya çift gibi ek koşulları uygula.\n\nKPSS’de “her zaman” ifadesi için bir örnek yetmez; karşı örnek yanlış iddiayı çürütür. “Her rasyonel tam sayıdır” önermesi 1 bölü 2 ile çürür. Sıfırın rasyonel ve çift olduğunu, pozitif olmadığını hatırla.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-dogal-sayilar": {
+      "topicId": "sayilar-dogal-sayilar",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Doğal Sayılar. Doğalın başlangıcı: 0. 0  elemanıdır  N;  eksi 1  elemanı değildir  N. Bölme doğal sayılarda kapalı değildir.\n\nAdet  eşittir  aralık  artı  1. 5’ten 9’a 5 sayı var. 9  eksi  5 yalnız aralık sayısıdır.\n\nÇiftler n(n artı 1), tekler n kare . İlk 5 pozitif tek toplamı 25. Son terim ile terim sayısını karıştırma.\n\nİlk rakam sıfır olamaz. 38  eşittir  3  çarpı  10  artı  8. Rakamlar farklı denmediyse eşit olabilir.",
+        "standard": "Doğal Sayılar. Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2  eksi  5  eşittir   eksi 3; 1 bölü 2 doğal değildir.\n\nArdışık doğal sayılar n, n  artı  1, n  artı  2 biçimindedir. 4’ten 12’ye iki uç dahil 12  eksi  4  artı  1  eşittir  9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.\n\n1  artı  …  artı  n toplamında ilk ve sonu eşleştir: her çift n  artı  1 verir. Toplam n(n  artı  1) bölü 2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.\n\nİki basamaklı ab sayısı 10a  artı  b’dir; a  elemanıdır  {1, …, 9}, b  elemanıdır  {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9  çarpı  9  eşittir  81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.\n\nEn küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n  artı  1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır.\n\nEşit aralıklı dizide terim sayısı (son  eksi  ilk) bölü adım  artı  1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24  eksi  3) bölü 3  artı  1  eşittir  8 terim vardır.\n\nİlk n pozitif çiftin toplamı n(n  artı  1), ilk n pozitif tekin toplamı n kare ’dir. 2  artı  4  artı  6  artı  8  eşittir  4  çarpı  5  eşittir  20; 1  artı  3  artı  5  artı  7  eşittir  4 kare   eşittir  16.\n\nToplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a  artı  b  eşittir  11 için 5  çarpı  6  eşittir  30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy.",
+        "detailed": "Doğal Sayılar. Doğal sayılar bu içerikte 0, 1, 2, … şeklindedir. Pozitif tam sayılar 1’den başlar. İki doğal sayının toplamı ve çarpımı doğaldır; çıkarma ve bölme sonucu her zaman doğal olmayabilir: 2  eksi  5  eşittir   eksi 3; 1 bölü 2 doğal değildir.\n\nEn küçük doğal sayı 0’dır, en büyük doğal sayı yoktur: seçtiğin n için n  artı  1 daha büyüktür. Çarpma yaparken 0 yutan elemandır; 0’a bölme tanımsızdır.\n\nArdışık doğal sayılar n, n  artı  1, n  artı  2 biçimindedir. 4’ten 12’ye iki uç dahil 12  eksi  4  artı  1  eşittir  9 sayı vardır. Uçlardan biri hariç tutulursa uygun ilk ve son terimi yeniden belirle.\n\nEşit aralıklı dizide terim sayısı (son  eksi  ilk) bölü adım  artı  1 olur; son terimin gerçekten diziye ait olması gerekir. 3, 6, …, 24 dizisinde (24  eksi  3) bölü 3  artı  1  eşittir  8 terim vardır.\n\n1  artı  …  artı  n toplamında ilk ve sonu eşleştir: her çift n  artı  1 verir. Toplam n(n  artı  1) bölü 2 olur; bu formülün n pozitif tam sayı için kullanıldığını unutma. Örneğin 1’den 10’a toplam 55’tir.\n\nİlk n pozitif çiftin toplamı n(n  artı  1), ilk n pozitif tekin toplamı n kare ’dir. 2  artı  4  artı  6  artı  8  eşittir  4  çarpı  5  eşittir  20; 1  artı  3  artı  5  artı  7  eşittir  4 kare   eşittir  16.\n\nİki basamaklı ab sayısı 10a  artı  b’dir; a  elemanıdır  {1, …, 9}, b  elemanıdır  {0, …, 9}. Rakamlar farklıysa b için a yasaklanır: 9  çarpı  9  eşittir  81 sayı. Onlar basamağına 0 koymak sayıyı iki basamaklı yapmaz.\n\nToplam sabitken çarpımı büyütmek için doğal sayıları yakın seç. a  artı  b  eşittir  11 için 5  çarpı  6  eşittir  30 en büyüktür. “Farklı” koşulu veya sıfırın serbest olup olmadığı sonucu değiştirebilir. Bulduğun sayıları koşula geri koy.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-tam-sayilar": {
+      "topicId": "sayilar-tam-sayilar",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Tam Sayılar. Sağdaki daha büyük.  eksi 2  büyüktür   eksi 8. Uzaklık ile değeri karıştırma.\n\nÇıkarmak ,  tersini eklemek. 4  eksi  ( eksi 3)  eşittir  4  artı  3  eşittir  7. Toplamada iki eksi artı olmaz.\n\nParantez tabanı sarar. ( eksi 2) kare   eşittir  4;  eksi 2 kare   eşittir   eksi 4. Çarpma ve bölme eş önceliklidir.\n\nKarşıtlar birbirini siler.  eksi 3  artı  3  eşittir  0. Aralığın dışında kalanları unutma.",
+        "standard": "Tam Sayılar. Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden  eksi 2  büyüktür   eksi 7; negatiflerde mutlak değeri büyük olan daha küçüktür.\n\nToplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al:  eksi 9  artı  4  eşittir   eksi 5.\n\n( eksi 4) kare   eşittir  16; tabanın tamamı karesi alınır.  eksi 4 kare   eşittir   eksi 16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.\n\n eksi 6’dan 6’ya toplamda  eksi 6 ile 6,  eksi 5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle.  eksi 2’den 4’e toplam 3  artı  4  eşittir  7.\n\nİki sayı arasındaki uzaklık negatif olamaz: |a  eksi  b| ile hesaplanır.  eksi 3 ve 5 arası uzaklık | eksi 3  eksi  5|  eşittir  8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir.\n\nÇıkarma ters işaretliyi eklemektir: 3  eksi  ( eksi 5)  eşittir  8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0 bölü 5  eşittir  0 ise tanımlıdır.\n\nÖncelik: parantez, kuvvet, çarpma bölü bölme, toplama bölü çıkarma. Aynı düzeyde soldan sağa ilerle: 18  bölü  3  çarpı  2  eşittir  12; önce 3  çarpı  2 yapmak yanlıştır.\n\nKPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a  eşittir   eksi 2 için 3a kare   eşittir  3  çarpı  ( eksi 2) kare   eşittir  12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama.",
+        "detailed": "Tam Sayılar. Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları içerir. Sayı doğrusunda sağa gittikçe değer büyür. Bu yüzden  eksi 2  büyüktür   eksi 7; negatiflerde mutlak değeri büyük olan daha küçüktür.\n\nİki sayı arasındaki uzaklık negatif olamaz: |a  eksi  b| ile hesaplanır.  eksi 3 ve 5 arası uzaklık | eksi 3  eksi  5|  eşittir  8’dir. Mutlak değerin ayrıntıları ilgili ana konuda işlenecektir.\n\nToplamada aynı işaretli sayıların mutlak değerlerini topla ve ortak işareti koru. Zıt işaretlerde mutlak değerleri çıkar, mutlak değeri büyük olanın işaretini al:  eksi 9  artı  4  eşittir   eksi 5.\n\nÇıkarma ters işaretliyi eklemektir: 3  eksi  ( eksi 5)  eşittir  8. Çarpma ve bölmede aynı işaret pozitif, farklı işaret negatif sonuç verir. Sıfıra bölme tanımsızdır; 0 bölü 5  eşittir  0 ise tanımlıdır.\n\n( eksi 4) kare   eşittir  16; tabanın tamamı karesi alınır.  eksi 4 kare   eşittir   eksi 16; önce 4’ün karesi, sonra eksi işareti uygulanır. Negatif sayının çift kuvveti pozitif, tek kuvveti negatiftir.\n\nÖncelik: parantez, kuvvet, çarpma bölü bölme, toplama bölü çıkarma. Aynı düzeyde soldan sağa ilerle: 18  bölü  3  çarpı  2  eşittir  12; önce 3  çarpı  2 yapmak yanlıştır.\n\n eksi 6’dan 6’ya toplamda  eksi 6 ile 6,  eksi 5 ile 5 gibi karşıtlar sıfır olur; toplam 0’dır. Simetrik olmayan aralıkta eşleşmeyenleri ayrıca ekle.  eksi 2’den 4’e toplam 3  artı  4  eşittir  7.\n\nKPSS sorusunda bir harfe negatif değer koyarken parantez kullan: a  eşittir   eksi 2 için 3a kare   eşittir  3  çarpı  ( eksi 2) kare   eşittir  12. Cevabın işaretini tahmin et, sonra hesapla; çarpma işaret kuralını toplamaya uygulama.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-faktoriyel": {
+      "topicId": "sayilar-faktoriyel",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Faktöriyel. 0 faktöriyel   eşittir  1. 3 faktöriyel   eşittir  3  çarpı  2  çarpı  1  eşittir  6. 0 faktöriyel  sıfır değildir.\n\nOrtak yere kadar aç. 6 faktöriyel  bölü 4 faktöriyel   eşittir  6  çarpı  5  eşittir  30. Toplamın içinden doğrudan sadeleştirme yapma.\n\nSıfır için 5’leri say. 25 faktöriyel  ,  5  artı  1  eşittir  6 sıfır. 25’in ikinci 5’ini unutma.\n\nAsal kuvvetleri böl, topla. 8 faktöriyel  içinde 2 üssü 4  artı  2  artı  1  eşittir  7. Bu formülde p asal olmalıdır.",
+        "standard": "Faktöriyel. Pozitif tam sayı n için n faktöriyel   eşittir  n  çarpı  (n  eksi  1)  çarpı  …  çarpı  2  çarpı  1 olarak tanımlanır. Örneğin 4 faktöriyel   eşittir  24. Ayrıca 0 faktöriyel   eşittir  1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.\n\n8 faktöriyel  bölü 6 faktöriyel  için 8 faktöriyel   eşittir  8  çarpı  7  çarpı  6 faktöriyel  yaz. Ortak 6 faktöriyel  sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.\n\nBir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10  eşittir  2  çarpı  5. n faktöriyel  içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.\n\nGenel olarak asal p’nin n faktöriyel  içindeki üssü  tam kısım n bölü p   artı   tam kısım n bölü p kare    artı  … olur. 10 faktöriyel  içindeki 2 üssü 5  artı  2  artı  1  eşittir  8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.\n\nFaktöriyel bir toplama değildir. 4 faktöriyel   artı  3 faktöriyel   eşittir  24  artı  6  eşittir  30; 7 faktöriyel  etmez. n faktöriyel   eşittir  n(n  eksi  1) faktöriyel  bağıntısı n  büyük eşittir  1 için geçerlidir ve sadeleştirmede kullanılır.\n\n(7 faktöriyel   artı  6 faktöriyel ) bölü 6 faktöriyel  ifadesinde önce 6 faktöriyel  ortak çarpanını ayır: 6 faktöriyel (7  artı  1) bölü 6 faktöriyel   eşittir  8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir.\n\nn faktöriyel  için  tam kısım n bölü 5   artı   tam kısım n bölü 25   artı   tam kısım n bölü 125   artı  … topla. Bölümler sıfır olunca dur. 30 faktöriyel  için 6  artı  1  eşittir  7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır.\n\nn faktöriyel   eşittir  1 ise hem n  eşittir  0 hem n  eşittir  1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say.",
+        "detailed": "Faktöriyel. Pozitif tam sayı n için n faktöriyel   eşittir  n  çarpı  (n  eksi  1)  çarpı  …  çarpı  2  çarpı  1 olarak tanımlanır. Örneğin 4 faktöriyel   eşittir  24. Ayrıca 0 faktöriyel   eşittir  1 kabul edilir. Negatif tam sayıların faktöriyeli bu düzeyde tanımlı değildir.\n\nFaktöriyel bir toplama değildir. 4 faktöriyel   artı  3 faktöriyel   eşittir  24  artı  6  eşittir  30; 7 faktöriyel  etmez. n faktöriyel   eşittir  n(n  eksi  1) faktöriyel  bağıntısı n  büyük eşittir  1 için geçerlidir ve sadeleştirmede kullanılır.\n\n8 faktöriyel  bölü 6 faktöriyel  için 8 faktöriyel   eşittir  8  çarpı  7  çarpı  6 faktöriyel  yaz. Ortak 6 faktöriyel  sadeleşince 56 kalır. Sayıları tamamen çarpmak gereksiz yük ve işlem hatası getirir.\n\n(7 faktöriyel   artı  6 faktöriyel ) bölü 6 faktöriyel  ifadesinde önce 6 faktöriyel  ortak çarpanını ayır: 6 faktöriyel (7  artı  1) bölü 6 faktöriyel   eşittir  8. Toplamın içinden tek bir terimi sadeleştirmek geçersizdir.\n\nBir doğal sayının sonunda sıfır olması 10 çarpanı taşımak demektir; 10  eşittir  2  çarpı  5. n faktöriyel  içinde 2 çarpanları daha çok olduğundan sondaki sıfırları 5 çarpanları belirler.\n\nn faktöriyel  için  tam kısım n bölü 5   artı   tam kısım n bölü 25   artı   tam kısım n bölü 125   artı  … topla. Bölümler sıfır olunca dur. 30 faktöriyel  için 6  artı  1  eşittir  7 sıfır; 25 hem ilk sayımda bir kez, hem ikinci 5’i için bir kez sayılır.\n\nGenel olarak asal p’nin n faktöriyel  içindeki üssü  tam kısım n bölü p   artı   tam kısım n bölü p kare    artı  … olur. 10 faktöriyel  içindeki 2 üssü 5  artı  2  artı  1  eşittir  8’dir. Bu yöntem asal çarpanlara ayırma konusuyla bağlantılıdır.\n\nn faktöriyel   eşittir  1 ise hem n  eşittir  0 hem n  eşittir  1 mümkündür; tek çözüm sanma. Bölmede önce ortak faktöriyeli gör, sonda sıfırda ise yalnız 5’in katlarını değil 25, 125 gibi üst kuvvetlerin ek katkısını da say.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-sayma-sistemleri": {
+      "topicId": "sayilar-sayma-sistemleri",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Sayma Sistemleri. Rakam  küçüktür  taban. 5 tabanında 0, 1, 2, 3, 4 var. 5 rakamı 5 tabanında kullanılamaz.\n\nSağdan: 1, t, t kare . (12) taban üç   eşittir  1  çarpı  3  artı  2  eşittir  5. Ortadaki sıfırı silme.\n\nBöl, kalanları tersten oku. 6 ,  (110) taban iki . Kalanları ilkten sona okumak yanlıştır.\n\nDenklem  artı  rakam kontrolü. (21) taban t   eşittir  11 ,  t  eşittir  5. Taban kesirli ya da rakama eşit olamaz.",
+        "standard": "Sayma Sistemleri. Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t  eksi  1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.\n\nSağdaki rakam t üzeri sıfır   eşittir  1, yanındaki t üzeri bir , sonra t kare  ile çarpılır. (abc) taban t   eşittir  a çarpı t kare   artı  b çarpı t  artı  c. Örneğin (132) taban dört   eşittir  1  çarpı  16  artı  3  çarpı  4  artı  2  eşittir  30.\n\nPozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101) taban iki .\n\n(24) taban t   eşittir  18 için 2t  artı  4  eşittir  18, t  eşittir  7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.\n\n(23) taban beş  gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır.\n\nSıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101) taban iki   eşittir  4  artı  0  artı  1  eşittir  5. Sıfırı silerek (11) taban iki  yazarsan değer 3’e dönüşür.\n\nSıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8  artı  4  artı  0  artı  1  eşittir  13.\n\nt tabanında iki basamaklı sayı için ilk rakam t  eksi  1, ikinci rakam t seçim alır: (t  eksi  1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle.",
+        "detailed": "Sayma Sistemleri. Bu konuda taban t, en az 2 olan tam sayıdır. Kullanılabilen rakamlar 0, 1, …, t  eksi  1 olur. İkilikte yalnız 0 ve 1; beşlikte 0, 1, 2, 3, 4 vardır. Rakam tabana eşit olamaz.\n\n(23) taban beş  gösterimindeki alt indis tabanı belirtir; sayı yirmi üç olarak onluk değer sanılmamalıdır. İlk basamak sıfır olursa yazımın basamak sayısı azalır.\n\nSağdaki rakam t üzeri sıfır   eşittir  1, yanındaki t üzeri bir , sonra t kare  ile çarpılır. (abc) taban t   eşittir  a çarpı t kare   artı  b çarpı t  artı  c. Örneğin (132) taban dört   eşittir  1  çarpı  16  artı  3  çarpı  4  artı  2  eşittir  30.\n\nSıfır rakamı bulunduğu yere katkı vermez ama basamağı korur: (101) taban iki   eşittir  4  artı  0  artı  1  eşittir  5. Sıfırı silerek (11) taban iki  yazarsan değer 3’e dönüşür.\n\nPozitif onluk sayıyı tabana art arda böl; kalanları en sondan ilkine doğru oku. 13’ü 2’ye böl: bölüm 6 kalan 1; 6’yı böl: bölüm 3 kalan 0; 3’ü böl: bölüm 1 kalan 1; 1’i böl: bölüm 0 kalan 1. Sonuç (1101) taban iki .\n\nSıfırın her tabandaki yazımı 0’dır. Dönüşümü kontrol etmek için yeni yazımı basamak açılımıyla tekrar onluğa çevir; 8  artı  4  artı  0  artı  1  eşittir  13.\n\n(24) taban t   eşittir  18 için 2t  artı  4  eşittir  18, t  eşittir  7 olur. Rakamlar 2 ve 4, bulunan 7’den küçük olduğu için çözüm uygundur. Denklem çözümü tek başına yetmez; taban en az 2 ve tam sayı olmalı.\n\nt tabanında iki basamaklı sayı için ilk rakam t  eksi  1, ikinci rakam t seçim alır: (t  eksi  1)t sayı. Toplama istenirse önce aynı tabana dönüştür. KPSS’de alt indisi ve istenen sonucun hangi tabanda olduğunu işaretle.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-bolme": {
+      "topicId": "sayilar-bolme",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Bölme. Bölünen  eşittir  bölen  çarpı  bölüm  artı  kalan. 43  eşittir  6  çarpı  7  artı  1. Bölen sıfır olamaz.\n\nKalan  küçüktür  bölen. 8’e bölmede en çok 7 kalır. Kalan bölen kadar olursa bölüm artar.\n\nAynı kalan, eşit adım. 5k  artı  2 ,  2, 7, 12, … . Aralığın dışındaki ilk ve son değeri sayma.\n\nNegatifte de kalan  büyük eşittir  0.  eksi 9  eşittir  4  çarpı  ( eksi 3)  artı  3. Negatif kalanı son cevap bırakma.",
+        "standard": "Bölme. Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A  eşittir  bq  artı  r yazılır; bölüm q tam sayı, kalan r için 0  küçük eşittir  r  küçüktür  b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.\n\nKalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.\n\n7’ye bölümünden kalan 3 olan doğal sayılar 7k  artı  3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.\n\nNegatif bölünende de kalan kuralını koru:  eksi 11  eşittir  4  çarpı  ( eksi 3)  artı  1. Bölüm  eksi 3, kalan 1’dir.  eksi 11  eşittir  4  çarpı  ( eksi 2)  eksi  3 eşitliği doğru olsa da kalan  eksi 3 olduğundan Öklid bölmesi değildir.\n\nÖrnek: 53  eşittir  7  çarpı  7  artı  4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir.\n\nKalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir.\n\n20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır.\n\nKPSS’de bilinmeyen bölüneni önce A  eşittir  bq  artı  r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0  küçük eşittir  r  küçüktür  b koşulunu kontrol et.",
+        "detailed": "Bölme. Pozitif tam sayı bölen b ile bir tam sayı A’yı bölerken A  eşittir  bq  artı  r yazılır; bölüm q tam sayı, kalan r için 0  küçük eşittir  r  küçüktür  b olmalıdır. Doğal sayı sorularında bölüm de doğaldır.\n\nÖrnek: 53  eşittir  7  çarpı  7  artı  4. Bölünen 53, bölen 7, bölüm 7 ve kalan 4’tür. Bölüm ile böleni karıştırmamak için eşitliğe isimleriyle yerleştir.\n\nKalan bölen kadar olamaz; aksi halde bir bölen daha çıkarılır ve bölüm artar. 9’a bölmede kalanlar 0, 1, …, 8 olabilir. Tam bölünme, kalanın sıfır olmasıdır.\n\nKalan 5 verilmişse pozitif tam sayı bölen en az 6’dır. Bölen 5 ve kalan 5 olan bir bölme yazımı geçerli değildir; 5 daha çıkarılabilir.\n\n7’ye bölümünden kalan 3 olan doğal sayılar 7k  artı  3 biçimindedir: 3, 10, 17, 24, … . Aralık sorusunda önce sınırdaki ilk ve son uygun sayıyı bul, sonra adedi hesapla.\n\n20 ile 50 arasında 7’ye bölümünden kalan 3 olanlar 24, 31, 38, 45’tir: dört sayı. Sınıra uymayan 17 ve 52 dışarıda kalır.\n\nNegatif bölünende de kalan kuralını koru:  eksi 11  eşittir  4  çarpı  ( eksi 3)  artı  1. Bölüm  eksi 3, kalan 1’dir.  eksi 11  eşittir  4  çarpı  ( eksi 2)  eksi  3 eşitliği doğru olsa da kalan  eksi 3 olduğundan Öklid bölmesi değildir.\n\nKPSS’de bilinmeyen bölüneni önce A  eşittir  bq  artı  r ile kur. Başka sayıya göre kalan istenirse bulunan A’yı yeniden böl. İşlemin sonunda hem eşitliği hem 0  küçük eşittir  r  küçüktür  b koşulunu kontrol et.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    },
+    "sayilar-bolunebilme-kurallari": {
+      "topicId": "sayilar-bolunebilme-kurallari",
+      "version": 1,
+      "source": "ozgun-seslendirme-metni",
+      "summaries": {
+        "quick": "Bölünebilme Kuralları. 2 ve 5: son rakam. 135, 5’e bölünür ama 2’ye bölünmez. 4 için son iki basamak gerekir.\n\n3 ve 9: rakam toplamı. 451 ,  10; 3’e kalan 1. 3’e bölünmek 9’a yetmez.\n\n6  eşittir  2 ve 3. 42 çift ve rakam toplamı 6. 2 ve 4’ten 8 sonucu çıkarma.\n\nRakamı bul ,  isteneni oku. a  eşittir  2, 5, 8 ,  adet 3, toplam 15. Başta sıfır olamaz.",
+        "standard": "Bölünebilme Kuralları. Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.\n\n3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.\n\n6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.\n\n3a4 sayısının 3’e bölünmesi için 7  artı  a, 3’ün katı olmalı; a  eşittir  2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.\n\n4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür.\n\nBu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma.\n\n11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8  artı  7)  eksi  (2  artı  2)  eşittir  11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir.\n\nSoruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir.",
+        "detailed": "Bölünebilme Kuralları. Bir tam sayı 2’ye tam bölünüyorsa son rakamı çift; 5’e bölünüyorsa son rakamı 0 veya 5; 10’a bölünüyorsa son rakamı 0’dır. Kalanın sıfır olması “tam bölünme” demektir.\n\n4’e bölünebilmede son iki basamağın oluşturduğu sayı; 8’de son üç basamağın oluşturduğu sayı kontrol edilir. Çünkü 100, 4’ün; 1000, 8’in katıdır. 1316, son iki basamağı 16 olduğu için 4’e bölünür.\n\n3 ve 9 için rakamlar toplamını kontrol et. 5724’ün rakamlar toplamı 18’dir; sayı hem 3’e hem 9’a bölünür. 3’e bölünen her sayının 9’a bölünmesi gerekmez: 12 karşı örnektir.\n\nBu iki bölen için kalan da rakam toplamının kalanıyla aynıdır. 428’in toplamı 14’tür; 3’e göre kalan 2, 9’a göre kalan 5. Bu kuralı 4 veya 8 için kullanma.\n\n6’ya bölünebilme hem 2 hem 3; 12’ye bölünebilme hem 3 hem 4 kontrolüdür. Bölenler aralarında asal olmalıdır: hem 2’ye hem 4’e bölünmek 8’e bölünmeyi garanti etmez; 12 karşı örnektir.\n\n11 için sağdan başlayarak bir atlayarak alınan rakamların toplamları arasındaki farkın 11’in katı olması gerekir. 2728 için (8  artı  7)  eksi  (2  artı  2)  eşittir  11, dolayısıyla 11’e bölünür. Fark negatif olabilir; tam bölünmede işaret önemli değildir.\n\n3a4 sayısının 3’e bölünmesi için 7  artı  a, 3’ün katı olmalı; a  eşittir  2, 5, 8. Son basamak zaten çift olduğu için bu üç sayı aynı zamanda 6’ya bölünür. Rakam 0–9 arasında kalmalıdır.\n\nSoruda tek rakam mı, değerlerin toplamı mı, değer sayısı mı isteniyor ayır. Sayıyı bulduktan sonra doğrudan bölerek kontrol et. Sondan basamak kuralıyla rakam toplamı kuralını karıştırma; 11’de kalan isteniyorsa farkı 0–10 aralığına getir.\n\nTekrar yöntemi: Önce kuralı kapatıp kendi cümlenle anlat. Çözümlü örneği cevabı açmadan dene. Yanlışının işlemden mi koşuldan mı geldiğini yaz; ilgili kartı tekrar et."
+      }
+    }
+  }
+}

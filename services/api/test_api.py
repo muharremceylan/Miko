@@ -63,13 +63,22 @@ class ApiTests(unittest.IsolatedAsyncioTestCase):
         headers=await self.auth()
         for _ in range(6):self.assertEqual((await self.client.post('/v1/solve',headers=headers,json={'topic_id':'temel','question':'2+2?'})).status_code,200)
         self.assertEqual((await self.client.post('/v1/solve',headers=headers,json={'topic_id':'temel','question':'2+2?'})).status_code,429)
+    async def test_speech_cache_is_separated_by_topic_and_level(self):
+        headers=await self.auth()
+        for topic in ['temel','sayilar-bolme','sayilar-faktoriyel','sayilar-bolme']:
+            r=await self.client.post('/v1/speech',headers=headers,json={'topic_id':topic,'level':'quick'})
+            self.assertEqual(r.status_code,200)
+        self.assertEqual(len(self.fake.speech_calls),3)
+        self.assertIn('Bölme',self.fake.speech_calls[1])
+        self.assertIn('Faktöriyel',self.fake.speech_calls[2])
+
     async def test_speech_uses_server_script_and_caches_generated_bytes(self):
         headers=await self.auth()
         for _ in range(2):
             response=await self.client.post('/v1/speech',headers=headers,json={'topic_id':'temel','level':'quick'})
             self.assertEqual(response.status_code,200);self.assertTrue(response.headers['content-type'].startswith('audio/mpeg'))
         self.assertEqual(len(self.fake.speech_calls),1);self.assertIn('Temel kavramları',self.fake.speech_calls[0])
-        self.assertEqual((await self.client.post('/v1/speech',headers=headers,json={'topic_id':'sayilar','level':'quick'})).status_code,422)
+        self.assertEqual((await self.client.post('/v1/speech',headers=headers,json={'topic_id':'denklemler','level':'quick'})).status_code,422)
     async def test_cors_only_known_origins(self):
         good=await self.client.get('/health',headers={'Origin':'https://muharremceylan.github.io'})
         bad=await self.client.get('/health',headers={'Origin':'https://unknown.example'})

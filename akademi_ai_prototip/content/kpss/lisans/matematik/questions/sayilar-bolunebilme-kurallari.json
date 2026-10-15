@@ -1,0 +1,309 @@
+[
+  {
+    "id": "sayilar-bolunebilme-kurallari-01",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Kolay",
+    "text": "472 sayısının 3’e bölümünden kalan kaçtır?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "steps": [
+      "Rakamlar toplamı 4 + 7 + 2 = 13.",
+      "13’ün 3’e bölümünden kalan 1."
+    ],
+    "formula": "3 ve 9’da rakamlar toplamının kalanı kullanılabilir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        472,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-02",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Kolay",
+    "text": "5832 sayısının 9’a bölümünden kalan kaçtır?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2",
+      "-2"
+    ],
+    "answer": 1,
+    "steps": [
+      "Rakamlar toplamı 5 + 8 + 3 + 2 = 18.",
+      "18, 9’un katı olduğu için kalan 0."
+    ],
+    "formula": "9’a bölünebilme: rakamlar toplamı 9’un katı.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        5832,
+        9
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-03",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Kolay",
+    "text": "4a2 üç basamaklı sayısı 3’e tam bölünüyorsa a rakamı kaç değer alır?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "2",
+      "3"
+    ],
+    "answer": 0,
+    "steps": [
+      "Rakamlar toplamı 6 + a.",
+      "a = 0, 3, 6, 9 uygundur; dört değer."
+    ],
+    "formula": "Rakam 0 ile 9 arasında olmalıdır.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        9,
+        "(402+10*x) % 3 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-04",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "7a4 sayısı 4’e tam bölünüyorsa a kaç farklı rakam olabilir?",
+    "options": [
+      "6",
+      "7",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 4,
+    "steps": [
+      "Son iki basamak a4, yani 10a + 4.",
+      "a = 0, 2, 4, 6, 8 uygundur; beş değer."
+    ],
+    "formula": "4’e bölünebilme için son iki basamağı kontrol et.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        9,
+        "(704+10*x) % 4 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-05",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "35a sayısı 5’e tam bölünüyorsa a kaç farklı rakam olabilir?",
+    "options": [
+      "4",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 3,
+    "steps": [
+      "5’e bölünme için son rakam 0 veya 5.",
+      "İki olasılık vardır."
+    ],
+    "formula": "5’e bölünebilme: son rakam 0 ya da 5.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        9,
+        "(350+x) % 5 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-06",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "2a6 sayısı 6’ya tam bölünüyorsa a kaç farklı rakam olabilir?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "steps": [
+      "Sayı son rakamı nedeniyle zaten çifttir.",
+      "Rakam toplamı 8 + a, 3’ün katı olmalı; a = 1, 4, 7: üç değer."
+    ],
+    "formula": "6’ya bölünebilme: hem 2’ye hem 3’e tam bölünme.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        9,
+        "(206+10*x) % 6 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-07",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "53a sayısı 8’e tam bölünüyorsa a rakamı kaçtır?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "steps": [
+      "530–539 arasında 8’in katı yalnız 536’dır.",
+      "Son rakam 6."
+    ],
+    "formula": "8 için son üç basamak yeterlidir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "digit",
+      "args": [
+        530,
+        1,
+        8
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-08",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "724 sayısının 11’e bölümünden kalan kaçtır?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "7",
+      "8"
+    ],
+    "answer": 0,
+    "steps": [
+      "7 − 2 + 4 = 9.",
+      "724 = 11 × 65 + 9; kalan 9."
+    ],
+    "formula": "11’de dönüşümlü rakam toplamının farkını kullan; kalanı 0–10 aralığına getir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        724,
+        11
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-09",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "1a2 sayısı 9’a tam bölünüyorsa a rakamı kaçtır?",
+    "options": [
+      "7",
+      "8",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 4,
+    "steps": [
+      "Rakam toplamı 3 + a, 9’un katı olmalıdır.",
+      "a = 6 tek uygun rakamdır."
+    ],
+    "formula": "Rakamlar toplamı ve rakam sınırlarını birlikte kullan.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "digit",
+      "args": [
+        102,
+        10,
+        9
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolunebilme-kurallari-10",
+    "version": 1,
+    "topicId": "sayilar-bolunebilme-kurallari",
+    "skill": "Bölünebilme Kuralları",
+    "difficulty": "Orta",
+    "text": "1 ≤ x ≤ 100 aralığında hem 3’e hem 4’e tam bölünen kaç tam sayı vardır?",
+    "options": [
+      "10",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 3,
+    "steps": [
+      "3 ve 4 aralarında asaldır; ortak katlar 12’nin katlarıdır.",
+      "12, 24, …, 96: sekiz sayı."
+    ],
+    "formula": "Aralarında asal bölenlerde ortak bölünebilme çarpıma bölünebilmeye denktir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        1,
+        100,
+        "x % 3 == 0 and x % 4 == 0"
+      ]
+    }
+  }
+]

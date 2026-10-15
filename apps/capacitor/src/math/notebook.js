@@ -20,14 +20,18 @@ function flash(note,index,esc) {
  return `<article class="memory-card ink-${index%4}"><span class="note-label">Aklında tut</span><h4 class="handwriting">${esc(note.key)}</h4><p>${esc(note.tip)}</p><div class="ink-example">${esc(note.example)}</div><p class="ink-warning"><b>Dikkat:</b> ${esc(note.warning)}</p>${recall(note,esc)}</article>`;
 }
 export function lessonNotebook(lesson,esc,style) {
+ const cards=lesson.memoryNotes??notes;
  const intro=`${viewChoice(style)}<div class="notebook-intro"><span class="note-label">Çalışma defterin</span><p class="handwriting">Oku → üzerini kapat → kendi cümlenle anlat.</p><p class="mini">Kartlardaki ipuçlarını izle: <b>Kural</b>, <b>Aklında tut</b>, <b>Dikkat</b>. Cevabı açmadan önce hatırlamayı dene.</p></div><h3>Bu konuda öğreneceklerin</h3><ul>${lesson.goals.map(g=>'<li>'+esc(g)+'</li>').join('')}</ul><p class="mini"><b>Başlamadan önce:</b> ${esc(lesson.prerequisites)}</p>`;
  if(style==='plain') return intro+lesson.sections.map(s=>'<h3>'+esc(s.title)+'</h3>'+s.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')).join('');
- return intro+`<div class="notebook-pages">${lesson.sections.map((section,i)=>`<article class="notebook-page ink-${i%4}"><span class="note-label">${names[i%3]} · ${i+1} / ${lesson.sections.length}</span><h3 class="handwriting">${esc(section.title)}</h3><p class="memory-key handwriting">${esc(notes[i].key)}</p><p>${esc(notes[i].tip)}</p><div class="ink-example">${esc(notes[i].example)}</div><p class="ink-warning"><b>Dikkat:</b> ${esc(notes[i].warning)}</p><details class="notebook-original"><summary>Ayrıntılı anlatımı oku</summary>${section.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')}</details>${recall(notes[i],esc)}</article>`).join('')}</div>`;
+ return intro+`<div class="notebook-pages">${lesson.sections.map((section,i)=>`<article class="notebook-page ink-${i%4}"><span class="note-label">${names[i%3]} · ${i+1} / ${lesson.sections.length}</span><h3 class="handwriting">${esc(section.title)}</h3><p class="memory-key handwriting">${esc(cards[i].key)}</p><p>${esc(cards[i].tip)}</p><div class="ink-example">${esc(cards[i].example)}</div><p class="ink-warning"><b>Dikkat:</b> ${esc(cards[i].warning)}</p><details class="notebook-original"><summary>Ayrıntılı anlatımı oku</summary>${section.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')}</details>${recall(cards[i],esc)}</article>`).join('')}</div>`;
 }
 export function summaryNotebook(lesson,level,esc,style) {
+ const cards=lesson.memoryNotes??notes;
+ const shortCards=lesson.memoryNotes??quick;
+ const titles=lesson.memoryNotes?cards.map(n=>n.key):headings;
  const content=lesson.summaries[level];
  const heading=`${viewChoice(style)}<h3>${esc(content.title)}</h3><p class="mini muted">Önce kuralı oku. Sonra cevabı açmadan kendine sor.</p>`;
  if(style==='plain')return heading+content.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('');
- if(level==='quick')return heading+quick.map((n,i)=>flash(n,i,esc)).join('')+`<details class="notebook-original"><summary>Hızlı özetin tamamını oku</summary>${content.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')}</details>`;
- return heading+content.paragraphs.map((p,i)=>`<article class="summary-sheet ink-${i%4}"><span class="note-label">${level==='standard'?'Standart tekrar':'Ayrıntılı tekrar'} · ${i+1}</span><h4 class="handwriting">${esc(headings[i]??'Hatırlama notu')}</h4><p>${esc(p)}</p>${i%3===2?recall(notes[Math.min(i,notes.length-1)],esc):''}</article>`).join('');
+ if(level==='quick')return heading+shortCards.map((n,i)=>flash(n,i,esc)).join('')+`<details class="notebook-original"><summary>Hızlı özetin tamamını oku</summary>${content.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')}</details>`;
+ return heading+content.paragraphs.map((p,i)=>`<article class="summary-sheet ink-${i%4}"><span class="note-label">${level==='standard'?'Standart tekrar':'Ayrıntılı tekrar'} · ${i+1}</span><h4 class="handwriting">${esc(content.headings?.[i]??titles[i%titles.length]??'Hatırlama notu')}</h4><p>${esc(p)}</p>${i%3===2?recall(cards[content.noteIndices?.[i]??i%cards.length],esc):''}</article>`).join('');
 }

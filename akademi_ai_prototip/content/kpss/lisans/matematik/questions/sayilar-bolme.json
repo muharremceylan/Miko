@@ -1,0 +1,303 @@
+[
+  {
+    "id": "sayilar-bolme-01",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Kolay",
+    "text": "157 sayısı 12’ye bölündüğünde kalan kaçtır?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "steps": [
+      "12 × 13 = 156.",
+      "157 − 156 = 1; 0 ≤ 1 < 12."
+    ],
+    "formula": "Bölünen = bölen × bölüm + kalan.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        157,
+        12
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-02",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Kolay",
+    "text": "Bir bölmede bölen 9, bölüm 14, kalan 5 ise bölünen kaçtır?",
+    "options": [
+      "130",
+      "131",
+      "132",
+      "133",
+      "129"
+    ],
+    "answer": 1,
+    "steps": [
+      "9 × 14 + 5 yaz.",
+      "126 + 5 = 131."
+    ],
+    "formula": "A = bq + r; 0 ≤ r < b.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "dividend",
+      "args": [
+        9,
+        14,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-03",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Kolay",
+    "text": "245 sayısı 17’ye bölündüğünde bölüm kaçtır?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "12",
+      "13"
+    ],
+    "answer": 0,
+    "steps": [
+      "17 × 14 = 238, 17 × 15 = 255 > 245.",
+      "Bölüm 14; kalan 7."
+    ],
+    "formula": "Bölüm, bölenin bölüneni aşmayan en büyük doğal sayı katının katsayısıdır.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "quotient",
+      "args": [
+        245,
+        17
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-04",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "Bir doğal sayı 8’e bölündüğünde kalan en çok kaç olabilir?",
+    "options": [
+      "8",
+      "9",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 4,
+    "steps": [
+      "Kalan 0’dan küçük olamaz, bölen 8’e eşit olamaz.",
+      "Olası kalanlar 0–7; en büyük 7."
+    ],
+    "formula": "0 ≤ kalan < bölen.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "8-1"
+    }
+  },
+  {
+    "id": "sayilar-bolme-05",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "Bir doğal sayı 7’ye bölündüğünde bölüm 11, kalan 4 ise sayı kaçtır?",
+    "options": [
+      "83",
+      "79",
+      "80",
+      "81",
+      "82"
+    ],
+    "answer": 3,
+    "steps": [
+      "7 × 11 + 4.",
+      "77 + 4 = 81."
+    ],
+    "formula": "Bölünen = bölen × bölüm + kalan.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "dividend",
+      "args": [
+        7,
+        11,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-06",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "100 sayısı 6’ya bölündüğünde kalan kaçtır?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 2,
+    "steps": [
+      "6 × 16 = 96.",
+      "100 − 96 = 4."
+    ],
+    "formula": "Kalanı bulduktan sonra bölenden küçük olduğunu kontrol et.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        100,
+        6
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-07",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "Bir bölmede bölen 5, bölüm 18 ve kalan 0 ise bölünen kaçtır?",
+    "options": [
+      "89",
+      "90",
+      "91",
+      "92",
+      "88"
+    ],
+    "answer": 1,
+    "steps": [
+      "Kalan sıfırsa tam bölünme vardır.",
+      "5 × 18 = 90."
+    ],
+    "formula": "Tam bölünmede A = bq.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "dividend",
+      "args": [
+        5,
+        18,
+        0
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-08",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "−17 = 5q + r ve 0 ≤ r < 5 eşitliğinde r kaçtır?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "1",
+      "2"
+    ],
+    "answer": 0,
+    "steps": [
+      "5’in −17’yi aşmayan katı −20 = 5 × (−4).",
+      "−17 = −20 + 3; r = 3."
+    ],
+    "formula": "Öklid bölmesinde kalan negatif olmaz.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        -17,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-09",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "Bir doğal sayının 9’a bölümünden kalan 4 ise, bu sayı 30 ile 60 arasında (uçlar dahil) kaç değer alır?",
+    "options": [
+      "5",
+      "6",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 4,
+    "steps": [
+      "9k + 4 biçimindeki sayıları bul: 31, 40, 49, 58.",
+      "30–60 içinde 4 sayı vardır."
+    ],
+    "formula": "Aynı kalanlı sayılar bölen kadar artar.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        30,
+        60,
+        "x % 9 == 4"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-bolme-10",
+    "version": 1,
+    "topicId": "sayilar-bolme",
+    "skill": "Bölme",
+    "difficulty": "Orta",
+    "text": "Bir sayı 13’e bölündüğünde bölüm 8 ve kalan 12’dir. Bu sayının 5’e bölümünden kalan kaçtır?",
+    "options": [
+      "3",
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "answer": 3,
+    "steps": [
+      "Sayı 13 × 8 + 12 = 116.",
+      "116 = 5 × 23 + 1; kalan 1."
+    ],
+    "formula": "Önce bölüneni kur, sonra yeni bölmeyi yap.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "remainder",
+      "args": [
+        116,
+        5
+      ]
+    }
+  }
+]

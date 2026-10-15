@@ -1,5 +1,18 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Sayılar çalışma paketi ve yanlış defteri — 15 Ekim 2026
+
+Güncel web kapsamı: Temel Kavramlar + Sayı Kümeleri, Doğal Sayılar, Tam Sayılar, Faktöriyel, Sayma Sistemleri, Bölme ve Bölünebilme Kuralları. Yedi yeni alt konunun her birinde dört renkli anlatım/hatırlama kartı, tam metne geçiş, üç özet, formüller, iki ayrı çözümlü örnek ve 10 test sorusu vardır. Toplam havuz 100 test sorusu ve havuzdan ayrı 17 çözümlü örnektir. Sayılar ana ekranı alt konu rotası ve 70 soruluk havuz üzerinden 10/20/30 soruluk karma test sunar. Alt konu havuzu 10 olduğu için 20/30 düğmeleri açıkça pasiftir; içerik tamamlanmış gibi gösterilmez. Sonraki içerik adımı EBOB–EKOK ve Asal Çarpanlara Ayırma; ardından Denklemler paketidir.
+
+Anlatım/özet/ses verileri konu kimliğiyle seçilir. Temel Kavramlara özgü kartların diğer konularda görünmesi önlendi. Üç uzunlukta seslendirme metni hem cihaz TTS yoluna hem sunucudaki izinli ses metni kataloğuna bağlandı. Sunucu ses önbelleği konu+sürüm+özet seviyesine göre ayrılır; istemci farklı konunun kaydını oynatmaz. API hesabı, anahtar ve uzak sunucu henüz sağlanmadığından gerçek AI veya ücretli ses üretimi yapılmadı.
+
+Yanlış defterine Matematik ana ekranından veya test sonucundan girilir. Yalnız bitmiş yeni testlerin son cevapları dikkate alınır; soru kimliği/sürümü, konu, cevap ve çözüm saklanır. Öğrenci konuya dönebilir, alt konuya göre süzebilir veya eski soru sürümünü aynen yeniden çözebilir. Doğru çözüm sonrasında soru tekrar listesinden çıkar; boş bırakmak önceki yanlışı silmez. Değerlendirme testi bitmeden yeni cevaplar deftere eklenmez; yarım test varken ikinci test başlatılmaz. Eski demo toplamlarından soru geçmişi üretilmez.
+
+Mevcut localStorage anahtarı ve müfredat sürümü değişmedi; önceki Temel Kavramlar tamamlama ve denemeleri korunur. İlerleme paydası 34 son konudur; sekiz hazır konu tamamlanırsa %24 gösterir. Sayılar ana ekranı ayrıca tamamlandı sayılmaz. Kalıcılık yalnız bu tarayıcı/cihaz içindir; üretim kullanıcı hesabı, PostgreSQL, senkronizasyon ve uzman onayı ayrı işlerdir.
+
+Doğrulama: 40 JavaScript testi ve 18 API testi geçti. Yeni Sayılar/yanlış defteri tarayıcı testi dört grubu; Matematik testi sekiz, defter/servis testi altı, KPSS düzeyleri testi yedi grubu geçti. Yayın paketi telefon çerçevesi, içerik kimlikleri, seçim/tema kalıcılığı ve iframe/tek HTML arasında yarım test devamını doğruladı. Matematik kontrolü 100 test sorusu ve 17 ayrı örneğin cevaplarını denetledi. Türkçe ses ve AI yanıtlarında test taklitleri kullanıldı; gerçek sağlayıcı veya fiziksel Android/iOS testi yapılmadı.
+
+
 ## Renkli çalışma defteri, görünür menü ve AI/ses bağlantısı
 
 15 Ekim 2026: Kullanıcının yeni görsel tercihine göre anlatım ve üç özet; el yazısı başlık/formüller, dört renkli not kartları, Kural/Aklında tut/Dikkat etiketleri, kapatıp hatırlama soruları ve açılabilir tam anlatımla düzenlendi. Düz metin tercihi ayrıca saklanır. Caveat'tan Türkçe karakterlerle alt kümelenen ve Akademi Notes olarak adlandırılan font uygulamaya gömülür; SIL OFL lisansı kaynaklarda ve üretilen CSS'te bulunur. Haricî font isteği gerekmez.

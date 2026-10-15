@@ -1,0 +1,272 @@
+[
+  {
+    "id": "sayilar-tam-sayilar-01",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Kolay",
+    "text": "−8 + 13 − 6 işleminin sonucu kaçtır?",
+    "options": [
+      "-3",
+      "-2",
+      "-1",
+      "0",
+      "1"
+    ],
+    "answer": 2,
+    "steps": [
+      "−8 + 13 = 5.",
+      "5 − 6 = −1."
+    ],
+    "formula": "Toplama ve çıkarmada aynı öncelikte soldan sağa ilerle.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "-8+13-6"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-02",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Kolay",
+    "text": "(−7)·(−4) işleminin sonucu kaçtır?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30",
+      "26"
+    ],
+    "answer": 1,
+    "steps": [
+      "İki negatif sayının çarpımı pozitiftir.",
+      "7 × 4 = 28."
+    ],
+    "formula": "Aynı işaretli çarpım pozitiftir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "(-7)*(-4)"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-03",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Kolay",
+    "text": "36 ÷ (−6) + 4 işleminin sonucu kaçtır?",
+    "options": [
+      "-2",
+      "-1",
+      "0",
+      "-4",
+      "-3"
+    ],
+    "answer": 0,
+    "steps": [
+      "Önce bölme: 36 / (−6) = −6.",
+      "−6 + 4 = −2."
+    ],
+    "formula": "Çarpma ve bölme, toplama ve çıkarmadan önce yapılır.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "36/(-6)+4"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-04",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "(−3)² − 3² işleminin sonucu kaçtır?",
+    "options": [
+      "1",
+      "2",
+      "-2",
+      "-1",
+      "0"
+    ],
+    "answer": 4,
+    "steps": [
+      "(−3)² = 9 ve 3² = 9.",
+      "9 − 9 = 0."
+    ],
+    "formula": "Parantez negatif tabanı kuvvete dahil eder.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "(-3)**2-3**2"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-05",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "−5 − (−9) işleminin sonucu kaçtır?",
+    "options": [
+      "6",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 3,
+    "steps": [
+      "Negatif sayıyı çıkarmak, ters işaretlisini eklemektir.",
+      "−5 + 9 = 4."
+    ],
+    "formula": "a − (−b) = a + b.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "-5-(-9)"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-06",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "Sayı doğrusunda −6 ile 4 arasındaki uzaklık kaç birimdir?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2,
+    "steps": [
+      "Büyük sayıdan küçük sayıyı çıkar.",
+      "4 − (−6) = 10 birim."
+    ],
+    "formula": "İki nokta arası uzaklık |a − b|.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "4-(-6)"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-07",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "−12 ÷ 3 · (−2) işleminin sonucu kaçtır?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "6"
+    ],
+    "answer": 1,
+    "steps": [
+      "Bölme ve çarpma eş önceliklidir; soldan başla.",
+      "−12 / 3 = −4; (−4) × (−2) = 8."
+    ],
+    "formula": "Çarpma bölmeden önce gelmez; eş öncelikte soldan sağa.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "-12/3*(-2)"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-08",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "−2³ + (−2)⁴ işleminin sonucu kaçtır?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "6",
+      "7"
+    ],
+    "answer": 0,
+    "steps": [
+      "−2³ = −8 ve (−2)⁴ = 16.",
+      "−8 + 16 = 8."
+    ],
+    "formula": "Kuvveti, başındaki parantezsiz eksi işaretinden önce hesapla.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "-2**3+(-2)**4"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-09",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "−4’ten 7’ye kadar olan tam sayıların toplamı kaçtır?",
+    "options": [
+      "19",
+      "20",
+      "16",
+      "17",
+      "18"
+    ],
+    "answer": 4,
+    "steps": [
+      "−4 ile 4 arasındaki karşıtlar birbirini götürür.",
+      "Kalan 5 + 6 + 7 = 18."
+    ],
+    "formula": "a + (−a) = 0.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "sum(range(-4,8))"
+    }
+  },
+  {
+    "id": "sayilar-tam-sayilar-10",
+    "version": 1,
+    "topicId": "sayilar-tam-sayilar",
+    "skill": "Tam Sayılar",
+    "difficulty": "Orta",
+    "text": "a = −3 ve b = 5 ise 2a² − 3b kaçtır?",
+    "options": [
+      "5",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 3,
+    "steps": [
+      "Önce a² = 9; 2a² = 18.",
+      "3b = 15; 18 − 15 = 3."
+    ],
+    "formula": "Yerine koyarken negatif değeri parantezle yaz.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "2*(-3)**2-3*5"
+    }
+  }
+]

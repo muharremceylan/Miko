@@ -59,7 +59,7 @@ with sync_playwright() as p:
     assert topics.count() == 17
     assert topics.nth(0).locator('summary').inner_text().startswith('1. Temel Kavramlar')
     assert topics.nth(16).locator('summary').inner_text().startswith('17. Sayısal Mantık')
-    assert page.locator('[data-math-topic="sayilar"] li').all_text_contents() == ['Sayı Kümeleri', 'Doğal Sayılar', 'Tam Sayılar', 'Faktöriyel', 'Sayma Sistemleri', 'Bölme', 'Bölünebilme Kuralları']
+    assert page.locator('[data-math-topic="sayilar"] li button').evaluate_all("els=>els.map(e=>e.childNodes[0].textContent.trim())") == ['Sayı Kümeleri', 'Doğal Sayılar', 'Tam Sayılar', 'Faktöriyel', 'Sayma Sistemleri', 'Bölme', 'Bölünebilme Kuralları']
     assert page.locator('[data-math-topic="problemler"] li').count() == 9
     page.locator('#mathExample').click()
     assert 'Birinci Dereceden Denklemler' in page.locator('#lessonName').inner_text()

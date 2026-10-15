@@ -32,7 +32,7 @@ export class LearningServices {
   async speech(topicId,level){
     if(!this.token || this.state.audioBusy)return;
     this.state.audioBusy=true;this.state.error='';this.onChange();
-    try{const response=await this.request('/v1/speech',{topic_id:topicId,level},AbortSignal.timeout(70000));const blob=await response.blob();if(!blob.type.startsWith('audio/'))throw Error('Ses dosyası okunamadı.');if(this.state.audioUrl)URL.revokeObjectURL(this.state.audioUrl);this.state.audioUrl=URL.createObjectURL(blob);this.state.audioLevel=level;}
+    try{const response=await this.request('/v1/speech',{topic_id:topicId,level},AbortSignal.timeout(70000));const blob=await response.blob();if(!blob.type.startsWith('audio/'))throw Error('Ses dosyası okunamadı.');if(this.state.audioUrl)URL.revokeObjectURL(this.state.audioUrl);this.state.audioUrl=URL.createObjectURL(blob);this.state.audioLevel=level;this.state.audioTopic=topicId;}
     catch(error){this.state.error=error.name==='TimeoutError'?'Ses üretimi zaman aşımına uğradı.':error.message;}
     finally{this.state.audioBusy=false;this.onChange();}
   }

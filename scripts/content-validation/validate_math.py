@@ -78,3 +78,79 @@ for item in questions+lesson['examples']:
 assert set(lesson['summaries'])=={'quick','standard','detailed'}
 assert len(lesson['sections'])==9 and len(lesson['formulas'])==8 and lesson['audioScript']
 print('30 test sorusu ve 3 ayrı çözümlü örnek: beş seçenek, benzersizlik, doğru cevap ve bağımsız matematik kontrolleri geçti. Uzman onayı değildir.')
+
+# Yeni içerik: kısıtlı ifadeler, tam sayı kümeleri ve bölme bağıntısı ile ayrı hesap.
+# eval kullanılmaz. Soru yazarı tarafından verilen cevap hesap sonucuyla karşılaştırılır.
+import ast
+import math
+import operator
+OPS={ast.Add:operator.add,ast.Sub:operator.sub,ast.Mult:operator.mul,ast.Div:operator.truediv,ast.FloorDiv:operator.floordiv,ast.Mod:operator.mod,ast.Pow:operator.pow}
+CMP={ast.Eq:operator.eq,ast.NotEq:operator.ne,ast.Gt:operator.gt,ast.GtE:operator.ge,ast.Lt:operator.lt,ast.LtE:operator.le,ast.In:lambda a,b:a in b,ast.NotIn:lambda a,b:a not in b}
+def calculate(source,x=None):
+    def visit(n):
+        if isinstance(n,ast.Constant) and isinstance(n.value,(int,bool)):return Fraction(n.value)
+        if isinstance(n,ast.Name) and n.id=='x' and x is not None:return Fraction(x)
+        if isinstance(n,ast.List):return [visit(t) for t in n.elts]
+        if isinstance(n,ast.UnaryOp) and isinstance(n.op,(ast.USub,ast.UAdd)):return -visit(n.operand) if isinstance(n.op,ast.USub) else visit(n.operand)
+        if isinstance(n,ast.BinOp) and type(n.op) in OPS:return OPS[type(n.op)](visit(n.left),visit(n.right))
+        if isinstance(n,ast.BoolOp):return (all if isinstance(n.op,ast.And) else any)(visit(t) for t in n.values)
+        if isinstance(n,ast.Compare):
+            vals=[visit(n.left)]+[visit(t) for t in n.comparators]
+            return all(CMP[type(op)](a,b) for op,a,b in zip(n.ops,vals,vals[1:]))
+        if isinstance(n,ast.Call) and isinstance(n.func,ast.Name):
+            args=[visit(a) for a in n.args]
+            if n.func.id=='factorial':return math.factorial(int(args[0]))
+            if n.func.id=='range':return range(*map(int,args))
+            if n.func.id=='sum':return sum(args[0])
+        raise AssertionError(ast.dump(n))
+    return visit(ast.parse(source,mode='eval').body)
+def verified(check):
+    kind,args=check['kind'],check['args']
+    if kind=='expression':return calculate(args)
+    if kind=='count':
+        start,stop,pred=args
+        return sum(bool(calculate(pred,x)) for x in range(int(start),int(stop)+1))
+    if kind=='base':
+        a,b,total=args
+        return sole(t for t in range(max(a,b)+1,100) if a*t+b==total)
+    if kind=='factorial_inverse':return sole(n for n in range(15) if math.factorial(n)==args)
+    if kind=='digit':
+        base,place,divisor=args
+        return sole(d for d in range(10) if (base+place*d)%divisor==0)
+    if kind=='remainder':return args[0]%args[1]
+    if kind=='quotient':return args[0]//args[1]
+    if kind=='dividend':
+        b,q,r=args
+        assert 0<=r<b
+        return b*q+r
+    raise AssertionError(kind)
+package=json.loads((CONTENT/'topics/sayilar.json').read_text())
+new_questions=[];new_examples=[]
+for tid,l in package['lessons'].items():
+    bank=json.loads((CONTENT/'questions'/f'{tid}.json').read_text())
+    assert len(bank)==10 and len(l['examples'])==2
+    assert len(l['sections'])==len(l['memoryNotes'])==4
+    assert l['topicId']==tid and l['learningReady'] and len(l['formulas'])>=2
+    assert set(l['summaries'])=={'quick','standard','detailed'}
+    for level in ['standard','detailed']:
+        summary=l['summaries'][level]
+        assert len(summary['paragraphs'])==len(summary['headings'])==len(summary['noteIndices'])
+        assert all(0<=i<len(l['memoryNotes']) for i in summary['noteIndices'])
+    for card in l['memoryNotes']:assert all(card.get(k) for k in ['key','tip','example','warning','question','answer'])
+    audio=package['audio'][tid]
+    assert audio['topicId']==tid and audio['version']==l['version']
+    assert set(audio['summaries'])=={'quick','standard','detailed'}
+    assert all(100<len(text)<=4096 for text in audio['summaries'].values())
+    for item in bank+l['examples']:
+        assert item['topicId']==tid
+        assert len(item['options'])==len(set(item['options']))==5
+        assert item['steps'] and item['formula'] and item['reviewStatus']=='demo-math-checked'
+        actual=Fraction(item['options'][item['answer']])
+        expected=verified(item['verification'])
+        assert actual==expected,(item['id'],actual,expected)
+    new_questions+=bank;new_examples+=l['examples']
+all_items=questions+lesson['examples']+new_questions+new_examples
+assert len({q['id'] for q in all_items})==len(all_items)
+assert len({q['text'] for q in all_items})==len(all_items)
+assert len(package['lessons'])==7 and len(new_questions)==70 and len(new_examples)==14
+print('Sayılar: 7 alt konu, 70 test sorusu ve 14 ayrı örnek; bağımsız işlem, küme, taban, bölme ve ses metni kontrolleri geçti.')

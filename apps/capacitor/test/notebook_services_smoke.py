@@ -104,7 +104,12 @@ with sync_playwright() as p:
  assert abs(player.evaluate('(e)=>e.currentTime')-0.75)<0.1
  assert any(entry[0]=='speech' for entry in requests)
  assert 'AI sağlayıcısına' not in json.dumps(requests[-1][1],ensure_ascii=False)
- remote.close();passed.append('Taklit iki saniyelik ses dosyasıyla gerçek medya süresi, sarma ve hız kontrolü')
+ r.evaluate("AcademiMath.openTopic('sayilar-bolme','audio')");assert r.locator('#summaryAudioPlayer').count()==0
+ r.locator('[data-math-action="server-speech"]').click();r.locator('#summaryAudioPlayer').wait_for()
+ assert requests[-1][1]['topic_id']=='sayilar-bolme'
+ assert 'Bölme — seslendirme metni' in r.locator('#mathTopicPanel').inner_text()
+ r.evaluate("AcademiMath.openTopic('temel','audio')");assert r.locator('#summaryAudioPlayer').count()==0
+ remote.close();passed.append('Taklit iki saniyelik ses dosyasıyla medya süresi, sarma, hız ve konular arasında ses kaydının karışmaması')
 
  actual=browser.new_context();actual.add_init_script("window.AkademiConfig={apiBase:'http://127.0.0.1:8010'}")
  a=actual.new_page();a.on('pageerror',lambda e:errors.append(str(e)));start(a);tab(a,'ai')

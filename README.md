@@ -6,7 +6,9 @@ GitHub Pages yayını ve canlı HTTP kontrolleri 15 Ekim 2026 tarihinde başarı
 
 Öncelik **web tarayıcısında mobil ekran görünümüyle geliştirme**. Ortak uygulama Capacitor + HTML/CSS/JavaScript ile `apps/capacitor` altında hazırlanıyor; Android ve iOS paketlerine sonra geçilecek. Flutter gerekmiyor.
 
-KPSS Lisans → Dersler → Matematik → **Temel Kavramlar** içinde ilk çalışma paketi hazır: yedi konu sekmesi, üç özet, formüller/çözümlü örnekler ve 10/20/30 soruluk testler. Yanlış/çözülmemiş filtreleri ve yarım teste dönüş desteklenir. Anlatım/özetlerde renkli el yazısı kartları ve kaydırmasız bölüm menüsü vardır. Destekli cihazda Türkçe sesli özet kullanılabilir. İçerik uzman incelemesi bekler; gerçek AI/üretilmiş ses için [sunucu kurulum rehberi](services/api/README.md) hazırdır, anahtar ve yayın bağlantısı beklenir.
+KPSS Lisans → Dersler → Matematik içinde **Temel Kavramlar ve Sayıların yedi alt konusu** çalışılabilir. Renkli el yazısı kartları, üç özet seviyesi, formüller, çözümlü örnekler ve toplam **100 test sorusu** bulunur. Temel Kavramlar 30; Sayıların alt konuları 10’ar soru içerir. Sayılar ana ekranından 70 soruluk havuzla 10/20/30 soruluk karma test hazırlanır. Yanlış defterinden konuya dönülebilir ve soru yeniden çözülebilir; sonradan doğru çözülünce soru listeden çıkar, geçmiş korunur.
+
+İlerleme/tema ve yarım testler cihazda saklanır; hesaplar arasında bulut eşitlemesi yoktur. Destekli cihazda Türkçe sesli özet kullanılabilir. İçerikler kodla kontrol edilmiş çalışma taslaklarıdır, uzman incelemesi bekler. Gerçek AI/üretilmiş ses için [sunucu kurulum rehberi](services/api/README.md) hazırdır; sunucu anahtarı ve yayın bağlantısı gerekir.
 
 - [Web mobil önizleme ve GitHub Pages hazırlığı](apps/capacitor/WEB_PREVIEW.md)
 - [Mobil uygulama, tasarım ve derleme](apps/capacitor/README.md)

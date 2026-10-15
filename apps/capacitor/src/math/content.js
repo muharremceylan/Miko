@@ -1,0 +1,15 @@
+import temel from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/topics/temel.json' with { type: 'json' };
+import temelAudio from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/topics/temel-audio.json' with { type: 'json' };
+import sayilar from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/topics/sayilar.json' with { type: 'json' };
+import bank0 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/temel.json' with { type: 'json' };
+import bank1 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-sayi-kumeleri.json' with { type: 'json' };
+import bank2 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-dogal-sayilar.json' with { type: 'json' };
+import bank3 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-tam-sayilar.json' with { type: 'json' };
+import bank4 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-faktoriyel.json' with { type: 'json' };
+import bank5 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-sayma-sistemleri.json' with { type: 'json' };
+import bank6 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-bolme.json' with { type: 'json' };
+import bank7 from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/sayilar-bolunebilme-kurallari.json' with { type: 'json' };
+export const lessons = {temel, ...sayilar.lessons};
+export const audios = {temel:temelAudio, ...sayilar.audio};
+export const bank = [...bank0, ...bank1, ...bank2, ...bank3, ...bank4, ...bank5, ...bank6, ...bank7];
+export const contentReady = id => lessons[id]?.learningReady === true;

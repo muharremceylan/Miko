@@ -1,0 +1,288 @@
+[
+  {
+    "id": "sayilar-dogal-sayilar-01",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Kolay",
+    "text": "İlk 15 pozitif tam sayının toplamı kaçtır?",
+    "options": [
+      "118",
+      "119",
+      "120",
+      "121",
+      "122"
+    ],
+    "answer": 2,
+    "steps": [
+      "1 + 2 + … + 15 toplamını yaz.",
+      "15 × 16 ÷ 2 = 120."
+    ],
+    "formula": "1 + … + n = n(n + 1)/2.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "15*16/2"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-02",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Kolay",
+    "text": "0 ile 24 arasında, iki uç dahil, kaç doğal sayı vardır?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "23"
+    ],
+    "answer": 1,
+    "steps": [
+      "0 da doğal sayıdır.",
+      "24 − 0 + 1 = 25."
+    ],
+    "formula": "İki uç dahilse son − ilk + 1.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        0,
+        24,
+        "True"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-03",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Kolay",
+    "text": "8’den 18’e kadar olan doğal sayıların toplamı kaçtır?",
+    "options": [
+      "143",
+      "144",
+      "145",
+      "141",
+      "142"
+    ],
+    "answer": 0,
+    "steps": [
+      "Terim sayısı 18 − 8 + 1 = 11.",
+      "Ortalama (8 + 18)/2 = 13; toplam 11 × 13 = 143."
+    ],
+    "formula": "Eşit aralıklı dizi toplamı = terim sayısı × (ilk + son)/2.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "11*(8+18)/2"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-04",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "İlk 9 pozitif çift tam sayının toplamı kaçtır?",
+    "options": [
+      "91",
+      "92",
+      "88",
+      "89",
+      "90"
+    ],
+    "answer": 4,
+    "steps": [
+      "2 + 4 + … + 18 = 2(1 + … + 9).",
+      "2 × 9 × 10 / 2 = 90."
+    ],
+    "formula": "İlk n pozitif çift sayının toplamı n(n + 1).",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "9*10"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-05",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "İlk 11 pozitif tek tam sayının toplamı kaçtır?",
+    "options": [
+      "123",
+      "119",
+      "120",
+      "121",
+      "122"
+    ],
+    "answer": 3,
+    "steps": [
+      "1 + 3 + … + 21 toplamında 11 terim vardır.",
+      "İlk n pozitif tek sayının toplamı n²: 11² = 121."
+    ],
+    "formula": "1 + 3 + … + (2n − 1) = n².",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "11**2"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-06",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "1 ≤ x ≤ 50 koşulunu sağlayan 4’ün katı kaç doğal sayı vardır?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "answer": 2,
+    "steps": [
+      "4, 8, …, 48 uygundur.",
+      "48 / 4 = 12 kat vardır."
+    ],
+    "formula": "Pozitif katları, en büyük uygun k değerinden say.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        1,
+        50,
+        "x % 4 == 0"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-07",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "Ardışık üç doğal sayının toplamı 96 ise ortadaki sayı kaçtır?",
+    "options": [
+      "31",
+      "32",
+      "33",
+      "34",
+      "30"
+    ],
+    "answer": 1,
+    "steps": [
+      "Sayıları x − 1, x, x + 1 seç.",
+      "3x = 96; x = 32."
+    ],
+    "formula": "Üç ardışık sayının ortancası toplamın üçte biridir.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "96/3"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-08",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "a ve b doğal sayılar, a + b = 17 olduğuna göre a·b en çok kaçtır?",
+    "options": [
+      "72",
+      "73",
+      "74",
+      "70",
+      "71"
+    ],
+    "answer": 0,
+    "steps": [
+      "Toplam sabitken sayıları birbirine yaklaştır.",
+      "8 ve 9 en yakın doğal sayılardır; 8 × 9 = 72."
+    ],
+    "formula": "Toplamı sabit negatif olmayan iki sayının çarpımı yakın değerlerde büyür.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "expression",
+      "args": "8*9"
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-09",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "İki basamaklı, rakamları farklı kaç doğal sayı vardır?",
+    "options": [
+      "82",
+      "83",
+      "79",
+      "80",
+      "81"
+    ],
+    "answer": 4,
+    "steps": [
+      "Onlar basamağı için 1–9 arasında 9 seçim var.",
+      "Birler basamağında onlar rakamı hariç 9 seçim: 9 × 9 = 81."
+    ],
+    "formula": "Başta sıfır olmaz; farklılık koşulunu her basamakta kontrol et.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        10,
+        99,
+        "x // 10 != x % 10"
+      ]
+    }
+  },
+  {
+    "id": "sayilar-dogal-sayilar-10",
+    "version": 1,
+    "topicId": "sayilar-dogal-sayilar",
+    "skill": "Doğal Sayılar",
+    "difficulty": "Orta",
+    "text": "3 ≤ x ≤ 25 aralığındaki 3’ün katı olmayan doğal sayıların sayısı kaçtır?",
+    "options": [
+      "17",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "answer": 3,
+    "steps": [
+      "Toplam 25 − 3 + 1 = 23 sayı var.",
+      "3, 6, …, 24 olmak üzere 8 kat çıkar: 23 − 8 = 15."
+    ],
+    "formula": "İstenen sayı adedi = tümü − istenmeyenler.",
+    "alternative": null,
+    "reviewStatus": "demo-math-checked",
+    "verification": {
+      "kind": "count",
+      "args": [
+        3,
+        25,
+        "x % 3 != 0"
+      ]
+    }
+  }
+]

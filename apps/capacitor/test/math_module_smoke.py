@@ -117,7 +117,7 @@ with sync_playwright() as p:
  for node in curriculum['topics']:
   topic(page,node['id']);assert page.locator('#mathTopicTitle').inner_text()==node['title']
   assert page.get_by_role('tab').count()==7
-  if node['id']!='temel':assert 'hazırlanıyor' in page.locator('#mathTopicPanel').inner_text()
+  if node['id'] not in ['temel','sayilar'] and not node['id'].startswith('sayilar-'):assert 'hazırlanıyor' in page.locator('#mathTopicPanel').inner_text()
  passed.append('Tamamlama %3; son konu/sekme, klavye sekmeleri ve 39 ana/alt konu ekranı çalışır')
 
  topic(page)

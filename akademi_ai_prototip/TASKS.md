@@ -1,5 +1,22 @@
 # AKADEMİ AI — Önceliklendirilmiş Görevler
 
+## Sayılar ve yanlış defteri — tamamlanan yeni adım
+
+- [x] M08a — Sayıların yedi alt konusuna renkli anlatım, üç özet, formüller ve konuya özel hatırlama kartları ekle.
+- [x] M08b — 70 özgün beş seçenekli test sorusu ve 14 ayrı çözümlü örnek ekle; sonuçları bağımsız kodla kontrol et.
+- [x] M08c — Sayılar ana ekranına alt konu rotası ve 10/20/30 karma test ekle; 10 soruluk alt havuz sınırını açık göster.
+- [x] W01 — Bitmiş testlerden soru/sürüm bazlı yanlış defteri; konu filtresi, anlatıma dönüş ve aynı sürümle tekrar çözme ekle.
+- [x] W02 — Doğru cevapta listeden çıkarma, boşta eski yanlışı koruma, geçmişi koruma ve yarım test engelini doğrula.
+- [x] W03 — Değerlendirme testi bitmeden yeni cevapları defterde gösterme; eski demo toplamlarından geçmiş türetme.
+- [x] S01 — Yeni konuların seslendirme metinlerini cihaz/sunucu yoluna bağla; ses kayıtlarını konu ve özet düzeyine göre ayır.
+- [ ] P1 — Yeni konu taslakları ve soru zorluklarını matematik öğretmenine incelet; uzman onayından sonra yayın durumunu değiştir.
+- [ ] P1 — Her Sayılar alt konusunu 20/30 soruluk özgün havuza ve daha fazla zor örneğe genişlet.
+- [ ] P1 — EBOB–EKOK → Asal Çarpanlara Ayırma → Denklemler içerik paketleriyle devam et.
+- [ ] P2 — Yanlış defterini diğer dersler ve kullanıcı hesabına bağlı kalıcı backend ile genişlet; tekrar takvimi ekle.
+
+Aşağıdaki önceki aşama listeleri durum geçmişidir. M08 tüm müfredatın genişlemesini kapsadığı için henüz kapanmaz; T15’in web üzerindeki ilk Matematik akışı tamamlanmıştır, üretim hesabı/sunucu kapsamı bekler.
+
+
 Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/engel, P1 MVP, P2 genişleme, P3 ileri özellik anlamındadır. Onaylanmamış örnek içerik üretim içeriği değildir. İlk inceleme sonrasında kullanıcı düzeltmeleri yetkilendirdi; v0.2 kapsamında aşağıdaki görevler uygulandı.
 
 ## Renkli defter ve AI/ses — güncel çalışma

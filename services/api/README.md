@@ -48,3 +48,7 @@ Ortam değişkenleri barındırma hizmetinden veya güvenli yerel ortamdan enjek
 - Postgres, kullanıcı hesabı, kalıcı kuyruk ve medya deposu bu pilotta kurulmadı. Gelecekte FastAPI/PostgreSQL mimarisine geçerken bu modül sağlayıcı adaptörü olarak korunabilir.
 
 Resmî sağlayıcı şemaları bu geliştirmede [Responses parametreleri](https://github.com/openai/openai-python/blob/main/src/openai/types/responses/response_create_params.py) ve [Speech parametreleri](https://github.com/openai/openai-python/blob/main/src/openai/types/audio/speech_create_params.py) üzerinden incelendi. Gerçek model/hesap bağlantısı güvenli yapılandırmadan sonra ayrıca test edilmelidir.
+
+## Sayılar ses kataloğu
+
+Temel Kavramlar dışında Sayıların yedi alt konusu için de `quick`, `standard`, `detailed` ses metinleri sunucu kataloğundadır. İstemci serbest seslendirme metni göndermez; yalnız konu kimliği ve özet seviyesi gönderir. Önbellek anahtarı konu+sürüm+seviye olduğundan farklı konular aynı sesi paylaşmaz. `sayilar` ana konu ekranı bir çalışma rotasıdır; kendi ses kaydı yoktur. İçerik `topics/sayilar.json` içindedir. Sağlayıcı taklitleriyle konu ayrımı test edilmiştir; gerçek OpenAI ses üretimi hâlâ anahtar ve yayın hesabı bekler.

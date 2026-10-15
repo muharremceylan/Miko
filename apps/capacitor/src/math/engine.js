@@ -1,5 +1,5 @@
 import curriculum from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/curriculum.json' with { type: 'json' };
-import bank from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/questions/temel.json' with { type: 'json' };
+import { bank, contentReady } from './content.js';
 
 export { curriculum, bank };
 export const STORAGE_KEY = 'akademi_math_v1_kpss_lisans';
@@ -18,7 +18,7 @@ export function validQuestion(q) {
 export function validState(s) {
   if (!object(s) || s.version !== 1 || s.curriculumVersion !== curriculum.version || !object(s.topics) ||
       !(s.lastTopic === null || nodes.has(s.lastTopic)) || !Array.isArray(s.attempts)) return false;
-  if (!Object.entries(s.topics).every(([id, p]) => nodes.has(id) && object(p) && typeof p.completed === 'boolean' && (!p.completed || id === 'temel') &&
+  if (!Object.entries(s.topics).every(([id, p]) => nodes.has(id) && object(p) && typeof p.completed === 'boolean' && (!p.completed || contentReady(id)) &&
       tabs.includes(p.tab) && object(p.scroll) && Object.entries(p.scroll).every(([tab, y]) => tabs.includes(tab) && Number.isFinite(y) && y >= 0))) return false;
   if (!s.attempts.every(a => object(a) && typeof a.id === 'string' && nodes.has(a.topicId) && ['learn','assessment'].includes(a.mode) &&
       time(a.startedAt) && (a.finishedAt === null || (time(a.finishedAt) && a.finishedAt >= a.startedAt)) &&
@@ -39,9 +39,16 @@ export function latestAnswers(attempts) {
   for (const attempt of attempts) attempt.answers.forEach((answer, i) => {
     if (!answer || answer.choice === null) return;
     const q = attempt.questions[i], key = q.id + ':' + q.version;
-    if (!latest.has(key) || latest.get(key).at <= answer.at) latest.set(key, { at: answer.at, correct: answer.choice === q.answer });
+    if (!latest.has(key) || latest.get(key).at <= answer.at) latest.set(key, { at: answer.at, correct: answer.choice === q.answer, question:q, choice:answer.choice, attemptId:attempt.id });
   });
   return latest;
+}
+// Defter yalnız biten testlerin cevaplarını gösterir; değerlendirme sırasında çözüm açılmaz.
+export function mistakes(attempts, topicId = null) {
+  const ids = topicId ? descendantIds(topicId) : null;
+  return [...latestAnswers(attempts.filter(a => a.finishedAt !== null)).values()]
+    .filter(v => !v.correct && (!ids || ids.includes(v.question.topicId)))
+    .sort((a,b) => b.at - a.at);
 }
 export function eligibleQuestions(topicId, filter, attempts) {
   const ids = descendantIds(topicId), latest = latestAnswers(attempts);
@@ -78,13 +85,22 @@ export class MathProgress {
     p.tab = tab; p.scroll[tab] = Math.max(0, y); this.state.topics[id] = p; this.state.lastTopic = id; this.save();
   }
   complete(id, value) {
-    if (id !== 'temel' || typeof value !== 'boolean') return; // Only the first full learning package is available.
+    if (!contentReady(id) || typeof value !== 'boolean') return;
     this.touch(id, this.state.topics[id]?.tab ?? 'lesson'); this.state.topics[id].completed = value; this.save();
   }
   start(topicId, filter, count, mode = 'learn') {
     if (!['learn','assessment'].includes(mode)) throw new Error('invalid-mode');
     if (this.active()) throw new Error('active-attempt');
     const questions = selectQuestions(eligibleQuestions(topicId, filter, this.state.attempts), count);
+    return this.createAttempt(topicId, questions, mode);
+  }
+  review(questionId, version) {
+    if(this.active()) throw new Error('active-attempt');
+    const item = mistakes(this.state.attempts).find(v => v.question.id === questionId && v.question.version === version);
+    if(!item) throw new Error('missing-mistake');
+    return this.createAttempt(item.question.topicId, [structuredClone(item.question)], 'learn');
+  }
+  createAttempt(topicId, questions, mode) {
     const a = { id: globalThis.crypto?.randomUUID?.() ?? Date.now() + '-' + Math.random().toString(36).slice(2),
       topicId, mode, questions, answers: questions.map(() => null), current: 0, startedAt: Date.now(), finishedAt: null };
     this.state.attempts.push(a); this.state.activeAttempt = a.id; this.save(); return a;

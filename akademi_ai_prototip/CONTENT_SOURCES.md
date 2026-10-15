@@ -46,3 +46,9 @@ Aritmetik tutarlılık resmî doğruluk veya uzman onayı değildir. Görseldeki
 Lisans, Ön Lisans ve Ortaöğretim ayrı yerel ilerleme kayıtları kullanır. Ön Lisans/Ortaöğretim henüz düzeye özel müfredat içermez; ortak demo içeriği açıkça etiketlenir. Eski ortak istatistiklerin Lisans alanında korunması yalnız veri kaybını önleyen bir demo uyumluluk kararıdır.
 
 Geometri ve Güncel Bilgiler yalnız ders alanı/hazırlık ekranı olarak eklendi. Anlatım/özet/soru/ses içerikleri yoktur. Güncel Bilgiler yayınına kaynak, olay tarihi ve son kontrol tarihi eklenmelidir. Üç düzey için resmî kapsam doğrulanmadan tam müfredat iddiası yapılmamalıdır.
+
+## Sayılar özgün çalışma taslakları — 15 Ekim 2026
+
+Kullanıcının verdiği alt konu adlarına göre yedi konu için anlatım, üç özet, hatırlama kartı, seslendirme metni, 70 beş seçenekli test sorusu ve 14 ayrı çözümlü örnek oluşturuldu. Metinler ÖSYM veya yayıncı sorularından kopyalanmadı; resmî çıkmış soru, resmî sınav dağılımı veya uzman onaylı içerik olarak sunulmaz. Tanım tercihi: doğal sayılar sıfırı içerir; sorudaki tanım önceliklidir.
+
+`python scripts/content-validation/validate_math.py` seçenek benzersizliğini, konu/kimlik/sürüm bağlantılarını ve cevapları bağımsız aritmetik, sonlu küme taraması, taban denklemi, faktöriyel ve Öklid bölmesiyle kontrol eder. Kontrol tanımları her yeni sorunun `verification` alanındadır. Bu kontroller öğretim yeterliliği, zorluk kalibrasyonu veya uzman incelemesi değildir. Sayılar alt konularında 20/30 soruluk tam havuzlar ve daha fazla zor örnek sonraki görevlerdir.

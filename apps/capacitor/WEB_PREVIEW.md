@@ -1,5 +1,12 @@
 # Web üzerinde mobil görünümle geliştirme
 
+## Güncel çalışma yolu — Sayılar ve yanlış defteri
+
+**KPSS → Lisans → Dersler → Matematik → Sayılar** içinde yedi alt konu açılır. Her biri renkli anlatım, üç özet, formüller, iki örnek, 10 soru ve seslendirme metni içerir. Sayılar ana ekranındaki **Test Çöz** bölümü 70 soruluk havuzdan 10/20/30 soru seçer. Temel Kavramlarla birlikte 100 test sorusu ve 17 ayrı örnek vardır; uzman onayı beklenir.
+
+Matematik ana ekranındaki **Yanlış defterini aç** düğmesi bitmiş testlerin son yanlışlarını gösterir. Konuya dönüş ve aynı soruyu tekrar çözme vardır; doğru cevapta listeden çıkar. Tamamlama, eski denemeler ve tema korunur. Yeni tarayıcı doğrulaması: `python test/numbers_mistakes_smoke.py`. Başka düzeylerin içerik ve kayıtlarına bu defterden erişilmez. Android/iOS fiziksel cihaz ve gerçek AI/ses sağlayıcısı bu adımda test edilmedi.
+
+
 ## Canlı yayın — doğrulandı
 
 Mobil web önizlemesi: **https://muharremceylan.github.io/Miko/**
