@@ -1,5 +1,11 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Matematik içerik ve ekran gereksinimleri — değerlendirme
+
+15 Ekim 2026: Kullanıcının ayrıntılı anlatım, üç özet seviyesi, beş seçenekli çözümlü örnekler, altı test seçeneği, sesli anlatım ve yedi konu sekmesi talebi [MATH_REQUIREMENTS.md](MATH_REQUIREMENTS.md) içinde değerlendirildi. Mevcut kodla farklar, içerik alanları, ekran akışı, ilerleme hesabı, soru geçmişi, kalite kontrolleri ve uygulama sırası tanımlandı. Bu adım dokümantasyon değerlendirmesidir; yeni ekranlar, 10/20/30 testleri veya yeni içerikler uygulanmış sayılmaz.
+
+Mevcut katalogda 17 ana konu ve 22 alt konu, toplam 39 içerik düğümü vardır. Test kapsamı için 34 son düzey konu bulunur. Her birinde 30 benzersiz soru gerekecekse en az 1.020 test sorusu hazırlanmalıdır. İlk uygulama hedefi ortak Matematik ekranı ve Temel Kavramlar üzerinde anlatım→özet→formül→örnek→test→sonuç akışıdır. İlerleme, konu tamamlama üzerinden; başarı oranı, cevaplanan sorular üzerinden ayrı hesaplanır. Gerçek medya/AI hizmeti olmadan çalışmayan kontroller eklenmez. Eski toplam sayaçlardan geçmiş yanlış sorular türetilmez.
+
 ## KPSS düzeyleri ve Lisans Matematik — 15 Ekim 2026
 
 KPSS seçildikten sonra Lisans, Ön Lisans veya Ortaöğretim seçilir. Düzey seçmeden ders/soru açılmaz. Tercih ve tema cihazda korunur. Her düzeyin toplam/günlük/konusal istatistik kaydı ayrıdır; önceki ortak demo kaydı `akademi_stats_v1` Lisans alanında korunur. Bu eşleme, eski cevapların hangi gerçek sınav düzeyinde verildiğini kanıtlamaz. Ön Lisans ve Ortaöğretim şimdilik açıkça etiketlenmiş ortak dört örnek konu/on soru sunar; düzeye özel müfredat hazırlanmadı.
