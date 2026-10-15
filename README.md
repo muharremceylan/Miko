@@ -14,6 +14,7 @@ Yeni **Kaynak kütüphanesi**, anlatım/soru çalışması için altı aday bağ
 
 **PDF ders notları:** Kullanıcının Türkçe/Tarih taramalarından hazırlanan iki ilk konuya **KPSS → Lisans → Dersler → PDF ders notlarını aç** yolundan erişilir. Renkli anlatım, üç özet ve dört özgün çözümlü örnek içerir; kaynak sayfaları belirtilir. 373 sayfaya OCR uygulanması bütün içeriğin onaylandığı anlamına gelmez. Vatandaşlık/Coğrafya dosyaları aktarım boyutu sınırından dolayı henüz incelenemedi. [PDF inceleme raporu](akademi_ai_prototip/PDF_REVIEW.md).
 
+- [iPhone ile Telegram PDF botu kurulumu](TELEGRAM_IOS_SETUP.md) — kod hazır; bot hesabı ve sürekli açık sunucu bağlantısı bekliyor.
 - [Web mobil önizleme ve GitHub Pages hazırlığı](apps/capacitor/WEB_PREVIEW.md)
 - [Mobil uygulama, tasarım ve derleme](apps/capacitor/README.md)
 - [Proje planı ve durum geçmişi](akademi_ai_prototip/PROJECT_PLAN.md)

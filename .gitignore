@@ -5,3 +5,9 @@ __pycache__/
 .env.*
 !.env.example
 .venv/
+
+# Telegram bot oturumu ve özel iş dosyaları
+services/telegram/pairing-link.txt
+services/telegram/data/
+*.session
+*.session-*

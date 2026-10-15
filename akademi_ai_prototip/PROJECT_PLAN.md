@@ -1,5 +1,9 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Telegram PDF aktarımı — 15 Ekim 2026
+
+Bot hesabıyla MTProto kullanan ayrı `services/telegram` servisi hazırlandı. Özel sohbet sahibi bir kez eşleştirilir; PDF indirme/bölme, Türkçe OCR, kalıcı iş kaydı, yeniden gönderim, saklama ve silme akışı uygulandı. İçerik inceleme taslağıdır, uygulamaya otomatik aktarılmaz. GitHub yalnız kod/test içindir; kullanıcı henüz bot oluşturmadı ve sunucu hesabı yok. Gerçek Telegram bağlantısı ve canlı sunucu pilotu tamamlanmadı. Kurulum: [iPhone rehberi](../TELEGRAM_IOS_SETUP.md), [teknik kurulum](../services/telegram/README.md).
+
 ## Kullanıcının PDF ders notları — 15 Ekim 2026
 
 Türkçe (109 sayfa) ve Tarih (264 sayfa) el yazısı taramalarına Türkçe OCR uygulandı. Ham OCR, doğrulanmış ders içeriği sayılmaz. İlk sayfalar ayrıntılı; ilerleyen bölümler küçük görsellerle örnekleme yoluyla incelendi. Vatandaşlık ve Coğrafya dosyaları 32 MiB aktarım sınırını aştığından açılamadı; küçük parçalar gerekiyor.

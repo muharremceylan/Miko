@@ -1,5 +1,18 @@
 # AKADEMİ AI — Önceliklendirilmiş Görevler
 
+## Telegram PDF botu — güncel görevler
+
+- [x] Bot hesabıyla büyük PDF aktarım mimarisi, tek sahipli özel sohbet eşleşmesi.
+- [x] Dosya boyutu/kota/sayfa sınırları, ayrı süreçte bölme ve Türkçe OCR taslak hattı.
+- [x] Kalıcı kayıt, hata sonrası devam, yeniden gönderme, saklama/silme ve testler.
+- [x] Docker/Compose, bağımsız GitHub Actions kontrolü ve Türkçe iPhone kurulum rehberi.
+- [ ] Kullanıcı BotFather ile botu oluştursun; API ID/Hash ve token yalnız sunucuda tanımlansın.
+- [ ] Sürekli açık, kalıcı diskli sunucu seçilsin ve özel eşleştirme yapılsın.
+- [ ] Gerçek küçük PDF ve 32 MiB üstü izinli PDF ile Telegram uçtan uca pilotu tamamlansın.
+- [ ] Vatandaşlık/Coğrafya PDF’leri aktarıldıktan sonra kaynak/izin, OCR doğruluğu ve konu eşlemeleri incelensin.
+
+[iPhone kurulum adımları](../TELEGRAM_IOS_SETUP.md). Botun hazır kodu canlı hizmet olduğu anlamına gelmez.
+
 ## PDF ders kaynakları — ilk adım
 
 - [x] P01 — Dört dosyada aktarım denemesi yap; iki 32 MiB sınırı engelini açık kaydet.

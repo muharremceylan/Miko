@@ -1,0 +1,34 @@
+name: Telegram PDF botu kontrolleri
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'services/telegram/**'
+      - '.dockerignore'
+      - '.github/workflows/telegram-bot.yml'
+  pull_request:
+    paths:
+      - 'services/telegram/**'
+      - '.dockerignore'
+      - '.github/workflows/telegram-bot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  pdf_bot_checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Kaynakları al
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Bot ve Türkçe OCR imajını üret
+        run: docker build -t akademi-telegram:test -f services/telegram/Dockerfile .
+      - name: Gerçek hesap veya ağ kullanmadan PDF ve sahiplik testleri
+        run: |
+          docker run --rm --network none --read-only --tmpfs /tmp:rw,size=256m \
+            akademi-telegram:test python -m unittest services.telegram.test_telegram -v

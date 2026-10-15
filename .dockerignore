@@ -2,9 +2,15 @@
 !services/
 !services/api/
 !services/api/**
+!services/telegram/
+!services/telegram/**
 !akademi_ai_prototip/
 !akademi_ai_prototip/content/
 !akademi_ai_prototip/content/**
 **/.env*
 **/__pycache__/
 **/*.pyc
+
+**/pairing-link.txt
+**/data/
+**/*.session*
