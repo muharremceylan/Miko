@@ -21,7 +21,9 @@ Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/en
 - [x] GitHub Pages iş akışını ve kullanıcı için yayın durumunu hazırla.
 - [ ] Ortam ayarlarında GitHub API ve yayın kontrol adreslerinin ağ izinlerini uygula.
 - [ ] GitHub depo görünürlüğü, Pages planı ve yazma/yayın erişimini mevcut kimlik doğrulamayla kontrol et.
-- [ ] Kullanıcı işini koruyarak kaynakları depoya yükle; Pages'i etkinleştir ve canlı mobil önizlemeyi doğrula.
+- [x] Kaynakları `main` dalına gönder; origin/main ile ilk commit `25c22e1` eşleşti.
+- [x] GitHub iş akışını kontrol et: ilk deneme Pages yapılandırmasını bulamadı.
+- [ ] GitHub Settings → Pages → Source: GitHub Actions seç; yayını yeniden çalıştır ve canlı mobil önizlemeyi doğrula.
 - [ ] Web üzerinde istenen tasarım/işlevleri tamamladıktan sonra Android APK'sını yeniden derle; iOS paketini macOS/Xcode'da hazırla.
 
 Önceki Android APK üretimi geçerlidir, fakat yeni web önizlemesi henüz herkese açık bir adreste yayınlanmış değildir.

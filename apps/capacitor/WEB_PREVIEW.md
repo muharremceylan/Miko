@@ -18,9 +18,9 @@ Yerel geliştirme için `apps/capacitor` içinde `npm start` çalışır. Bu bul
 
 Hedef hesap/depo kullanıcı bilgisinden `muharremceylan/Miko` olarak belirlendi. Kendi alan adınız gerekmez. GitHub Pages etkinleştirilirse beklenen proje adresi `https://muharremceylan.github.io/Miko/` olur. **Bu adres henüz doğrulanmış veya yayına alınmış değildir.**
 
-`.github/workflows/web-preview.yml` hazırlandı. Ana dala yüklenip Pages kaynağı **GitHub Actions** olarak seçilirse iş akışı kilitli npm bağımlılıklarını kurar, köprü testlerini çalıştırır, mobil web önizlemesini üretir ve Pages'e dağıtır. Android/iOS/Flutter derlemez. Eylemler resmî depolardan doğrulanan commit'lere sabitlenmiştir. Bu GitHub iş akışı henüz GitHub üzerinde çalıştırılmadı.
+`.github/workflows/web-preview.yml` hazırlandı. Ana dala yüklenip Pages kaynağı **GitHub Actions** olarak seçilirse iş akışı kilitli npm bağımlılıklarını kurar, köprü testlerini çalıştırır, mobil web önizlemesini üretir ve Pages'e dağıtır. Android/iOS/Flutter derlemez. Eylemler resmî depolardan doğrulanan commit'lere sabitlenmiştir. İlk kaynak commit'i `25c22e1334fe4da322fdcd219e7ef54d7b11ffb7` ile `main` dalına gönderildi. GitHub iş akışı çalıştı; `38690903289` numaralı deneme Pages yapılandırmasını bulamadı (`Get Pages site failed / Not Found`). Bu nedenle site henüz yayında kabul edilmez.
 
-Mevcut makinede HTTPS Git okuması başarılı, fakat GitHub ayar API'si `api.github.com` ağ politikasından 403 alıyor. Bu yüzden depo görünürlüğü, Pages uygunluğu ve yazma/yayın izni henüz doğrulanamadı. `api.github.com` ve yayın sonucunu kontrol etmek için `muharremceylan.github.io` ağ izinleri ortam taslağına eklendi; ayarlarda kaydetme/uygulama bekleniyor. Yalnızca taslağa kaydetmek erişimi açmaz. Kullanıcıdan GitHub şifresi veya ham token istenmez.
+Mevcut makinede HTTPS Git okuması başarılı, fakat GitHub ayar API'si `api.github.com` ağ politikasından 403 alıyor. HTTPS Git push başarıyla çalıştı ve GitHub web sayfasından deponun Public olduğu doğrulandı. Pages ayar API'si ise bu makineden erişilemiyor. `api.github.com` ve yayın sonucunu kontrol etmek için `muharremceylan.github.io` ağ izinleri ortam taslağına eklendi; ayarlarda kaydetme/uygulama bekleniyor. Yalnızca taslağa kaydetmek erişimi açmaz. Kullanıcıdan GitHub şifresi veya ham token istenmez.
 
 Ağ ayarı uygulandıktan sonra mevcut kimlik doğrulamayla depo/Pages yetkileri tekrar kontrol edilmelidir. Depo gizliyse herkese açık hale getirilmez; Pages plan uygunluğu veya alternatif yayın kullanıcıyla değerlendirilir. Remote `main` üzerinde mevcut iş varsa korunur; üzerine zorla yazılmaz. Kaynakları yükleme, Pages etkinleştirme, gerçek HTTPS isteği ve tarayıcı kontrolü başarılı olmadan “yayında” denmez.
 
@@ -31,3 +31,7 @@ Ağ ayarı uygulandıktan sonra mevcut kimlik doğrulamayla depo/Pages yetkileri
 - `AKADEMI_TEST_URL` yeni sunucuyu gösterecek şekilde 11 mevcut web regresyon grubu geçti; JavaScript hatası görülmedi.
 - Export edilen tek HTML ve mobil önizlemenin ders/soru akışı HTTP üzerinden doğrulandı; bulut tarayıcısında yerel file:// açılışı yönetici politikasıyla engellendi.
 - Kamera ve ses tarayıcı/cihaz desteğine bağlı. Gerçek AI hâlâ bağlı değil. Android test APK'sı önceki aşamada üretildi; bu web önizleme değişiklikleri için mobil paket yeniden derlenmedi. iOS derlemesi yapılmadı.
+
+## Kalan GitHub ayarı
+
+`https://github.com/muharremceylan/Miko/settings/pages` içinde **Build and deployment → Source → GitHub Actions** seçilmelidir. Ardından `https://github.com/muharremceylan/Miko/actions/runs/38690903289` üzerinden **Re-run all jobs** ile yeniden denenebilir. Bu ayarın bu makineden değiştirilmesi GitHub API ağ engeline takılıyor. Seçim yapıldıktan ve dağıtım tamamlandıktan sonra gerçek HTTPS yayın kontrolü yapılmalıdır.
