@@ -1,5 +1,10 @@
 # Web üzerinde mobil görünümle geliştirme
 
+## PDF ders notları
+
+**KPSS → Lisans → Dersler → PDF ders notlarını aç** veya ana sayfadaki aynı düğme, iki ilk konu taslağını ve dört kaynağın durumunu gösterir. Sözcükte Anlam (Türkçe PDF s. 1–2) ve Asya Hun Devleti (Tarih PDF s. 3) için renkli anlatım, üç özet ve açıklamalı örnekler vardır. Ham PDF/OCR dosyaları yayımlanmaz. Diğer sayfalar tam incelenmedi; Vatandaşlık/Coğrafya için küçük parçalar gerekir. İnceleme: [PDF_REVIEW.md](../../akademi_ai_prototip/PDF_REVIEW.md).
+
+
 ## Kaynaklar ve otomatik alıştırma
 
 **KPSS → Lisans → Dersler → Matematik → Kaynakları incele** aday kaynakları açar. Konu içindeki **Bu konu için ek kaynaklar** düğmesi de kullanılabilir. İçerikler ağ engeli nedeniyle incelenemedi; kaynaklar yalnız bağlantı olarak sunulur.

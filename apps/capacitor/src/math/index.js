@@ -1,3 +1,4 @@
+import { initializePDFNotes } from '../notes/index.js';
 import { lessons, audios, contentReady, bank } from './content.js';
 import { templateCatalog, availableVariants } from './generator.js';
 import { sourceCards, sourceUses } from './sources.js';
@@ -264,3 +265,5 @@ window.addEventListener('pagehide',()=>{stopLearningAudio();services.cancel();ch
 document.addEventListener('visibilitychange',()=>{if(document.hidden){deviceSpeech.stop(false);checkpoint();}});
 window.drawHome();
 window.renderExamState();
+
+initializePDFNotes();

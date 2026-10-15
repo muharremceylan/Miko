@@ -1,5 +1,14 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Kullanıcının PDF ders notları — 15 Ekim 2026
+
+Türkçe (109 sayfa) ve Tarih (264 sayfa) el yazısı taramalarına Türkçe OCR uygulandı. Ham OCR, doğrulanmış ders içeriği sayılmaz. İlk sayfalar ayrıntılı; ilerleyen bölümler küçük görsellerle örnekleme yoluyla incelendi. Vatandaşlık ve Coğrafya dosyaları 32 MiB aktarım sınırını aştığından açılamadı; küçük parçalar gerekiyor.
+
+Lisans alanına ayrı PDF ders notları ekranı eklendi. Kaynak/sayfa eşleşmeli Sözcükte Anlam ve Asya Hun Devleti taslakları; renkli kartlar, tam metin, üç özet ve toplam dört özgün açıklamalı örnek sunar. Uzman incelemesi bekler; test puanı/ilerleme uydurulmaz. Ham PDF ve OCR metinleri web paketine alınmadı. Türkçe tam ders kataloğu ve iki PDF’nin bütün konuları henüz tamamlanmadı.
+
+51 JavaScript testi, PDF notları tarayıcı testinde dört grup, önceki otomatik üretim testinde altı grup ve web yayın paketi testi geçti. 320–768 pikselde iki tema, kaynak durumları, örnek/özetler, geri dönüş ve eski kayıtların korunması doğrulandı. Ayrıntılı inceleme, sayfa örneklemesi, düzeltme notları ve sonraki işler [PDF_REVIEW.md](PDF_REVIEW.md) içinde kayıtlıdır.
+
+
 ## Kaynak kütüphanesi ve otomatik alıştırma — 15 Ekim 2026
 
 Matematik ana ekranı ve konu ekranlarından altı aday kaynağa erişilir; kaynak türü süzülebilir, konuya geri dönülebilir. Katalog kurum/dil/amaç, kapsam, inceleme ve kullanım hakkını ayrı tutar. ÖSYM, OGM, ÖDSGM, EBA, OpenStax ve önceki Kitapseç bağlantısının içerikleri bu ortamda 403 nedeniyle incelenemedi; bağlantılar genel aday başvuru kaynağıdır. Belirli bölüm eşlemesi, lisans doğrulaması veya bu kaynaklarla anlatım zenginleştirmesi yapılmış sayılmaz. Kaynaklardan metin/soru aktarılmadı.

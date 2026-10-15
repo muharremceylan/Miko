@@ -8,3 +8,5 @@
 
 .math-mistake{border:1px solid var(--border);border-radius:16px;padding:16px;margin:16px 0;background:var(--surface);overflow-wrap:anywhere}.math-mistake details{margin:14px 0}.mistake-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}.mistake-actions button{white-space:normal}.math-child .math-status{display:block;text-align:left;margin-top:3px}
 .math-source{padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface-soft);margin:16px 0;overflow-wrap:anywhere}.source-external{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;border:1px solid var(--border);border-radius:12px;color:var(--link);font-weight:700}.source-external:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.pdf-note-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}.pdf-note-tabs button{white-space:normal;min-height:44px}

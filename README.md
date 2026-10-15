@@ -12,6 +12,8 @@ KPSS Lisans → Dersler → Matematik içinde **Temel Kavramlar ve Sayıların y
 
 Yeni **Kaynak kütüphanesi**, anlatım/soru çalışması için altı aday bağlantı sunar; içerik ve hak incelemesi henüz yapılmadı. **Test Çöz → Otomatik alıştırma üret** seçeneği 16 özgün kalıptan 1706 sonlu varyasyonla 10/20/30 soru oluşturur. API anahtarı gerekmez; bu özellik gerçek AI üretimi değildir. Sayısal kontroller, yarım test ve yanlış defteri desteklenir. [Kaynaklar ve otomatik soru üretimi](akademi_ai_prototip/CONTENT_PIPELINE.md).
 
+**PDF ders notları:** Kullanıcının Türkçe/Tarih taramalarından hazırlanan iki ilk konuya **KPSS → Lisans → Dersler → PDF ders notlarını aç** yolundan erişilir. Renkli anlatım, üç özet ve dört özgün çözümlü örnek içerir; kaynak sayfaları belirtilir. 373 sayfaya OCR uygulanması bütün içeriğin onaylandığı anlamına gelmez. Vatandaşlık/Coğrafya dosyaları aktarım boyutu sınırından dolayı henüz incelenemedi. [PDF inceleme raporu](akademi_ai_prototip/PDF_REVIEW.md).
+
 - [Web mobil önizleme ve GitHub Pages hazırlığı](apps/capacitor/WEB_PREVIEW.md)
 - [Mobil uygulama, tasarım ve derleme](apps/capacitor/README.md)
 - [Proje planı ve durum geçmişi](akademi_ai_prototip/PROJECT_PLAN.md)

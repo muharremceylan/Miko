@@ -1,5 +1,22 @@
 # AKADEMİ AI — Önceliklendirilmiş Görevler
 
+## PDF ders kaynakları — ilk adım
+
+- [x] P01 — Dört dosyada aktarım denemesi yap; iki 32 MiB sınırı engelini açık kaydet.
+- [x] P02 — Türkçe/Tarih için sayfa, dosya özeti, metin katmanı ve kaynak/inceleme kayıtlarını oluştur.
+- [x] P03 — 373 sayfaya Türkçe OCR uygula; ham metni özel yerel arama taslağı olarak tut; doğrulanmış içerik diye yayımlama.
+- [x] P04 — İlk sayfaları görsellerden kontrol et; sesteşlik, “ilk düzenli ordu” ve diğer genellemeleri inceleme notlarına al.
+- [x] P05 — İki kaynak/sayfa eşleşmeli özgün ders taslağı, üçer özet ve toplam dört çözümlü örneği mobil not alanına ekle.
+- [x] P06 — Ekran geçişleri, iki tema, mobil genişlikler ve eski test akışlarının korunmasını doğrula.
+- [ ] P07 — Vatandaşlık ve Coğrafya dosyalarını 32 MiB’den küçük parçalardan incele.
+- [ ] P08 — Türkçe tam konu kataloğu ve diğer bölümler için sayfa eşlemesi/özgün ders paketleri hazırla.
+- [ ] P09 — Tarih özel ad/tarih/ilk-tek iddialarını uzman kaynaklarla kontrol edip tam bölüm kataloğunu tamamla.
+- [ ] P10 — Vatandaşlık mevzuatını ve coğrafyanın değişken verilerini güncel resmî kaynaklarla karşılaştır.
+- [ ] P11 — Öğretmen incelemesiyle örnek/test havuzlarını ve konu onay durumlarını genişlet.
+
+İnceleme raporu: [PDF_REVIEW.md](PDF_REVIEW.md). Ham PDF yeniden dağıtımı veya dış AI aktarımı bu adımda yapılmadı.
+
+
 ## Kaynak ve soru üretimi — güncel adım
 
 - [x] K01 — Kurum, URL, dil, kullanım amacı, konu kapsamı, inceleme ve hak alanlarıyla altı aday kaynak kaydet; erişim engelini açık tut.

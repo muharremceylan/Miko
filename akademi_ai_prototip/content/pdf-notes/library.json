@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "pdf-turkce-20261015",
+      "subject": "turkce",
+      "fileName": "Türkçe  Notları.pdf",
+      "pageCount": 109,
+      "status": "scanned-reviewed-sample",
+      "sizeBytes": 31339051,
+      "sha256": "94fffc2856e882297adb84b9a5c27a371df190d807a2943b3c3cc97f619a576c",
+      "textLayer": false,
+      "authorVerified": false,
+      "fullContentReviewed": false,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3
+      ],
+      "ocrStatus": "completed-unreviewed",
+      "usage": {
+        "userProvidedForReference": true,
+        "originalFilePublished": false,
+        "bulkTextPublished": false,
+        "thirdPartyRightsConfirmed": false
+      },
+      "ocrPageCount": 109,
+      "ocrCharacterCount": 48942,
+      "overviewSamplePages": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        109
+      ],
+      "fileMetadataDate": "2021-03-11"
+    },
+    {
+      "id": "pdf-tarih-20261015",
+      "subject": "tarih",
+      "fileName": "Tarih .pdf",
+      "pageCount": 264,
+      "status": "scanned-reviewed-sample",
+      "sizeBytes": 31732469,
+      "sha256": "31cab1202228feba608099ca39afb8fb26132e9be4ffcc522ecd2b76af71b1d0",
+      "textLayer": false,
+      "authorVerified": false,
+      "fullContentReviewed": false,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "ocrStatus": "completed-unreviewed",
+      "usage": {
+        "userProvidedForReference": true,
+        "originalFilePublished": false,
+        "bulkTextPublished": false,
+        "thirdPartyRightsConfirmed": false
+      },
+      "ocrPageCount": 264,
+      "ocrCharacterCount": 89332,
+      "overviewSamplePages": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200,
+        220,
+        240,
+        260,
+        264
+      ],
+      "fileMetadataDate": "2022-01-07"
+    },
+    {
+      "id": "pdf-vatandaslik-20261015",
+      "subject": "vatandaslik",
+      "fileName": "Vatandaşlık.pdf",
+      "pageCount": null,
+      "status": "transfer-size-blocked",
+      "sizeBytes": null,
+      "sha256": null,
+      "textLayer": null,
+      "authorVerified": false,
+      "fullContentReviewed": false,
+      "visuallyReviewedPages": [],
+      "ocrStatus": "not-accessible",
+      "usage": {
+        "userProvidedForReference": true,
+        "originalFilePublished": false,
+        "bulkTextPublished": false,
+        "thirdPartyRightsConfirmed": false
+      }
+    },
+    {
+      "id": "pdf-cografya-20261015",
+      "subject": "cografya",
+      "fileName": "Coğrafyaa .pdf",
+      "pageCount": null,
+      "status": "transfer-size-blocked",
+      "sizeBytes": null,
+      "sha256": null,
+      "textLayer": null,
+      "authorVerified": false,
+      "fullContentReviewed": false,
+      "visuallyReviewedPages": [],
+      "ocrStatus": "not-accessible",
+      "usage": {
+        "userProvidedForReference": true,
+        "originalFilePublished": false,
+        "bulkTextPublished": false,
+        "thirdPartyRightsConfirmed": false
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "id": "turkce-sozcukte-anlam",
+      "topicId": "turkce-sozcukte-anlam",
+      "title": "Sözcükte Anlam: bağlamı yakala",
+      "subject": "turkce",
+      "reviewStatus": "editorial-draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf-turkce-20261015",
+          "pages": [
+            1,
+            2
+          ],
+          "check": "visual-sample"
+        }
+      ],
+      "goals": [
+        "Önce cümle, sonra etiket bağlantısını kendi örneğinle açıklayabilmek.",
+        "Temel → ilk çağrışım bağlantısını kendi örneğinle açıklayabilmek.",
+        "Yan → benzerlikle yeni ad bağlantısını kendi örneğinle açıklayabilmek.",
+        "Mecaz → başka düşünce bağlantısını kendi örneğinle açıklayabilmek.",
+        "Terim → alan + kavram bağlantısını kendi örneğinle açıklayabilmek.",
+        "Yakın olmak, aynı olmak değildir bağlantısını kendi örneğinle açıklayabilmek."
+      ],
+      "prerequisites": "Bu bir ilk çalışma taslağıdır; kaynak sayfaları görsel olarak incelendi, uzman onayı henüz yoktur.",
+      "sections": [
+        {
+          "title": "Anlamı cümle belirler",
+          "paragraphs": [
+            "Bir sözcüğü tek başına etiketlemek yerine cümlede neyi karşıladığına bak. Aynı sözcük farklı cümlelerde farklı anlamlar taşıyabilir. Önce sözcüğün yerine anlamını açıklayan kısa bir ifade koy; cümlenin düşüncesi korunuyor mu dene.",
+            "Soru “hangi anlamda kullanılmıştır?” diyorsa sözlükteki bütün anlamları değil, verilen cümledeki kullanımı seç. Örneğin “Sıcak çorbayı içti.” cümlesinde sıcak bir ısı özelliğidir; “Bizi sıcak karşıladı.” cümlesinde ise samimi bir tutumu anlatır."
+          ]
+        },
+        {
+          "title": "Temel anlam: ilk çağrışım",
+          "paragraphs": [
+            "Temel anlam, sözcüğün tek başına düşünüldüğünde ilk akla gelen yaygın anlamıdır. “Taşı yoldan kaldırdı.” cümlesinde taş, bildiğimiz katı maddeyi karşılar. Soyut bir değerlendirmeye dönüşmemiştir.",
+            "Temel anlamı yalnız “elle tutulabilir olma” ölçütüne bağlama; soyut kavramların da temel anlamı olabilir. Ayrıca sesteş sözcüklerin her biri ayrı anlamıyla değerlendirilir; “sesteşlerin temel anlamı yoktur” genellemesi kullanılmaz."
+          ]
+        },
+        {
+          "title": "Yan anlam: benzerlik bağı sürer",
+          "paragraphs": [
+            "Yan anlamda sözcük, temel anlamıyla şekil, görev veya konum gibi bir bağ kurarak başka bir varlığı adlandırır. “Çantanın gözüne anahtarı koydu.” cümlesinde göz, görme organı değil bir bölmedir; bölme ile açıklık/yer benzerliği kurulmuştur.",
+            "Temel ve yan anlam birçok öğretim kaynağında gerçek anlamın kapsamında ele alınır. Sorunun kullandığı sınıflandırmayı ve bağlamı birlikte değerlendir; her farklı kullanımın otomatik olarak mecaz olduğunu düşünme."
+          ]
+        },
+        {
+          "title": "Mecaz anlam: yeni düşünceye geçiş",
+          "paragraphs": [
+            "Mecaz kullanımda sözcük temel anlamından uzaklaşıp başka bir duygu, düşünce veya durumu anlatır. “Bu söz beni çok yaraladı.” cümlesinde fiziksel bir yara değil, duygusal incinme vardır.",
+            "İpucu: Sözcüğü temel anlamıyla aldığında cümlenin iletisi bozuluyor, yerine soyut bir açıklama koyunca düzeliyorsa mecaz olasılığını düşün. Yine de tek bir anahtar sözcüğe bakmak yerine cümlenin tamamını oku."
+          ]
+        },
+        {
+          "title": "Terim anlam: alanın özel dili",
+          "paragraphs": [
+            "Bir sözcük bilim, sanat, spor veya meslek alanında belirli bir kavramı karşılıyorsa terim anlam taşır. “Üçgenin dış açısını hesapladı.” cümlesinde açı matematikte tanımlı bir kavramdır.",
+            "Alanla ilişkili her sözcük her cümlede terim değildir. “Bu olaya farklı bir açıdan baktı.” ifadesinde geometrik açı ölçümü yapılmaz. Terim sorularında hem ilgili alanı hem özel kavramı belirle."
+          ]
+        },
+        {
+          "title": "Eş ve yakın anlamı bağlamda ayır",
+          "paragraphs": [
+            "Eş anlamlı sözcükler belirli kullanımlarda aynı kavramı karşılayabilir; yakın anlamlılar ise benzer olmakla birlikte ince anlam farkları taşır. “Anlam” ve “mana” birçok bağlamda birbirinin yerine geçebilir. “Bakmak” ile “görmek” ise aynı işlem değildir: bakmak yönelmeyi, görmek algılamayı vurgular.",
+            "Yer değiştirme denemesinde cümlenin anlamı ve doğal kullanımı korunmalıdır. Eş anlamlıları gereksiz yere art arda kullanmak anlatım bozukluğuna yol açabilir; ancak her tekrarın hata olduğunu varsayma, anlatımın amacını değerlendir."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Önce cümle, sonra etiket",
+          "tip": "Sözcüğün burada ne anlattığını söyle.",
+          "example": "Sıcak çorba → ısı; sıcak karşılama → samimiyet.",
+          "warning": "Sözcüğün her kullanımına aynı etiketi verme.",
+          "question": "“Sert sözleri herkesi üzdü.” cümlesinde sert nasıl bir anlam taşır?",
+          "answer": "Fiziksel sertlik değil, kırıcı/ağır bir söyleyişi anlattığı için mecazdır."
+        },
+        {
+          "key": "Temel → ilk çağrışım",
+          "tip": "İlk yaygın anlamı bağlamda dene.",
+          "example": "“Taşı kaldırdı.” → taş maddesi.",
+          "warning": "Sesteş sözcükler hakkında istisnasız bir kural kurma.",
+          "question": "“Bardağa su doldurdu.” cümlesindeki su mecaz mı?",
+          "answer": "Hayır; sözcük bilinen madde anlamındadır."
+        },
+        {
+          "key": "Yan → benzerlikle yeni ad",
+          "tip": "Şekil, görev veya konum bağına bak.",
+          "example": "Çantanın gözü → bölme.",
+          "warning": "Farklı anlam gördüğünde hemen mecaz deme.",
+          "question": "“Masanın ayağı kırıldı.” kullanımında ayak neyi adlandırır?",
+          "answer": "Bir eşyanın taşıyıcı parçasını; vücut bölümüyle görev/şekil bağı kurulan yan anlamı."
+        },
+        {
+          "key": "Mecaz → başka düşünce",
+          "tip": "Fiziksel olay mı, duygu/düşünce mi?",
+          "example": "“Sözleri yaraladı.” → duygusal incinme.",
+          "warning": "Yalnız tek kelimeye bakarak karar verme.",
+          "question": "“Bu haber içimi ısıttı.” ifadesinde gerçek ısı artışı mı anlatılır?",
+          "answer": "Hayır; sevinç ve iyi hissetme anlatılır."
+        },
+        {
+          "key": "Terim → alan + kavram",
+          "tip": "Özel kavramı ve ait olduğu alanı bul.",
+          "example": "Dış açı → geometri.",
+          "warning": "Gündelik kullanım aynı sözcüğü terim olmaktan çıkarabilir.",
+          "question": "“Perde kapandı, oyun bitti.” cümlesindeki perde hangi alana bağlanabilir?",
+          "answer": "Tiyatro bağlamına; alanın özel kullanımı cümleyle birlikte değerlendirilir."
+        },
+        {
+          "key": "Yakın olmak, aynı olmak değildir",
+          "tip": "Yer değiştir, anlam farkını dinle.",
+          "example": "Bakmak yönelme; görmek algılama.",
+          "warning": "Eş anlamlılıkta da bağlamı göz ardı etme.",
+          "question": "“Baktım ama göremedim.” neden çelişki olmak zorunda değil?",
+          "answer": "Yönelmek ile algılamak farklı aşamalardır."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Önce cümle, sonra etiket. Sıcak çorba → ısı; sıcak karşılama → samimiyet.",
+            "Temel → ilk çağrışım. “Taşı kaldırdı.” → taş maddesi.",
+            "Yan → benzerlikle yeni ad. Çantanın gözü → bölme.",
+            "Mecaz → başka düşünce. “Sözleri yaraladı.” → duygusal incinme.",
+            "Terim → alan + kavram. Dış açı → geometri.",
+            "Yakın olmak, aynı olmak değildir. Bakmak yönelme; görmek algılama."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Bir sözcüğü tek başına etiketlemek yerine cümlede neyi karşıladığına bak. Aynı sözcük farklı cümlelerde farklı anlamlar taşıyabilir. Önce sözcüğün yerine anlamını açıklayan kısa bir ifade koy; cümlenin düşüncesi korunuyor mu dene.",
+            "Temel anlam, sözcüğün tek başına düşünüldüğünde ilk akla gelen yaygın anlamıdır. “Taşı yoldan kaldırdı.” cümlesinde taş, bildiğimiz katı maddeyi karşılar. Soyut bir değerlendirmeye dönüşmemiştir.",
+            "Yan anlamda sözcük, temel anlamıyla şekil, görev veya konum gibi bir bağ kurarak başka bir varlığı adlandırır. “Çantanın gözüne anahtarı koydu.” cümlesinde göz, görme organı değil bir bölmedir; bölme ile açıklık/yer benzerliği kurulmuştur.",
+            "Mecaz kullanımda sözcük temel anlamından uzaklaşıp başka bir duygu, düşünce veya durumu anlatır. “Bu söz beni çok yaraladı.” cümlesinde fiziksel bir yara değil, duygusal incinme vardır.",
+            "Bir sözcük bilim, sanat, spor veya meslek alanında belirli bir kavramı karşılıyorsa terim anlam taşır. “Üçgenin dış açısını hesapladı.” cümlesinde açı matematikte tanımlı bir kavramdır.",
+            "Eş anlamlı sözcükler belirli kullanımlarda aynı kavramı karşılayabilir; yakın anlamlılar ise benzer olmakla birlikte ince anlam farkları taşır. “Anlam” ve “mana” birçok bağlamda birbirinin yerine geçebilir. “Bakmak” ile “görmek” ise aynı işlem değildir: bakmak yönelmeyi, görmek algılamayı vurgular."
+          ],
+          "headings": [
+            "Önce cümle, sonra etiket",
+            "Temel → ilk çağrışım",
+            "Yan → benzerlikle yeni ad",
+            "Mecaz → başka düşünce",
+            "Terim → alan + kavram",
+            "Yakın olmak, aynı olmak değildir"
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Bir sözcüğü tek başına etiketlemek yerine cümlede neyi karşıladığına bak. Aynı sözcük farklı cümlelerde farklı anlamlar taşıyabilir. Önce sözcüğün yerine anlamını açıklayan kısa bir ifade koy; cümlenin düşüncesi korunuyor mu dene.",
+            "Soru “hangi anlamda kullanılmıştır?” diyorsa sözlükteki bütün anlamları değil, verilen cümledeki kullanımı seç. Örneğin “Sıcak çorbayı içti.” cümlesinde sıcak bir ısı özelliğidir; “Bizi sıcak karşıladı.” cümlesinde ise samimi bir tutumu anlatır.",
+            "Temel anlam, sözcüğün tek başına düşünüldüğünde ilk akla gelen yaygın anlamıdır. “Taşı yoldan kaldırdı.” cümlesinde taş, bildiğimiz katı maddeyi karşılar. Soyut bir değerlendirmeye dönüşmemiştir.",
+            "Temel anlamı yalnız “elle tutulabilir olma” ölçütüne bağlama; soyut kavramların da temel anlamı olabilir. Ayrıca sesteş sözcüklerin her biri ayrı anlamıyla değerlendirilir; “sesteşlerin temel anlamı yoktur” genellemesi kullanılmaz.",
+            "Yan anlamda sözcük, temel anlamıyla şekil, görev veya konum gibi bir bağ kurarak başka bir varlığı adlandırır. “Çantanın gözüne anahtarı koydu.” cümlesinde göz, görme organı değil bir bölmedir; bölme ile açıklık/yer benzerliği kurulmuştur.",
+            "Temel ve yan anlam birçok öğretim kaynağında gerçek anlamın kapsamında ele alınır. Sorunun kullandığı sınıflandırmayı ve bağlamı birlikte değerlendir; her farklı kullanımın otomatik olarak mecaz olduğunu düşünme.",
+            "Mecaz kullanımda sözcük temel anlamından uzaklaşıp başka bir duygu, düşünce veya durumu anlatır. “Bu söz beni çok yaraladı.” cümlesinde fiziksel bir yara değil, duygusal incinme vardır.",
+            "İpucu: Sözcüğü temel anlamıyla aldığında cümlenin iletisi bozuluyor, yerine soyut bir açıklama koyunca düzeliyorsa mecaz olasılığını düşün. Yine de tek bir anahtar sözcüğe bakmak yerine cümlenin tamamını oku.",
+            "Bir sözcük bilim, sanat, spor veya meslek alanında belirli bir kavramı karşılıyorsa terim anlam taşır. “Üçgenin dış açısını hesapladı.” cümlesinde açı matematikte tanımlı bir kavramdır.",
+            "Alanla ilişkili her sözcük her cümlede terim değildir. “Bu olaya farklı bir açıdan baktı.” ifadesinde geometrik açı ölçümü yapılmaz. Terim sorularında hem ilgili alanı hem özel kavramı belirle.",
+            "Eş anlamlı sözcükler belirli kullanımlarda aynı kavramı karşılayabilir; yakın anlamlılar ise benzer olmakla birlikte ince anlam farkları taşır. “Anlam” ve “mana” birçok bağlamda birbirinin yerine geçebilir. “Bakmak” ile “görmek” ise aynı işlem değildir: bakmak yönelmeyi, görmek algılamayı vurgular.",
+            "Yer değiştirme denemesinde cümlenin anlamı ve doğal kullanımı korunmalıdır. Eş anlamlıları gereksiz yere art arda kullanmak anlatım bozukluğuna yol açabilir; ancak her tekrarın hata olduğunu varsayma, anlatımın amacını değerlendir."
+          ],
+          "headings": [
+            "Önce cümle, sonra etiket",
+            "Önce cümle, sonra etiket",
+            "Temel → ilk çağrışım",
+            "Temel → ilk çağrışım",
+            "Yan → benzerlikle yeni ad",
+            "Yan → benzerlikle yeni ad",
+            "Mecaz → başka düşünce",
+            "Mecaz → başka düşünce",
+            "Terim → alan + kavram",
+            "Terim → alan + kavram",
+            "Yakın olmak, aynı olmak değildir",
+            "Yakın olmak, aynı olmak değildir"
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5
+          ]
+        }
+      },
+      "examples": [
+        {
+          "id": "turkce-anlam-01",
+          "text": "Aşağıdaki cümlelerin hangisinde “kırılmak” sözcüğü mecaz anlamda kullanılmıştır?",
+          "options": [
+            "Cam bardak yere düşünce kırıldı.",
+            "Onun sözlerine çok kırıldım.",
+            "Ağacın ince dalı fırtınada kırıldı.",
+            "Tabak tezgâhtan düşünce kırıldı.",
+            "Çantadaki cetvel ortasından kırıldı."
+          ],
+          "answer": 1,
+          "steps": [
+            "İkinci cümlede fiziksel bir parçalanma değil, duygusal incinme anlatılır.",
+            "Diğer dört cümlede nesnelerin parçalanması söz konusudur. Bu nedenle mecaz kullanım ikinci seçenektedir."
+          ],
+          "reviewStatus": "editorial-draft"
+        },
+        {
+          "id": "turkce-anlam-02",
+          "text": "Aşağıdaki cümlelerin hangisinde “açı” sözcüğü matematik terimi olarak kullanılmıştır?",
+          "options": [
+            "Bu olaya farklı bir açıdan bakmalıyız.",
+            "Romanın bakış açısını tartıştılar.",
+            "Üçgenin dış açısını hesapladı.",
+            "Konuyu başka bir açıdan ele aldı.",
+            "Herkes aynı açıdan düşünmüyordu."
+          ],
+          "answer": 2,
+          "steps": [
+            "Soruda sözcüğün belirli bir alanın tanımlı kavramı olması isteniyor.",
+            "Üçgenin dış açısı geometrik bir kavramdır; hesaplama bağlamı da bunu destekler."
+          ],
+          "reviewStatus": "editorial-draft"
+        }
+      ]
+    },
+    {
+      "id": "tarih-asya-hun",
+      "topicId": "tarih-asya-hun",
+      "title": "Asya Hun Devleti: kişi ve özellik eşleştirmesi",
+      "subject": "tarih",
+      "reviewStatus": "editorial-draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf-tarih-20261015",
+          "pages": [
+            3
+          ],
+          "check": "visual-sample"
+        }
+      ],
+      "goals": [
+        "Devlet → kişi → ilişki bağlantısını kendi örneğinle açıklayabilmek.",
+        "Teoman ile Mete’yi ayır bağlantısını kendi örneğinle açıklayabilmek.",
+        "“İlk” gördüğünde kapsam sor bağlantısını kendi örneğinle açıklayabilmek.",
+        "İç etken / dış etken bağlantısını kendi örneğinle açıklayabilmek."
+      ],
+      "prerequisites": "Bu bir ilk çalışma taslağıdır; kaynak sayfaları görsel olarak incelendi, uzman onayı henüz yoktur.",
+      "sections": [
+        {
+          "title": "Devlet ve kişiyi ayrı kutulara koy",
+          "paragraphs": [
+            "Asya Hun Devleti, İslamiyet öncesi Türk tarihi çalışılırken Orta Asya bağlamında ele alınır. Notlarda devlet adı, kuruluşla ilişkilendirilen kişi ve öne çıkan hükümdar aynı sayfada bulunabilir; bunları tek bir bilgiymiş gibi ezberleme.",
+            "Üç sütunlu bir kart kur: devlet, kişi, ilişki. Örneğin Asya Hun Devleti–Teoman–kuruluşla anılan hükümdar; Asya Hun Devleti–Mete Han–siyasi ve askerî örgütlenmeyle öne çıkan hükümdar. “Kurucu” ile “önemli hükümdar” sorularının aynı şeyi sormadığını gör."
+          ]
+        },
+        {
+          "title": "Teoman ve Mete Han eşleştirmesi",
+          "paragraphs": [
+            "Kaynak notun üçüncü PDF sayfasında Teoman kuruluşla, Mete Han ise öne çıkan hükümdarla ilişkilendirilir. Bu iki kişiyi sorunun kullandığı görev ifadesine göre ayır.",
+            "Kendini sınama: Soru kurucu eşleştirmesi istiyorsa Teoman bağlantısını; askerî teşkilatlanma ve hükümdar özellikleri soruyorsa Mete Han bağlantısını hatırla. Bu küçük taslak, tüm Hun tarihi veya tartışmalı kronolojilerin incelemesi değildir."
+          ]
+        },
+        {
+          "title": "Askerî örgütlenmeyi sınırlı bir iddia olarak öğren",
+          "paragraphs": [
+            "Mete Han, mevcut dersimizde askerî teşkilatlanma ve onlu sistemle ilişkilendirilir. Bunun öğrenme değeri devlet–hükümdar–özellik bağını kurmaktır. “Bütün dünya tarihinde ilk düzenli orduyu kurdu” gibi sınırı belli olmayan bir üstünlük iddiasına dönüştürme.",
+            "Kaynak PDF’deki “ilk düzenli ordu” ifadesi bu taslağa kesin dünya tarihi bilgisi olarak taşınmadı. “İlk” sorularında coğrafya, dönem ve kurumun tanımı belirtilmeli; güçlü iddialar ayrıca uzman ve kaynak incelemesinden geçmelidir."
+          ]
+        },
+        {
+          "title": "Nedenleri ve kavramları karşılaştır",
+          "paragraphs": [
+            "Notta Çin’le ilişkiler, boylar arası mücadele ve iç siyasi sorunlar birlikte anılır. Bu tür tarih konularını tek bir nedene indirgemek yerine iç/dış etkenler olarak ayır; kaynakta belirtilen dönemi ve olayı da kaydet.",
+            "Sınav tekniği: Sorunun devlet mi, hükümdar mı, kurum mu sorduğunu önce işaretle. İki benzer kişi veya devlet arasında kaldığında her seçeneğin karşısına tek bir ayırt edici ilişki yaz. Kaynaktaki başka sayfalarda geçen tartışmalı iddialar bu notun onaylandığı anlamına gelmez."
+          ]
+        }
+      ],
+      "memoryNotes": [
+        {
+          "key": "Devlet → kişi → ilişki",
+          "tip": "Her eşleştirmede ilişkinin adını yaz.",
+          "example": "Asya Hun → Teoman → kuruluş.",
+          "warning": "Kuruluş ile parlak dönemi aynı kutuya koyma.",
+          "question": "Bir soruda “kurucu” ile “hükümdar özelliği” aynı bilgi midir?",
+          "answer": "Hayır. Önce istenen ilişkinin türünü ayır."
+        },
+        {
+          "key": "Teoman ile Mete’yi ayır",
+          "tip": "İki ismi ayrı hatırlama kartına koy.",
+          "example": "Teoman: kuruluş; Mete Han: teşkilatlanma.",
+          "warning": "Kişiyi doğru devlete bağlamadan özelliği ezberleme.",
+          "question": "Mete Han hangi çalışma başlığıyla eşleştirilir?",
+          "answer": "Asya Hun Devleti ve askerî/siyasi teşkilatlanma."
+        },
+        {
+          "key": "“İlk” gördüğünde kapsam sor",
+          "tip": "Hangi dönem, coğrafya ve tanıma göre?",
+          "example": "Mete Han → onlu teşkilatlanma bağlantısı.",
+          "warning": "“Dünyada ilk düzenli ordu” diye genişletme.",
+          "question": "Bir notta “ilk” yazması iddiayı kendiliğinden doğrular mı?",
+          "answer": "Hayır; kapsam ve karşılaştırma kaynağı ayrıca kontrol edilmelidir."
+        },
+        {
+          "key": "İç etken / dış etken",
+          "tip": "Nedenleri ayrı sütunlarda değerlendir.",
+          "example": "Boylar arası mücadele → iç siyasi etken.",
+          "warning": "Bir etkeni bütün tarihsel sürecin tek nedeni sayma.",
+          "question": "Soruyu çözmeden ilk hangi ayrımı yapmalısın?",
+          "answer": "Devlet mi, kişi mi, kurum mu, neden mi sorulduğunu belirle."
+        }
+      ],
+      "summaries": {
+        "quick": {
+          "title": "1 dakikalık hızlı tekrar",
+          "paragraphs": [
+            "Devlet → kişi → ilişki. Asya Hun → Teoman → kuruluş.",
+            "Teoman ile Mete’yi ayır. Teoman: kuruluş; Mete Han: teşkilatlanma.",
+            "“İlk” gördüğünde kapsam sor. Mete Han → onlu teşkilatlanma bağlantısı.",
+            "İç etken / dış etken. Boylar arası mücadele → iç siyasi etken."
+          ]
+        },
+        "standard": {
+          "title": "5 dakikalık standart özet",
+          "paragraphs": [
+            "Asya Hun Devleti, İslamiyet öncesi Türk tarihi çalışılırken Orta Asya bağlamında ele alınır. Notlarda devlet adı, kuruluşla ilişkilendirilen kişi ve öne çıkan hükümdar aynı sayfada bulunabilir; bunları tek bir bilgiymiş gibi ezberleme.",
+            "Kaynak notun üçüncü PDF sayfasında Teoman kuruluşla, Mete Han ise öne çıkan hükümdarla ilişkilendirilir. Bu iki kişiyi sorunun kullandığı görev ifadesine göre ayır.",
+            "Mete Han, mevcut dersimizde askerî teşkilatlanma ve onlu sistemle ilişkilendirilir. Bunun öğrenme değeri devlet–hükümdar–özellik bağını kurmaktır. “Bütün dünya tarihinde ilk düzenli orduyu kurdu” gibi sınırı belli olmayan bir üstünlük iddiasına dönüştürme.",
+            "Notta Çin’le ilişkiler, boylar arası mücadele ve iç siyasi sorunlar birlikte anılır. Bu tür tarih konularını tek bir nedene indirgemek yerine iç/dış etkenler olarak ayır; kaynakta belirtilen dönemi ve olayı da kaydet."
+          ],
+          "headings": [
+            "Devlet → kişi → ilişki",
+            "Teoman ile Mete’yi ayır",
+            "“İlk” gördüğünde kapsam sor",
+            "İç etken / dış etken"
+          ],
+          "noteIndices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "detailed": {
+          "title": "Ayrıntılı tekrar notları",
+          "paragraphs": [
+            "Asya Hun Devleti, İslamiyet öncesi Türk tarihi çalışılırken Orta Asya bağlamında ele alınır. Notlarda devlet adı, kuruluşla ilişkilendirilen kişi ve öne çıkan hükümdar aynı sayfada bulunabilir; bunları tek bir bilgiymiş gibi ezberleme.",
+            "Üç sütunlu bir kart kur: devlet, kişi, ilişki. Örneğin Asya Hun Devleti–Teoman–kuruluşla anılan hükümdar; Asya Hun Devleti–Mete Han–siyasi ve askerî örgütlenmeyle öne çıkan hükümdar. “Kurucu” ile “önemli hükümdar” sorularının aynı şeyi sormadığını gör.",
+            "Kaynak notun üçüncü PDF sayfasında Teoman kuruluşla, Mete Han ise öne çıkan hükümdarla ilişkilendirilir. Bu iki kişiyi sorunun kullandığı görev ifadesine göre ayır.",
+            "Kendini sınama: Soru kurucu eşleştirmesi istiyorsa Teoman bağlantısını; askerî teşkilatlanma ve hükümdar özellikleri soruyorsa Mete Han bağlantısını hatırla. Bu küçük taslak, tüm Hun tarihi veya tartışmalı kronolojilerin incelemesi değildir.",
+            "Mete Han, mevcut dersimizde askerî teşkilatlanma ve onlu sistemle ilişkilendirilir. Bunun öğrenme değeri devlet–hükümdar–özellik bağını kurmaktır. “Bütün dünya tarihinde ilk düzenli orduyu kurdu” gibi sınırı belli olmayan bir üstünlük iddiasına dönüştürme.",
+            "Kaynak PDF’deki “ilk düzenli ordu” ifadesi bu taslağa kesin dünya tarihi bilgisi olarak taşınmadı. “İlk” sorularında coğrafya, dönem ve kurumun tanımı belirtilmeli; güçlü iddialar ayrıca uzman ve kaynak incelemesinden geçmelidir.",
+            "Notta Çin’le ilişkiler, boylar arası mücadele ve iç siyasi sorunlar birlikte anılır. Bu tür tarih konularını tek bir nedene indirgemek yerine iç/dış etkenler olarak ayır; kaynakta belirtilen dönemi ve olayı da kaydet.",
+            "Sınav tekniği: Sorunun devlet mi, hükümdar mı, kurum mu sorduğunu önce işaretle. İki benzer kişi veya devlet arasında kaldığında her seçeneğin karşısına tek bir ayırt edici ilişki yaz. Kaynaktaki başka sayfalarda geçen tartışmalı iddialar bu notun onaylandığı anlamına gelmez."
+          ],
+          "headings": [
+            "Devlet → kişi → ilişki",
+            "Devlet → kişi → ilişki",
+            "Teoman ile Mete’yi ayır",
+            "Teoman ile Mete’yi ayır",
+            "“İlk” gördüğünde kapsam sor",
+            "“İlk” gördüğünde kapsam sor",
+            "İç etken / dış etken",
+            "İç etken / dış etken"
+          ],
+          "noteIndices": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3
+          ]
+        }
+      },
+      "examples": [
+        {
+          "id": "tarih-hun-01",
+          "text": "Asya Hun Devleti’nin kuruluşuyla ilişkilendirilen hükümdar aşağıdakilerden hangisidir?",
+          "options": [
+            "Bumin Kağan",
+            "Teoman",
+            "Bilge Kağan",
+            "Alp Arslan",
+            "Fatih Sultan Mehmed"
+          ],
+          "answer": 1,
+          "steps": [
+            "Önce sorunun “kuruluş” ilişkisini sorduğunu belirle.",
+            "Asya Hun Devleti için bu eşleştirme Teoman’dır; Mete Han ise ayrı hükümdar/özellik kartında tutulur."
+          ],
+          "reviewStatus": "editorial-draft"
+        },
+        {
+          "id": "tarih-hun-02",
+          "text": "“Mete Han—Asya Hun Devleti—askerî teşkilatlanma” kartında bilgiler hangi sırayla düzenlenmiştir?",
+          "options": [
+            "Devlet—kurum—yer",
+            "Kişi—devlet—özellik",
+            "Yer—devlet—kurucu",
+            "Kurum—kişi—tarih",
+            "Dönem—yer—kurum"
+          ],
+          "answer": 1,
+          "steps": [
+            "Mete Han bir kişi, Asya Hun bir devlet, askerî teşkilatlanma ise bu karttaki özelliktir.",
+            "Bu ilişkiyi ayırmak, kurucu ile hükümdar özelliklerini karıştırmayı önler."
+          ],
+          "reviewStatus": "editorial-draft"
+        }
+      ]
+    }
+  ]
+}
