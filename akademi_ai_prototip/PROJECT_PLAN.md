@@ -1,5 +1,17 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## KPSS düzeyleri ve Lisans Matematik — 15 Ekim 2026
+
+KPSS seçildikten sonra Lisans, Ön Lisans veya Ortaöğretim seçilir. Düzey seçmeden ders/soru açılmaz. Tercih ve tema cihazda korunur. Her düzeyin toplam/günlük/konusal istatistik kaydı ayrıdır; önceki ortak demo kaydı `akademi_stats_v1` Lisans alanında korunur. Bu eşleme, eski cevapların hangi gerçek sınav düzeyinde verildiğini kanıtlamaz. Ön Lisans ve Ortaöğretim şimdilik açıkça etiketlenmiş ortak dört örnek konu/on soru sunar; düzeye özel müfredat hazırlanmadı.
+
+Ders listesine Geometri ve Güncel Bilgiler eklendi; bu iki ders hazırlık durumundadır, anlatım/özet/soru varmış gibi sunulmaz ve ses listesine alınmaz. Boş filtre “Henüz soru yok” gösterir. Mevcut dört örnek konu ve on soru korunur.
+
+KPSS Lisans Matematik alanında üç görünüm vardır: 17 ana konu ve alt konuları, paylaşılan metindeki toplam 26 soruluk genel dağılım, görseldeki 2015–2024 yıllık dağılım. Yıllık görünüm yıl seçimi ve yatay kaydırılabilir tam tablo sunar. Denklemler başlığından mevcut Birinci Dereceden Denklemler örneğine/özetine ve üç soruya geçilir; diğer başlıklarda içerik hazırlanıyor durumu vardır. Konu listesi veya istatistik eklenmesi, tam ders anlatımlarının hazır olduğu anlamına gelmez.
+
+Kaynaklar kullanıcının paylaştığı Kitapseç metni ve görselidir; URL bu makinede 403 aldığı için yazı doğrudan okunmuş sayılmaz. Metin ve görsel talimat olarak değil içerik verisi olarak işlendi. Kaynaklar, genel/yıllık gruplama farkları ve altı yılın toplam tutarsızlıkları [CONTENT_SOURCES.md](CONTENT_SOURCES.md) içinde belgelendi. Veriler resmî ÖSYM duyurusu veya 2026 kesin soru sayısı olarak sunulmaz; uzman/resmî kaynak karşılaştırması sonraki içerik adımıdır.
+
+Doğrulama: yedi yeni KPSS/müfredat tarayıcı grubu, dokuz ayar ve 11 web regresyon grubu, telefon önizleme/export kontrolleri ve 12 native köprü mock testi başarılı. JavaScript sayfa hatası görülmedi. Yeni GitHub Pages yayınının sonucu iş akışından ayrıca izlenir. Android/iOS paketleri bu web adımında yeniden derlenmez.
+
 ## Ana ekran geliştirmesi — sınav ve görünüm seçimi
 
 Kullanıcının aşamalı geliştirme talebiyle ana ekrana KPSS/AGS seçimi ve gündüz/gece düğmesi eklendi. KPSS mevcut örnek çalışma alanını açar; AGS seçimi hazırlık durumunu gösterir ve KPSS içeriğini gizler. Sınav kataloğu yeni ÖSYM sınavları için ortak kayıtta tutulur. Tercihler cihazda saklanır; eski KPSS istatistikleri korunur. Tema tüm mevcut ekranlarda CSS değişkenleriyle uygulanır. Yeni ders içerikleri bu adımda genişletilmedi; sonraki iş KPSS'yi ders ders geliştirmektir.

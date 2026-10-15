@@ -24,13 +24,13 @@ with sync_playwright() as p:
     assert page.locator('html').get_attribute('data-theme') == 'dark'
     assert page.locator('.app').evaluate('(e)=>getComputedStyle(e).backgroundColor') == 'rgb(11, 13, 18)'
     assert page.locator('#themeToggle').get_attribute('aria-pressed') == 'true'
-    page.locator('#exam-kpss').click()
+    page.locator('#exam-kpss').click();page.locator('#level-lisans').click()
     assert page.locator('#exam-kpss').get_attribute('aria-pressed') == 'true'
-    assert page.locator('#examTag').inner_text() == 'KPSS'
+    assert page.locator('#examTag').inner_text() == 'KPSS Lisans'
     assert page.locator('[data-study-content]').is_visible()
-    assert page.locator('.subject').count() == 4
+    assert page.locator('.subject').count() == 6
     page.reload()
-    assert page.locator('#examTag').inner_text() == 'KPSS'
+    assert page.locator('#examTag').inner_text() == 'KPSS Lisans'
     assert page.locator('html').get_attribute('data-theme') == 'dark'
     assert page.locator('#preferencesNotice').is_hidden()
     passed.append('KPSS ve gece modu seçimi yenileme sonrası korunuyor')
@@ -90,7 +90,7 @@ with sync_playwright() as p:
     page.evaluate("navTo('analytics')")
     page.get_by_role('button', name='Demo verilerini sıfırla').click()
     page.reload()
-    assert page.locator('#examTag').inner_text() == 'KPSS'
+    assert page.locator('#examTag').inner_text() == 'KPSS Lisans'
     assert page.locator('html').get_attribute('data-theme') == 'dark'
     assert page.evaluate('stats.solved') == 0
     passed.append('İlerlemeyi sıfırlamak sınav ve tema tercihini silmiyor')
@@ -102,7 +102,7 @@ with sync_playwright() as p:
         assert page.locator('#examStatusTitle').inner_text() == 'Önce sınavını seç'
         assert page.locator('html').get_attribute('data-theme') == 'light'
         assert page.locator('#preferencesNotice').is_visible()
-    page.locator('#exam-kpss').click()
+    page.locator('#exam-kpss').click();page.locator('#level-lisans').click()
     assert page.locator('#preferencesNotice').is_hidden()
     saved = page.evaluate("localStorage.getItem('akademi_preferences_v1')")
     page.evaluate("selectExam('__proto__');selectExam('unknown')")
@@ -117,9 +117,9 @@ with sync_playwright() as p:
         other.goto(BASE)
         if method == 'getItem':
             assert other.locator('#preferencesNotice').is_visible()
-        other.locator('#exam-kpss').click()
+        other.locator('#exam-kpss').click();other.locator('#level-lisans').click()
         other.locator('#themeToggle').click()
-        assert other.locator('#examTag').inner_text() == 'KPSS'
+        assert other.locator('#examTag').inner_text() == 'KPSS Lisans'
         assert other.locator('html').get_attribute('data-theme') == 'dark'
         if method == 'setItem':
             assert other.locator('#preferencesNotice').is_visible()
@@ -140,7 +140,7 @@ with sync_playwright() as p:
 
     Path('test-artifacts').mkdir(exist_ok=True)
     page.set_viewport_size({'width': 390, 'height': 844})
-    page.locator('#exam-kpss').click()
+    page.locator('#exam-kpss').click();page.locator('#level-lisans').click()
     for theme in ['light', 'dark']:
         if page.locator('html').get_attribute('data-theme') != theme:
             page.locator('#themeToggle').click()

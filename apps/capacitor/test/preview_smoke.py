@@ -13,7 +13,7 @@ with sync_playwright() as p:
     app = page.frame_locator('#appFrame')
     assert app.locator('#welcome').inner_text() == 'Merhaba! 👋'
     assert page.frames[1].evaluate('innerWidth') == 390
-    app.locator('#exam-kpss').click()
+    app.locator('#exam-kpss').click();app.locator('#level-lisans').click()
     app.locator('.nav [data-tab="lessons"]').click()
     app.locator('.subject').first.click()
     app.locator('#shortTab').click()

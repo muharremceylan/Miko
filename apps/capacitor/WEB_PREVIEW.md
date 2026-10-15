@@ -11,6 +11,12 @@ GitHub Pages seçimi artık tamamdır; kullanıcıdan tekrar ayar veya parola is
 
 Bu aşamada hedef tarayıcıda çalışan web sürümünü telefon ekranında görerek geliştirmektir. Android ve iOS paketleri sonraki aşamadır; günlük arayüz çalışması için APK veya Flutter gerekmez. Uygulamanın ortak kaynağı `akademi_ai_prototip/index.html`, mobil bağlantıları `apps/capacitor/src` altındadır.
 
+## Son eklenenler — KPSS düzeyleri ve matematik
+
+Ana sayfada **KPSS → Lisans / Ön Lisans / Ortaöğretim** seçilir. Düzeylerin ilerlemesi ayrıdır. Dersler alanında Geometri ve Güncel Bilgiler hazırlık ekranları eklendi. **KPSS Lisans → Dersler → Matematik** içinde konu listesi (17 ana başlık), genel dağılım ve yıllara göre (2015–2024) görünüm vardır. Yıllık tabloda yıl seçimi veya tüm yılları yatay kaydırarak inceleme kullanılabilir; toplam uyuşmazlıkları açık gösterilir. Denklemler örneği ve üç demo soru korunur. Diğer anlatımlar henüz hazırlanmadı; kaynak/güncellik notları uygulamada ve `akademi_ai_prototip/CONTENT_SOURCES.md` içinde yer alır.
+
+Yerel tarayıcı doğrulaması: `python test/kpss_levels_smoke.py` yedi grup; `python test/home_settings_smoke.py` dokuz grup; `AKADEMI_TEST_URL` çalışan yerel sunucuya ayarlanarak `python test/web_smoke.py` 11 grup; ayrıca preview/export testleri. `npm test` 12 native mock testini çalıştırır. Bunlar fiziksel Android/iOS cihaz testleri değildir.
+
 ## Hazır olanlar
 
 - 360×800, 390×844 ve 412×915 telefon boyutları; ekrana sığdırma veya 1:1 gösterim.

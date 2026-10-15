@@ -8,9 +8,11 @@ with sync_playwright() as p:
  context=b.new_context(viewport={'width':390,'height':844},timezone_id='Europe/Istanbul')
  page=context.new_page(); errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
  page.clock.install(time=__import__('datetime').datetime.fromisoformat('2026-10-14T12:00:00+03:00'))
- page.goto(URL);page.locator('#exam-kpss').click();assert page.locator('.subject').count()==4
+ page.goto(URL);page.locator('#exam-kpss').click();page.locator('#level-lisans').click();assert page.locator('.subject').count()==6
  for topic in ['tarih','matematik','vatandaslik','cografya']:
-  page.evaluate(f"openLesson('{topic}')");page.locator('#shortTab').click();assert page.locator('#lessonBody li').count()
+  page.evaluate(f"openLesson('{topic}')")
+  if topic=='matematik': page.locator('#mathExample').click()
+  page.locator('#shortTab').click();assert page.locator('#lessonBody li').count()
   page.evaluate('startTopicQuiz()');assert page.locator('#quizTopic').input_value()==topic
  passed.append('4 ders, özet ve filtre akışı')
  page.locator('#quizTopic').select_option('all')
@@ -44,7 +46,7 @@ with sync_playwright() as p:
  passed.append('Önceki kayıt biçiminden toplamları kaybetmeden geçiş')
  for bad in ['broken',json.dumps({'solved':-1,'correct':5,'topics':{}}),json.dumps({'solved':1,'correct':0,'topics':{'unknown':{'solved':1,'correct':0}}}), 'null']:
   page.evaluate('(v)=>localStorage.setItem("akademi_stats_v1",v)',bad);page.reload()
-  assert page.locator('.subject').count()==4;assert page.evaluate('stats.solved')==0
+  assert page.locator('.subject').count()==6;assert page.evaluate('stats.solved')==0
   assert page.evaluate('localStorage.getItem("akademi_stats_v1")')==bad
  passed.append('Bozuk JSON/şema/konu/null: çökmeden açılma, başlangıçta eski kaydı koruma')
  page.evaluate("navTo('quiz')");page.locator('#options button').nth(0).click();page.reload();assert page.evaluate('stats.solved')==1
@@ -73,7 +75,7 @@ with sync_playwright() as p:
  passed.append('Sıfırlama ve 320/390/768 genişliklerde tüm ana ekranlarda taşma kontrolü')
  for mode in ['read','write']:
   c=b.new_context();c.add_init_script("Object.defineProperty(Storage.prototype,'"+('getItem' if mode=='read' else 'setItem')+"',{value(){throw new DOMException('blocked','SecurityError')}})")
-  pg=c.new_page();pg.on('pageerror',lambda e:errors.append(str(e)));pg.goto(URL);pg.locator('#exam-kpss').click();pg.evaluate("navTo('quiz')");pg.locator('#options button').nth(0).click();assert pg.evaluate('stats.solved')==1;assert pg.locator('#storageNotice').is_visible();c.close()
+  pg=c.new_page();pg.on('pageerror',lambda e:errors.append(str(e)));pg.goto(URL);pg.locator('#exam-kpss').click();pg.locator('#level-lisans').click();pg.evaluate("navTo('quiz')");pg.locator('#options button').nth(0).click();assert pg.evaluate('stats.solved')==1;assert pg.locator('#storageNotice').is_visible();c.close()
  passed.append('Depolama okuma/yazma engelinde kullanılabilir oturum ve uyarı')
  assert not errors,errors
  page.evaluate("navTo('home')");page.set_viewport_size({'width':390,'height':844});Path('test-artifacts').mkdir(exist_ok=True); page.screenshot(path='test-artifacts/home-fixed.png',full_page=True)

@@ -24,7 +24,7 @@ try:
         frame = page.frame_locator('#appFrame')
         assert frame.locator('#exam-kpss').is_visible()
         assert 'v=' in page.locator('#appFrame').get_attribute('src')
-        frame.locator('#exam-kpss').click()
+        frame.locator('#exam-kpss').click();frame.locator('#level-lisans').click()
         frame.locator('#themeToggle').click()
         assert frame.locator('html').get_attribute('data-theme') == 'dark'
         for element, attr, filename in [
@@ -34,11 +34,11 @@ try:
             url = frame.locator(element).get_attribute(attr)
             assert parse_qs(urlsplit(url).query)['v'][0] == hashlib.sha256((root / filename).read_bytes()).hexdigest()[:12]
         page.reload()
-        assert page.frame_locator('#appFrame').locator('#examTag').inner_text() == 'KPSS'
+        assert page.frame_locator('#appFrame').locator('#examTag').inner_text() == 'KPSS Lisans'
         assert page.frame_locator('#appFrame').locator('html').get_attribute('data-theme') == 'dark'
         page.goto(base + '/standalone.html')
         assert page.locator('script[src]').count() == 0
-        assert page.locator('#examTag').inner_text() == 'KPSS'
+        assert page.locator('#examTag').inner_text() == 'KPSS Lisans'
         assert page.locator('html').get_attribute('data-theme') == 'dark'
         page.locator('.nav [data-tab="quiz"]').click()
         page.locator('#options button').first.click()

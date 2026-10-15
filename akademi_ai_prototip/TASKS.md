@@ -2,6 +2,23 @@
 
 Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/engel, P1 MVP, P2 genişleme, P3 ileri özellik anlamındadır. Onaylanmamış örnek içerik üretim içeriği değildir. İlk inceleme sonrasında kullanıcı düzeltmeleri yetkilendirdi; v0.2 kapsamında aşağıdaki görevler uygulandı.
 
+## Güncel adım — KPSS düzeyleri ve Lisans Matematik
+
+- [x] KPSS → Lisans / Ön Lisans / Ortaöğretim seçimini ve tercih kalıcılığını ekle.
+- [x] Düzeylerin soru ilerlemesini ayır; eski demo kaydını Lisans alanında koru; eski tercih biçiminde düzeyi kullanıcı seçsin.
+- [x] Geometri ve Güncel Bilgiler ders alanlarını ekle; içerik ve soru yokluğunu açık göster.
+- [x] Kullanıcının paylaştığı 17 matematik ana konusunu ve alt konuları Lisans alanına ekle.
+- [x] 26 soruluk genel dağılımı kaynak açıklamasıyla ekle.
+- [x] Görseldeki 2015–2024 yıllık dağılımı, yıl seçimini, tam tabloyu ve kaynak toplamı/hesaplanan toplam ayrımını ekle.
+- [x] Mevcut denklem örneği/özet/üç soru akışını konu listesine bağla.
+- [x] Kaynak aktarımını ve uyuşmazlıklarını CONTENT_SOURCES.md içinde belgele.
+- [ ] P1: Kaynaktaki altı yıllık toplam farkını resmî/uzman kaynakla doğrula; doğrulanmış yeni kaydı kaynak/sürüm bilgisiyle yayımla.
+- [ ] P1: Bağıntı/Fonksiyon ve konu listesi/dağılım gruplarını karşılaştır; sınav kapsamını doğrula.
+- [ ] P1: Lisans Matematik Temel Kavramlar ile başlayarak anlatım, kısa/orta/ayrıntılı özet, örnek ve editör onaylı soruları ders ders hazırla.
+- [ ] P1: Sorulara konu kimliği ve içerik onay/sürüm bilgisi ekle; konu bazlı test ve analizi tamamla.
+- [ ] P2: Geometri için düzeye özel konu listesi ve özgün görseller; Güncel Bilgiler için kaynak/olay tarihi/son kontrol tarihi hazırla.
+- [ ] P2: Ön Lisans ve Ortaöğretim için düzeye özel onaylı müfredat ve soru havuzları ekle.
+
 ## Tamamlanan inceleme
 
 - [x] ZIP içindeki index.html ve README.md dosyalarını incele; özgün dosyaları koru.
