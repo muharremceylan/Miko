@@ -30,5 +30,17 @@ jobs:
         run: docker build -t akademi-telegram:test -f services/telegram/Dockerfile .
       - name: Gerçek hesap veya ağ kullanmadan PDF ve sahiplik testleri
         run: |
-          docker run --rm --network none --read-only --tmpfs /tmp:rw,size=256m \
-            akademi-telegram:test python -m unittest services.telegram.test_telegram -v
+          python3 - <<'PY'
+          import subprocess
+          import sys
+          result = subprocess.run([
+              'docker', 'run', '--rm', '--network', 'none', '--read-only',
+              '--tmpfs', '/tmp:rw,size=512m', 'akademi-telegram:test',
+              'python', '-m', 'unittest', 'services.telegram.test_telegram', '-v'
+          ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+          print(result.stdout)
+          if result.returncode:
+              message = result.stdout[-4000:].replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+              print('::error title=Bot konteyner testleri::' + message)
+          sys.exit(result.returncode)
+          PY

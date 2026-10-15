@@ -92,7 +92,7 @@ OCR testi için `pdftoppm`, `tesseract` ve Türkçe `tur.traineddata` gerekir. D
 
 ```bash
 docker build -t akademi-telegram:test -f services/telegram/Dockerfile .
-docker run --rm --network none --read-only --tmpfs /tmp:rw,size=256m \
+docker run --rm --network none --read-only --tmpfs /tmp:rw,size=512m \
   akademi-telegram:test python -m unittest services.telegram.test_telegram -v
 ```
 

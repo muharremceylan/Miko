@@ -223,6 +223,16 @@ class ServiceTests(unittest.IsolatedAsyncioTestCase):
         for mime,size,name in [('text/plain',1,'a.pdf'),('application/pdf',0,'a.pdf'),('application/pdf',self.settings.max_file_bytes+1,'a.pdf'),('application/octet-stream',1,'a.exe')]:
             await self.service.handle(Incoming(10,10,2,True,document=b'x',filename=name,size=size,mime=mime))
         self.assertTrue(self.service.queue.empty())
+    async def test_low_free_disk_and_full_quota_reject_before_enqueue(self):
+        await self.pair()
+        msg=Incoming(10,10,2,True,document=b'x',filename='a.pdf',size=1,mime='application/pdf')
+        from collections import namedtuple
+        usage=namedtuple('usage','total used free')
+        with patch('services.telegram.core.shutil.disk_usage',return_value=usage(256*1024*1024,0,256*1024*1024)):
+            await self.service.handle(msg)
+        self.assertTrue(self.service.queue.empty())
+        self.service.settings=dataclasses.replace(self.settings,quota_bytes=3)
+        await self.service.handle(msg);self.assertTrue(self.service.queue.empty());self.assertFalse(self.transport.downloads)
     async def test_real_subprocess_pipeline_and_owner_only_deletion(self):
         await self.pair();source=self.root/'fixture.pdf';make_pdf(source,3)
         job,_=self.service.store.create(10,2);await self.service.run_job(job,source.read_bytes())
