@@ -8,10 +8,10 @@ for (const name of ['index.html', 'app.js', 'native.js', 'mobile.css', 'preview.
 let standalone = await readFile(new URL('index.html', root), 'utf8');
 for (const name of ['app.js', 'native.js']) {
   const code = (await readFile(new URL(name, root), 'utf8')).replace(/<\/script/gi, '<\\/script');
-  standalone = standalone.replace(new RegExp(`<script src="${name.replace('.', '\\.')}"(?: defer)?><\\/script>`), () => `<script>${code}</script>`);
+  standalone = standalone.replace(new RegExp(`<script src="${name.replace('.', '\\.')}(?:\\?v=[a-f0-9]+)?"(?: defer)?><\\/script>`), () => `<script>${code}</script>`);
 }
 const css = await readFile(new URL('mobile.css', root), 'utf8');
-standalone = standalone.replace('<link rel="stylesheet" href="mobile.css">', () => `<style>${css}</style>`);
+standalone = standalone.replace(/<link rel="stylesheet" href="mobile\.css(?:\?v=[a-f0-9]+)?">/, () => `<style>${css}</style>`);
 await writeFile(new URL('standalone.html', output), standalone);
 // A published site opens in phone-preview mode. The actual app remains a
 // separate page so the iframe never embeds the preview recursively.

@@ -8,6 +8,18 @@ Kaynak web uygulaması `../../akademi_ai_prototip/index.html` dosyasıdır. `scr
 
 Kullanıcının güncel tercihi önce web üzerinde telefon görünümüyle geliştirmek, ardından Android/iOS paketlerini hazırlamaktır. `npm start` web sunucusunu, `/preview.html` mobil çerçeveyi açar. `npm run export:web` yayın dosyalarını üretir; GitHub Pages hazırlığı, kontroller ve henüz çözülmeyen erişim adımı [WEB_PREVIEW.md](WEB_PREVIEW.md) içindedir.
 
+## Ana ekran: sınav seçimi ve gündüz/gece görünümü
+
+Ana ekranda KPSS ve AGS seçilebilir. İlk ziyarette sınav seçilene kadar çalışma menüleri açılmaz. KPSS seçimi mevcut dört örnek ders/on soru alanını açar. AGS seçimi hatırlanır ancak hazırlık mesajı gösterir; KPSS dersleri, soruları ve istatistikleri AGS içeriği olarak sunulmaz. KPSS'ye dönüş önceki kayıtları korur. İçerikler henüz tam KPSS müfredatı veya uzman onaylı soru bankası değildir.
+
+Üstteki “Gece modu / Gündüz modu” düğmesi tüm mevcut uygulama ekranlarını beyaz/koyu arka plana geçirir. Sınav ve tema tercihleri `akademi_preferences_v1` kaydında saklanır; ilerleme sıfırlama bunları silmez. Depolama engelinde uygulama geçici seçimlerle çalışır ve hata bildirir. KPSS'nin eski `akademi_stats_v1` kayıtları korunmuştur.
+
+Yeni sınavlar `akademi_ai_prototip/index.html` içindeki `exams` kaydına eklenir: ad, açıklama, erişilebilirlik (`available`), ders kimlikleri (`subjects`) ve sınava özel ilerleme anahtarı (`statsKey`). `available` içerik onayı anlamına gelmez, yalnızca çalışma alanının açılabildiğini belirtir. AGS için ayrı boş ders listesi/ilerleme anahtarı hazırdır. Yeni ÖSYM sınavları içerikleri hazır oldukça eklenmelidir.
+
+Varlık URL'lerinde içerik hash'i kullanılır; yeni HTML, JavaScript, CSS ve önizleme iframe'i güncellendiğinde tarayıcı yeni adresi yükler. Tek HTML export bu kimliklerle uyumludur.
+
+Ek tarayıcı kontrolleri: `python test/home_settings_smoke.py` sınav/tema, kalıcılık, KPSS–AGS geçişi, bozuk/engelli kayıt ve farklı genişlikleri; `python test/export_smoke.py` yayın paketi, varlık hash'leri ve tek HTML soru akışını kontrol eder. Dokuz yeni ayar kontrol grubu, mevcut 11 web regresyon grubu, mobil önizleme/export ve 12 native mock testi geçti. Gerçek cihaz/AI desteği konusunda önceki sınırlamalar sürer.
+
 ## Ekranların görsel tasarımı
 
 Lacivert gradyan başlık, kırık beyaz arka plan, beyaz yuvarlak kartlar ve mor/indigo ana işlem butonları kullanılır. Tasarım mobilde tek sütun, ana sayfa kısayollarında iki sütundur. Alt gezinme: Ana sayfa, Dersler, Sorular, Dinle, Analiz. İçerik genişliği büyük ekranda 490 px ile sınırlandırılır.

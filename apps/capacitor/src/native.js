@@ -15,6 +15,7 @@ async function initialize() {
     document.getElementById('speechStatus').textContent = 'Seslendirme durduruldu.';
   };
   window.startSpeech = async function () {
+    if (typeof isStudyReady === 'function' && !isStudyReady()) return;
     window.stopSpeech();
     const token = speechToken;
     const status = document.getElementById('speechStatus');

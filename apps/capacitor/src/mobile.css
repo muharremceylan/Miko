@@ -1,4 +1,3 @@
-:root { color-scheme: light; }
 button, .upload { touch-action: manipulation; }
 button:focus-visible, .upload:focus-visible { outline: 3px solid #7282f0; outline-offset: 3px; }
 /* Capacitor 8 injects these variables for older Android WebViews. On iOS,

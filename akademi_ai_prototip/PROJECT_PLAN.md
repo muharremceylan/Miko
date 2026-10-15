@@ -1,5 +1,11 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Ana ekran geliştirmesi — sınav ve görünüm seçimi
+
+Kullanıcının aşamalı geliştirme talebiyle ana ekrana KPSS/AGS seçimi ve gündüz/gece düğmesi eklendi. KPSS mevcut örnek çalışma alanını açar; AGS seçimi hazırlık durumunu gösterir ve KPSS içeriğini gizler. Sınav kataloğu yeni ÖSYM sınavları için ortak kayıtta tutulur. Tercihler cihazda saklanır; eski KPSS istatistikleri korunur. Tema tüm mevcut ekranlarda CSS değişkenleriyle uygulanır. Yeni ders içerikleri bu adımda genişletilmedi; sonraki iş KPSS'yi ders ders geliştirmektir.
+
+Yerel tarayıcı doğrulaması: dokuz yeni ayar grubu; mevcut 11 web regresyon grubu; telefon çerçevesi ve export; 12 native köprü mock testi başarılı. Android/iOS paketleri bu değişikliklerle yeniden hazırlanmadı. GitHub Pages yayın kontrolü yeni ana ekran ve sınav seçimi betiğini de doğrulayacak şekilde güncellendi.
+
 ## Canlı mobil web önizlemesi
 
 15 Ekim 2026: Kullanıcının GitHub Pages ayarından sonra 38692055701 numaralı yayın başarıyla tamamlandı. Mobil önizleme **https://muharremceylan.github.io/Miko/** adresindedir. GitHub çalıştırıcısındaki yayın kontrolü önizleme ana sayfası, app.html ve preview.js için HTTP 200 ve beklenen içeriği doğruladı. Uygulama akışları yerel Chromium'da önceden test edilmiştir; bu bulut makinesindeki ağ kısıtı nedeniyle canlı adreste uzaktan tarayıcı testi yapılmadı. İlk başarısız yayın ve ağ engeli aşağıdaki tarihsel notlarda korunur; Pages'i tekrar etkinleştirme gerekmiyor.

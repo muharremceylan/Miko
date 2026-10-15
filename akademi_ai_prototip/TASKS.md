@@ -11,6 +11,21 @@ Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/en
 - [x] Seslendirme sınırını kaydet: Türkçe ses bulunmadı, işitilebilir çıktı doğrulanmadı.
 - [x] Mevcut durum, mimari, ekran/akış planı ve görev listesini Türkçe hazırla.
 
+## Güncel küçük adım — sınav seçimi ve gündüz/gece modu
+
+- [x] İlk açılışta KPSS/AGS seçimini ana ekrana ekle; sınav seçmeden çalışma içeriğini açma.
+- [x] KPSS örnek alanını koru; AGS'yi seçilebilir hazırlık durumu olarak ayır.
+- [x] Sınava göre ders/soru erişimini ve ilerleme anahtarını ayır; eski KPSS kayıtlarını koru.
+- [x] Gündüz/gece modunu tüm mevcut uygulama ekranlarına uygula.
+- [x] Sınav/tema tercihini sakla; bozuk/engelli kayıt durumlarını yönet.
+- [x] Test oturumunu tema değişiminde, KPSS ilerlemesini sınav değişiminde koru.
+- [x] Varlık ve iframe URL'lerine içerik hash'i ekle; tek HTML export uyumunu doğrula.
+- [x] Dokuz ayar kontrol grubu, mevcut 11 web grubu, önizleme/export ve 12 native köprü mock testini geçir.
+- [ ] KPSS içeriklerini kullanıcıyla ders ders geliştirmeye başla; mevcut dört örnek konu tam müfredat sayılmaz.
+- [ ] AGS ve diğer ÖSYM sınavlarına onaylı içerikler hazır oldukça geç.
+
+Bu adım web sürümüne yöneliktir; Android/iOS paketleri yeniden derlenmedi.
+
 ## Güncel aşama — web üzerinde mobil önizleme
 
 - [x] Telefon çerçevesi, üç boyut, 1:1/sığdırma ve uygulamayı ayrı açma denetimlerini ekle.

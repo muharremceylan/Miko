@@ -92,3 +92,8 @@ test('tamamlanmamış kamera dönüşü anlaşılır hata gösterir', async () =
   await d.events.appRestoredResult({ pluginId: 'Camera', methodName: 'getPhoto', success: false });
   assert.match(d.nodes.photoStatus.textContent, /tamamlanamadı/); assert.equal(d.calls.load.length, 0);
 });
+test('hazırlık aşamasındaki sınavda cihaz seslendirmesi başlatılmaz', async () => {
+  const d = await device(); d.context.isStudyReady = () => false;
+  await d.context.startSpeech();
+  assert.equal(d.calls.speak.length, 0);
+});
