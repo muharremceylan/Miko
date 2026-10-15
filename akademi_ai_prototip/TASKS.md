@@ -23,10 +23,10 @@ Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/en
 - [ ] GitHub depo görünürlüğü, Pages planı ve yazma/yayın erişimini mevcut kimlik doğrulamayla kontrol et.
 - [x] Kaynakları `main` dalına gönder; origin/main ile ilk commit `25c22e1` eşleşti.
 - [x] GitHub iş akışını kontrol et: ilk deneme Pages yapılandırmasını bulamadı.
-- [ ] GitHub Settings → Pages → Source: GitHub Actions seç; yayını yeniden çalıştır ve canlı mobil önizlemeyi doğrula.
+- [x] Kullanıcının Pages ayarından sonra yayını yeniden çalıştır: 38692055701 başarılı. Ana önizleme, app.html ve preview.js canlı HTTP kontrolleri geçti.
 - [ ] Web üzerinde istenen tasarım/işlevleri tamamladıktan sonra Android APK'sını yeniden derle; iOS paketini macOS/Xcode'da hazırla.
 
-Önceki Android APK üretimi geçerlidir, fakat yeni web önizlemesi henüz herkese açık bir adreste yayınlanmış değildir.
+Önceki Android APK üretimi geçerlidir, ve yeni web önizlemesi https://muharremceylan.github.io/Miko/ adresinde yayımlandı. Canlı HTTP kontrolü geçti; canlı sitede uzaktan tarayıcı uçtan uca testi henüz yapılmadı.
 
 ## v0.4 — Aktif Capacitor mobil yolu
 

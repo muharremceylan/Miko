@@ -1,5 +1,14 @@
 # Web üzerinde mobil görünümle geliştirme
 
+## Canlı yayın — doğrulandı
+
+Mobil web önizlemesi: **https://muharremceylan.github.io/Miko/**
+
+15 Ekim 2026 tarihinde `0eb2039` commit'inin [38692055701 numaralı GitHub Actions yayını](https://github.com/muharremceylan/Miko/actions/runs/38692055701) başarıyla tamamlandı. Yayın sonrasında GitHub çalıştırıcısından ana önizleme, `app.html` ve `preview.js` için HTTP 200 ve beklenen içerik kontrolü geçti. Önizleme 360×800, 390×844 ve 412×915 ölçülerini sunar. Önizleme içindeki uygulama akışları önceki yerel Chromium testlerinde doğrulanmıştır; canlı siteye bu bulut makinesinden doğrudan erişim hâlâ ağ kısıtına takıldığı için uzaktan tarayıcı testi yapılmış sayılmaz.
+
+GitHub Pages seçimi artık tamamdır; kullanıcıdan tekrar ayar veya parola istenmez. Aşağıdaki ilk deneme/ağ notları durum geçmişidir.
+
+
 Bu aşamada hedef tarayıcıda çalışan web sürümünü telefon ekranında görerek geliştirmektir. Android ve iOS paketleri sonraki aşamadır; günlük arayüz çalışması için APK veya Flutter gerekmez. Uygulamanın ortak kaynağı `akademi_ai_prototip/index.html`, mobil bağlantıları `apps/capacitor/src` altındadır.
 
 ## Hazır olanlar
@@ -16,9 +25,9 @@ Yerel geliştirme için `apps/capacitor` içinde `npm start` çalışır. Bu bul
 
 ## GitHub Pages için hazırlık
 
-Hedef hesap/depo kullanıcı bilgisinden `muharremceylan/Miko` olarak belirlendi. Kendi alan adınız gerekmez. GitHub Pages etkinleştirilirse beklenen proje adresi `https://muharremceylan.github.io/Miko/` olur. **Bu adres henüz doğrulanmış veya yayına alınmış değildir.**
+Hedef hesap/depo kullanıcı bilgisinden `muharremceylan/Miko` olarak belirlendi. Kendi alan adınız gerekmez. GitHub Pages etkinleştirilirse beklenen proje adresi `https://muharremceylan.github.io/Miko/` olur. **Bu adres artık yayındadır; doğrulama sonucu yukarıdadır.**
 
-`.github/workflows/web-preview.yml` hazırlandı. Ana dala yüklenip Pages kaynağı **GitHub Actions** olarak seçilirse iş akışı kilitli npm bağımlılıklarını kurar, köprü testlerini çalıştırır, mobil web önizlemesini üretir ve Pages'e dağıtır. Android/iOS/Flutter derlemez. Eylemler resmî depolardan doğrulanan commit'lere sabitlenmiştir. İlk kaynak commit'i `25c22e1334fe4da322fdcd219e7ef54d7b11ffb7` ile `main` dalına gönderildi. GitHub iş akışı çalıştı; `38690903289` numaralı deneme Pages yapılandırmasını bulamadı (`Get Pages site failed / Not Found`). Bu nedenle site henüz yayında kabul edilmez.
+`.github/workflows/web-preview.yml` hazırlandı. Ana dala yüklenip Pages kaynağı **GitHub Actions** olarak seçilirse iş akışı kilitli npm bağımlılıklarını kurar, köprü testlerini çalıştırır, mobil web önizlemesini üretir ve Pages'e dağıtır. Android/iOS/Flutter derlemez. Eylemler resmî depolardan doğrulanan commit'lere sabitlenmiştir. İlk kaynak commit'i `25c22e1334fe4da322fdcd219e7ef54d7b11ffb7` ile `main` dalına gönderildi. GitHub iş akışı çalıştı; `38690903289` numaralı deneme Pages yapılandırmasını bulamadı (`Get Pages site failed / Not Found`). Bu ilk başarısız denemeden sonra kullanıcı Pages ayarını yaptı; yeni yayın başarıyla tamamlandı.
 
 Mevcut makinede HTTPS Git okuması başarılı, fakat GitHub ayar API'si `api.github.com` ağ politikasından 403 alıyor. HTTPS Git push başarıyla çalıştı ve GitHub web sayfasından deponun Public olduğu doğrulandı. Pages ayar API'si ise bu makineden erişilemiyor. `api.github.com` ve yayın sonucunu kontrol etmek için `muharremceylan.github.io` ağ izinleri ortam taslağına eklendi; ayarlarda kaydetme/uygulama bekleniyor. Yalnızca taslağa kaydetmek erişimi açmaz. Kullanıcıdan GitHub şifresi veya ham token istenmez.
 
@@ -32,6 +41,6 @@ Ağ ayarı uygulandıktan sonra mevcut kimlik doğrulamayla depo/Pages yetkileri
 - Export edilen tek HTML ve mobil önizlemenin ders/soru akışı HTTP üzerinden doğrulandı; bulut tarayıcısında yerel file:// açılışı yönetici politikasıyla engellendi.
 - Kamera ve ses tarayıcı/cihaz desteğine bağlı. Gerçek AI hâlâ bağlı değil. Android test APK'sı önceki aşamada üretildi; bu web önizleme değişiklikleri için mobil paket yeniden derlenmedi. iOS derlemesi yapılmadı.
 
-## Kalan GitHub ayarı
+## İlk kurulumda kullanılan GitHub ayarı — tamamlandı
 
-`https://github.com/muharremceylan/Miko/settings/pages` içinde **Build and deployment → Source → GitHub Actions** seçilmelidir. Ardından `https://github.com/muharremceylan/Miko/actions/runs/38690903289` üzerinden **Re-run all jobs** ile yeniden denenebilir. Bu ayarın bu makineden değiştirilmesi GitHub API ağ engeline takılıyor. Seçim yapıldıktan ve dağıtım tamamlandıktan sonra gerçek HTTPS yayın kontrolü yapılmalıdır.
+`https://github.com/muharremceylan/Miko/settings/pages` içinde **Build and deployment → Source → GitHub Actions** seçildi. Ardından `https://github.com/muharremceylan/Miko/actions/runs/38690903289` üzerinden **Re-run all jobs** ile yeniden denenebilir. Kullanıcı bu ayarı tamamladı. Sonraki 38692055701 numaralı iş akışı yayını ve canlı HTTP kontrolünü başarıyla tamamladı. Bu eski denemeyi tekrar çalıştırmak gerekmez.

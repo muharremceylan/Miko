@@ -1,5 +1,9 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Canlı mobil web önizlemesi
+
+15 Ekim 2026: Kullanıcının GitHub Pages ayarından sonra 38692055701 numaralı yayın başarıyla tamamlandı. Mobil önizleme **https://muharremceylan.github.io/Miko/** adresindedir. GitHub çalıştırıcısındaki yayın kontrolü önizleme ana sayfası, app.html ve preview.js için HTTP 200 ve beklenen içeriği doğruladı. Uygulama akışları yerel Chromium'da önceden test edilmiştir; bu bulut makinesindeki ağ kısıtı nedeniyle canlı adreste uzaktan tarayıcı testi yapılmadı. İlk başarısız yayın ve ağ engeli aşağıdaki tarihsel notlarda korunur; Pages'i tekrar etkinleştirme gerekmiyor.
+
 ## Güncel öncelik — web üzerinde telefon görünümü
 
 Kullanıcının yeni tercihi önce web üzerinden mobil ekranı görerek geliştirmek, Android/iOS paketlerini sonra hazırlamaktır. `apps/capacitor/src/preview.html` ve `preview.js` ile etkileşimli telefon çerçevesi, üç ekran boyutu, 1:1/sığdırma ve uygulamayı ayrı sekmede açma eklendi. `npm start` ile yerel sunucu başlatıldı; iframe içinde ders/soru, boyut geçişi ve mevcut 11 regresyon grubu doğrulandı. Statik yayın paketi ve tek dosyalık sürüm HTTP üzerinden kontrol edildi. file:// açılışı bu bulut tarayıcısının yönetici politikası nedeniyle doğrulanamadı.
