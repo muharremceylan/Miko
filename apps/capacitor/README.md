@@ -4,6 +4,14 @@ Aktif mobil geliştirme yolu **Capacitor 8 + mevcut HTML/CSS/JavaScript**. Flutt
 
 Kaynak web uygulaması `../../akademi_ai_prototip/index.html` dosyasıdır. `scripts/build.mjs` bu dosyayı değiştirmeden HTML/JavaScript varlıklarını `www/` içine çıkarır; `src/native.js` cihaz bağlantısını ve `src/mobile.css` mobil güvenli alanlarını ekler. `src/math` modülü ve `../../akademi_ai_prototip/content` altındaki Matematik verileri aynı app.js/mobile.css varlıklarına paketlenir; içerik yüklemek için dış servis isteği yapılmaz. `www/` ve native hostlara kopyalanan web dosyaları üretilmiş çıktıdır; doğrudan düzenlenmez. Flutter denemesi `../mobile` altında tarihsel kaynak olarak korunur; bu uygulamanın build adımlarına dahil değildir.
 
+## Son güncelleme: renkli defter ve servis bağlantısı
+
+Anlatım ve özetlerde renkli el yazısı notları, açılabilir ayrıntılı anlatım ve cevabı kapalı hatırlama kartları vardır. Düz metin görünümü saklanır. Font lisansıyla birlikte CSS'e gömülür. Yedi konu bölümü iki sütunlu menüde görünür; seçim içeriğe gider, Bölümler kısayolu menüye döner.
+
+Türkçe sesi olan cihazda sesli özet; tarayıcıda duraklat/devam ve hız kullanılabilir. Bu cihaz TTS'sidir; podcast kaydı değildir. Gerçek ses dosyası varsa süre/sarma ve hız kontrolleri sunulur. AI için `services/api` adaptörü ve istemci oturumu hazırdır, fakat anahtar ve genel sunucu adresi henüz yoktur. Gerçek hizmetin kurulumu [API rehberindedir](../../services/api/README.md). İstemci derlemesinde yalnız `AKADEMI_API_URL` kullanılır; sağlayıcı anahtarı konmaz. Docker/Render yayımlanmış sayılmaz; önceki APK bu web değişikliklerini içermez.
+
+Kontroller: `npm test` 37 kontrol; `python test/notebook_services_smoke.py` altı yeni tarayıcı grubu (yerel API 8010 portunda çalışmalı). Uzak sağlayıcı/cihaz sesi taklit edilmiştir; gerçek API ve fiziksel ses sonucu değildir. API'de 17 unittest temiz sabit bağımlılıklı sanal ortamda geçti.
+
 ## Matematik — ilk çalışma paketi
 
 Web sürümünde KPSS → Lisans → Dersler → Matematik → Temel Kavramlar yolunu kullan. Ana ekran ilerleme, tamamlanan/kalan konu, matematik cevap sayısı/doğruluğu ve son çalışılan konuyu gösterir. Konu ekranı yedi sekmelidir. Temel Kavramlar dokuz anlatım bölümü, üç özet, sekiz formül kartı, üç çözümlü örnek, 30 farklı beş seçenekli test sorusu ve ses metni içerir. Matematiksel kontroller geçmiştir; uzman onayı beklenir. Diğer içerikler hazırmış gibi sunulmaz.

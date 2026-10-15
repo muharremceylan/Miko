@@ -11,6 +11,10 @@ GitHub Pages seçimi artık tamamdır; kullanıcıdan tekrar ayar veya parola is
 
 Bu aşamada hedef tarayıcıda çalışan web sürümünü telefon ekranında görerek geliştirmektir. Android ve iOS paketleri sonraki aşamadır; günlük arayüz çalışması için APK veya Flutter gerekmez. Uygulamanın ortak kaynağı `akademi_ai_prototip/index.html`, mobil bağlantıları `apps/capacitor/src` altındadır.
 
+## Renkli defter ve görünür bölüm menüsü
+
+Anlatım/özetlerde el yazısı kartları ve hatırlama soruları; tüm bölümler için iki sütunlu görünür menü kullanılır. Bölüm seçimi içeriğe götürür. Destekli cihazda Türkçe sesli özet çalışabilir. Gerçek AI ve AI ses dosyası için [sunucu kurulumu](../../services/api/README.md), sunucu anahtarı ve genel adres gerekir; GitHub Pages bunları tek başına sağlamaz. `AKADEMI_API_URL` yalnız genel sunucu adresidir ve GitHub Actions repository variable olarak bağlanabilir; API anahtarı değildir.
+
 ## İlk Matematik çalışma paketi
 
 **KPSS → Lisans → Dersler → Matematik → Temel Kavramlar → Test Çöz** yolunda 10/20/30 soru veya rastgele tek soru seçilebilir. Yanlış/çözülmemiş filtreleri, sonuç analizi ve yarım teste dönüş çalışır. Konu içinde anlatım, üç özet, sekiz formül kartı, üç çözümlü örnek ve ses metni vardır. Ders ilerlemesi başarı oranından ayrıdır; 34 son düzey konudan yalnız ilk tam paket açılmıştır. Uzman incelemesi beklenir; gerçek ses/AI sekmeleri hazırlık durumudur. Yeni sekmeler ve paket, tek HTML sürümünde de çalışır. Android/iOS henüz bu güncellemeyle yeniden paketlenmedi.

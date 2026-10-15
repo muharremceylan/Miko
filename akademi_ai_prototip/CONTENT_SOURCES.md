@@ -2,6 +2,10 @@
 
 15 Ekim 2026 itibarıyla kaynak verileri ve editör onaylı eğitim içeriği ayrı değerlendirilir. Kaynak tablo aktarımı aşamasında yeni tam ders anlatımları üretilmedi. Sonraki Temel Kavramlar çalışma paketi aşağıda ayrıca belirtilmiştir; gerçek AI servisi bağlı değildir.
 
+## Renkli notlar, font ve ses metinleri
+
+Hatırlama kancaları, soru/cevap kartları ve üç konuşma metni bu geliştirmede özgün çalışma taslağı olarak yazıldı. `temel-audio.json` matematiksel sembolleri konuşma diliyle açıklar; yayımlanmış bir podcastten alınmadı. Gerçek ses üretilirse yapay zekâ sesi olarak etiketlenir. Caveat fontu Google Fonts'un resmî deposundan alındı; Türkçe Latin karakterler için alt kümelenip Akademi Notes adıyla gömüldü. Kaynak telif bildirimi ve SIL OFL 1.1 lisansı `apps/capacitor/src/math/assets/OFL.txt` ve üretilen CSS'te korunur. Türkçe Ç/Ğ/İ/Ö/Ş/Ü ve küçük harflerin karakter haritası kontrol edildi. Sağlayıcı taklitleriyle yapılan test sesleri veya AI sonuçları gerçek içerik olarak yayımlanmaz.
+
 ## Temel Kavramlar özgün çalışma içeriği
 
 15 Ekim 2026: Ayrıntılı anlatım, üç özet, sekiz formül kartı, seslendirme metni, üç çözümlü örnek ve 30 test sorusu bu geliştirme sırasında asistan tarafından özgün taslak olarak yazıldı. Kitapseç veya ÖSYM soruları kopyalanmadı; eğitim içeriği “çıkmış soru” veya uzman onaylı ürün olarak sunulmaz. Yalnız KPSS Lisans içindeki Temel Kavramlar paketinde kullanılabilir.

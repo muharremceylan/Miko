@@ -46,7 +46,7 @@ with sync_playwright() as p:
  page.locator('.math-example details summary').first.click()
  assert 'Alternatif yöntem' in page.locator('.math-example').first.inner_text()
  tab(page,'audio');assert 'henüz hazırlanmadı' in page.locator('#mathTopicPanel').inner_text()
- assert page.locator('#mathTopicPanel button').count()==0
+ assert page.locator('#mathTopicPanel button:visible').count()==0
  assert 'seslendirme metni' in page.locator('#mathTopicPanel h3').inner_text()
  tab(page,'ai');assert 'henüz bağlı değil' in page.locator('#mathTopicPanel').inner_text()
  assert page.locator('#mathTopicPanel button, #mathTopicPanel input').count()==0

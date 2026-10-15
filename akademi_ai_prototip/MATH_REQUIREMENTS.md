@@ -4,7 +4,7 @@
 
 ## Uygulama durumu — ilk çalışma paketi
 
-Kullanıcının geliştirmeye başlama talebi sonrasında ortak Matematik ekranı, yedi konu sekmesi, yerel soru geçmişi ve Temel Kavramlar çalışma paketi uygulandı. Temel Kavramlar dokuz anlatım bölümü, üç özet, sekiz formül kartı, üç ayrı çözümlü örnek, 30 beş seçenekli test sorusu ve ses metni içerir. Hesaplanabilir cevaplar kodla kontrol edildi; uzman onayı beklenir. 10/20/30 testleri ve geçmiş filtreleri bu pakette çalışır; diğer konular henüz hazırlanmadı. Gerçek podcast/AI, backend ve senkronizasyon yoktur. Aşağıdaki mevcut durum tablosu değerlendirme anının tarihsel başlangıcıdır; güncel doğrulama PROJECT_PLAN.md içindedir.
+Kullanıcının geliştirmeye başlama talebi sonrasında ortak Matematik ekranı, yedi konu sekmesi, yerel soru geçmişi ve Temel Kavramlar çalışma paketi uygulandı. Temel Kavramlar dokuz anlatım bölümü, üç özet, sekiz formül kartı, üç ayrı çözümlü örnek, 30 beş seçenekli test sorusu ve ses metni içerir. Hesaplanabilir cevaplar kodla kontrol edildi; uzman onayı beklenir. 10/20/30 testleri ve geçmiş filtreleri bu pakette çalışır; diğer konular henüz hazırlanmadı. Gerçek podcast/AI ve senkronizasyon henüz canlı değildir. Sonraki geliştirmede FastAPI sağlayıcı adaptörü hazırlandı; anahtar ve sunucu yayını beklenir. Cihaz Türkçe TTS desteği varsa sesli özet kullanılabilir. Aşağıdaki mevcut durum tablosu değerlendirme anının tarihsel başlangıcıdır; güncel doğrulama PROJECT_PLAN.md içindedir.
 
 İçerik dosyaları `content/kpss/lisans/matematik/{curriculum.json,topics/temel.json,questions/temel.json}`; ses metni ders JSON'undaki `audioScript` alanıdır. Modül `apps/capacitor/src/math/` altında paketlenir. Kayıt bu ilk web sürümünde hata yönetimli localStorage ile tutulur; IndexedDB ve backend henüz eklenmedi.
 
@@ -97,7 +97,7 @@ Konu ekranındaki yedi sekme:
 | Sesli Dinle | Gerçek oynatıcı veya açık hazırlık durumu ve ses metni |
 | Yapay Zekâya Sor | Gerçek sunucu entegrasyonu varsa konu bağlamlı asistan; yoksa açık hazırlık durumu |
 
-Mobilde yedi sekme tek satıra sıkıştırılmaz: yatay kaydırılan, seçili sekmeyi görünür tutan erişilebilir sekme şeridi kullanılır. Klavye/ekran okuyucu erişimi, 320 piksel genişlik, büyük yazı ve iki tema kontrol edilir. Konu başlığı ve geri dönüş yolu anlaşılır kalır; sekme değişimi cevapları veya okuma konumunu silmez. Hazırlık sekmeleri açılabilir ama gerçek işlevi olmayan gönder/oynat düğmeleri içermez.
+Kullanıcının sonraki tercihiyle yedi bölüm, yatay kaydırma gerektirmeyen iki sütunlu görünür menüde sunulur. Seçim içeriğe gider; yapışkan Bölümler bağlantısı menüye döndürür. Klavye/ekran okuyucu erişimi, 320 piksel genişlik, büyük yazı ve iki tema kontrol edilir. Konu başlığı ve geri dönüş yolu anlaşılır kalır; sekme değişimi cevapları veya okuma konumunu silmez. Hazırlık sekmeleri açılabilir ama gerçek işlevi olmayan gönder/oynat düğmeleri içermez.
 
 AI alanında hizmet bağlanana kadar sahte sohbet veya sabit yanıt gerçek sonuç gibi sunulmaz. Entegrasyon sonradan FastAPI üzerinden yapılır; anahtarlar istemciye konmaz. Soru, konu ve içerik sürümü bağlama eklenir; yanıtların kaynak/doğrulama durumu ve belirsizlikleri gösterilir.
 

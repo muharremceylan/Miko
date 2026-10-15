@@ -8,6 +8,9 @@ on:
       - 'akademi_ai_prototip/index.html'
       - 'akademi_ai_prototip/content/**'
       - 'scripts/content-validation/**'
+      - 'services/api/**'
+      - 'render.yaml'
+      - '.dockerignore'
       - 'apps/capacitor/test/**'
       - 'apps/capacitor/package.json'
       - 'apps/capacitor/package-lock.json'
@@ -50,6 +53,8 @@ jobs:
       - name: Matematik içeriğini doğrula
         run: python3 ../../scripts/content-validation/validate_math.py
       - name: Web önizlemesini hazırla
+        env:
+          AKADEMI_API_URL: ${{ vars.AKADEMI_API_URL }}
         run: npm run export:web
       - name: Pages ayarlarını oku
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
@@ -57,8 +62,20 @@ jobs:
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: apps/capacitor/web-release
+  api_checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaynakları al
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: API bağımlılıklarını kur ve sağlayıcı taklitleriyle test et
+        run: |
+          python3 -m venv "$RUNNER_TEMP/akademi-api"
+          "$RUNNER_TEMP/akademi-api/bin/python" -m pip install --no-cache-dir --disable-pip-version-check -r services/api/requirements.txt
+          "$RUNNER_TEMP/akademi-api/bin/python" -m unittest services.api.test_api -v
   deploy:
-    needs: build
+    needs: [build, api_checks]
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -82,7 +99,7 @@ jobs:
           import urllib.request
           from urllib.parse import urljoin
           base = os.environ['PREVIEW_URL'].rstrip('/') + '/'
-          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('app.js', 'mathTopicScreen'), ('preview.js', 'resizePreview')]
+          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('app.js', 'mathTopicScreen'), ('mobile.css', 'AkademiNotes'), ('preview.js', 'resizePreview')]
           for path, expected in checks:
               url = urljoin(base, path) + '?build=' + os.environ['GITHUB_SHA']
               for attempt in range(6):

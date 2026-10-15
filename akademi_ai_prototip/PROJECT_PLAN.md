@@ -1,5 +1,17 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Renkli çalışma defteri, görünür menü ve AI/ses bağlantısı
+
+15 Ekim 2026: Kullanıcının yeni görsel tercihine göre anlatım ve üç özet; el yazısı başlık/formüller, dört renkli not kartları, Kural/Aklında tut/Dikkat etiketleri, kapatıp hatırlama soruları ve açılabilir tam anlatımla düzenlendi. Düz metin tercihi ayrıca saklanır. Caveat'tan Türkçe karakterlerle alt kümelenen ve Akademi Notes olarak adlandırılan font uygulamaya gömülür; SIL OFL lisansı kaynaklarda ve üretilen CSS'te bulunur. Haricî font isteği gerekmez.
+
+Yedi bölüm yatay kaydırma yerine iki sütunlu görünür menüdür. Bölüm seçimi içeriğe gider; yapışkan “Bölümler” bağlantısı menüye döner ve okuma konumu korunur. Yeni tasarım diğer konu başlıklarının hazırlanmış olduğunu göstermez.
+
+Sesli özet için üç ayrı konuşma metni `temel-audio.json` içinde hazırlandı. Destekleyen cihazda Türkçe TTS, tarayıcıda duraklat/devam, hız ve gerçek okuma olaylarından ilerleme uygulanır. Native TTS'de desteklenmeyen duraklatma sunulmaz. Gerçek AI ses dosyası varsa HTML medya oynatıcısı süre/sarma ve hız kontrolünü kullanır; gerçek kayıt yokken sahte süre veya sarma yoktur.
+
+`services/api` altında FastAPI metin/fotoğraf çözüm adaptörü, gerçek ses üretimi, davet oturumu, sınırlı kota, görsel doğrulama/metadata temizliği ve sayısal eşitlik kontrolü hazırlandı. İstemci yalnız genel `AKADEMI_API_URL` adresini bilir; OpenAI anahtarı sunucuda kalır. Kod ve Docker/Render kurulum tanımı hazırdır. **Sağlayıcı anahtarı ve kamuya açık API adresi tanımlı olmadığı için gerçek AI/üretilmiş ses canlıda etkin değildir.** Ödeme gerektiren çağrı yapılmadı. Ayrıntılı ve kullanıcıya uygun kurulum yolu `services/api/README.md` içindedir; GitHub Pages Python çalıştırmaz. Sunucunun yerel sağlık/anahtarsız yetenek uçları doğrulandı. Hesap/anahtar/sunucu ayarları ve gerçek sağlayıcı/cihaz testi dış ön koşuldur.
+
+Doğrulama: 37 JavaScript motor/native/servis kontrolü ve temiz Python sanal ortamında 17 API testi geçti. Yeni tarayıcı kontrollerinde cihaz sesi ve uzak AI/medya test taklitleridir; gerçek ses kalitesi veya sağlayıcı başarısı sayılmaz. Mevcut ders/test/kayıt regresyonları ayrıca çalıştırılır. Kotalar ve oturumlar süreç belleğindedir; genel kullanıcı yayınına uygun kalıcı yetkilendirme/kota henüz eklenmedi.
+
 ## İlk Matematik çalışma paketi — uygulandı
 
 15 Ekim 2026: KPSS Lisans Matematik için modüler içerik verisi, kalıcı deneme motoru, Matematik ana ekranı ve 39 ana/alt konuda açılabilen yedi sekmeli konu ekranı eklendi. Temel Kavramlar; dokuz bölümlü anlatım, üç özet, sekiz formül kartı, üç kolay/orta/zor çözümlü örnek, özgün ses metni ve 30 ayrı beş seçenekli test sorusu içerir. İçerikler matematiksel kontrolden geçti; uzman incelemesi bekleyen çalışma/demodur, onaylı soru bankası değildir. Diğer başlıklarda hazırlık durumu gösterilir; önceki denklem örneği ve diğer dersler korunur.

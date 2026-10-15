@@ -8,10 +8,15 @@ await mkdir(destination, { recursive: true });
 let html = await readFile(source, 'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/);
 if (!script) throw new Error('Prototip uygulama scripti bulunamadı.');
-const math = await build({ entryPoints: [new URL('../src/math/index.js', import.meta.url).pathname], bundle: true, write: false, format: 'iife', target: 'es2022' });
+const apiUrl=process.env.AKADEMI_API_URL||'';
+if(apiUrl){const parsed=new URL(apiUrl);if(parsed.username||parsed.password||parsed.search||parsed.hash||(parsed.protocol!=='https:'&&!(parsed.protocol==='http:'&&['127.0.0.1','localhost'].includes(parsed.hostname))))throw new Error('API adresi HTTPS olmalı.');}
+const math = await build({ define: { __AKADEMI_API_URL__: JSON.stringify(apiUrl) }, entryPoints: [new URL('../src/math/index.js', import.meta.url).pathname], bundle: true, write: false, format: 'iife', target: 'es2022' });
 const application = script[1] + '\n;' + math.outputFiles[0].text;
 await writeFile(new URL('app.js', destination), application);
-const css = (await readFile(new URL('../src/mobile.css', import.meta.url), 'utf8')) + '\n' + (await readFile(new URL('../src/math/math.css', import.meta.url), 'utf8'));
+const notesFont = await readFile(new URL('../src/math/assets/akademi-notes.woff', import.meta.url));
+const fontLicense = await readFile(new URL('../src/math/assets/OFL.txt', import.meta.url), 'utf8');
+const fontCss = '/* Caveat subset: Akademi Notes. Source: google/fonts/ofl/caveat.\n' + fontLicense + '\n*/\n@font-face{font-family:AkademiNotes;src:url(data:font/woff;base64,' + notesFont.toString('base64') + ') format("woff");font-weight:600;font-style:normal;font-display:swap}\n';
+const css = fontCss + (await readFile(new URL('../src/mobile.css', import.meta.url), 'utf8')) + '\n' + (await readFile(new URL('../src/math/math.css', import.meta.url), 'utf8'));
 await writeFile(new URL('mobile.css', destination), css);
 await build({ entryPoints: [new URL('../src/native.js', import.meta.url).pathname],
   bundle: true, outfile: new URL('native.js', destination).pathname, format: 'iife', target: 'es2022', minify: false });

@@ -2,6 +2,20 @@
 
 Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/engel, P1 MVP, P2 genişleme, P3 ileri özellik anlamındadır. Onaylanmamış örnek içerik üretim içeriği değildir. İlk inceleme sonrasında kullanıcı düzeltmeleri yetkilendirdi; v0.2 kapsamında aşağıdaki görevler uygulandı.
 
+## Renkli defter ve AI/ses — güncel çalışma
+
+- [x] Anlatım ve özetleri el yazısı hissi veren renkli not/hatırlama kartlarına dönüştür; tam metni ve düz yazı seçimini koru.
+- [x] Türkçe karakterli lisanslı fontu göm; iki tema, renk dışı etiketler ve mobil okunabilirlik sağla.
+- [x] Yedi bölümü yatay kaydırmadan görünür kıl; bölüm/içerik ve menüye dönüş akışını düzenle.
+- [x] Üç sesli özet metni, desteklenen cihazda Türkçe TTS ve gerçeğe dayalı oynatma/ilerleme kontrolleri hazırla.
+- [x] FastAPI metin/görsel çözüm ve ses adaptörünü; erişim, boyut/tür/kota/hata ve sınırlı sayısal doğrulamayla oluştur.
+- [x] İstemciye oturum, soru/görsel gönderimi, doğrulama etiketi ve gerçek dosya oynatıcısı bağlama yolunu ekle.
+- [x] Gerçek API anahtarı olmadan sağlayıcı taklitleriyle test et; canlı AI sonucu uydurma.
+- [x] Docker/Render tanımı ve güvenli kurulum rehberi hazırla.
+- [ ] Kullanıcının AI API hesabı, güvenli sunucu anahtarı ve yayın hesabı üzerinden gerçek hizmeti aç; `AKADEMI_API_URL` genel adresini web derlemesine bağla.
+- [ ] Gerçek sağlayıcıyla metin/fotoğraf çözümü ve AI ses kaydı üretimini; fiziksel cihazda Türkçe ses ve arka plan davranışını doğrula.
+- [ ] Genel kullanıcı yayını öncesi tam kimlik/kalıcı kota, maliyet takibi, gizlilik ve uzman değerlendirmesi ekle.
+
 ## Yeni Matematik gereksinimleri — uygulanacak işler
 
 Ayrıntılı kapsam ve kabul ölçütleri: [MATH_REQUIREMENTS.md](MATH_REQUIREMENTS.md). İşaretlenen maddeler ilk Temel Kavramlar çalışma paketi için uygulandı; tüm müfredat veya uzman onayı tamamlanmış sayılmaz.

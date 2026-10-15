@@ -1,0 +1,20 @@
+# Yalnız kurulum tanımıdır; bu dosya sunucu yayımlamaz veya ücretli hizmet başlatmaz.
+services:
+  - type: web
+    name: akademi-ai-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./services/api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: AKADEMI_ACCESS_CODE
+        sync: false
+      - key: AKADEMI_ALLOWED_ORIGINS
+        value: https://muharremceylan.github.io
+      - key: OPENAI_SOLVER_MODEL
+        value: gpt-4.1-mini
+      - key: OPENAI_SPEECH_MODEL
+        value: gpt-4o-mini-tts
