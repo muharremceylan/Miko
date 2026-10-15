@@ -10,6 +10,8 @@ KPSS Lisans → Dersler → Matematik içinde **Temel Kavramlar ve Sayıların y
 
 İlerleme/tema ve yarım testler cihazda saklanır; hesaplar arasında bulut eşitlemesi yoktur. Destekli cihazda Türkçe sesli özet kullanılabilir. İçerikler kodla kontrol edilmiş çalışma taslaklarıdır, uzman incelemesi bekler. Gerçek AI/üretilmiş ses için [sunucu kurulum rehberi](services/api/README.md) hazırdır; sunucu anahtarı ve yayın bağlantısı gerekir.
 
+Yeni **Kaynak kütüphanesi**, anlatım/soru çalışması için altı aday bağlantı sunar; içerik ve hak incelemesi henüz yapılmadı. **Test Çöz → Otomatik alıştırma üret** seçeneği 16 özgün kalıptan 1706 sonlu varyasyonla 10/20/30 soru oluşturur. API anahtarı gerekmez; bu özellik gerçek AI üretimi değildir. Sayısal kontroller, yarım test ve yanlış defteri desteklenir. [Kaynaklar ve otomatik soru üretimi](akademi_ai_prototip/CONTENT_PIPELINE.md).
+
 - [Web mobil önizleme ve GitHub Pages hazırlığı](apps/capacitor/WEB_PREVIEW.md)
 - [Mobil uygulama, tasarım ve derleme](apps/capacitor/README.md)
 - [Proje planı ve durum geçmişi](akademi_ai_prototip/PROJECT_PLAN.md)

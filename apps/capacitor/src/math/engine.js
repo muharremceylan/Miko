@@ -1,5 +1,6 @@
 import curriculum from '../../../../akademi_ai_prototip/content/kpss/lisans/matematik/curriculum.json' with { type: 'json' };
 import { bank, contentReady } from './content.js';
+import { generateQuestions } from './generator.js';
 
 export { curriculum, bank };
 export const STORAGE_KEY = 'akademi_math_v1_kpss_lisans';
@@ -52,7 +53,9 @@ export function mistakes(attempts, topicId = null) {
 }
 export function eligibleQuestions(topicId, filter, attempts) {
   const ids = descendantIds(topicId), latest = latestAnswers(attempts);
-  return bank.filter(q => ids.includes(q.topicId)).filter(q => {
+  const pool=[...bank];
+  if(filter==='wrong')for(const item of latest.values())if(!item.correct&&item.question.origin?.kind==='template'&&ids.includes(item.question.topicId)&&!pool.some(q=>q.id===item.question.id&&q.version===item.question.version))pool.push(item.question);
+  return pool.filter(q => ids.includes(q.topicId)).filter(q => {
     const answer = latest.get(q.id + ':' + q.version);
     return filter === 'wrong' ? !!answer && !answer.correct : filter === 'unseen' ? !answer : filter === 'all';
   });
@@ -93,6 +96,12 @@ export class MathProgress {
     if (this.active()) throw new Error('active-attempt');
     const questions = selectQuestions(eligibleQuestions(topicId, filter, this.state.attempts), count);
     return this.createAttempt(topicId, questions, mode);
+  }
+  startGenerated(topicId,count,difficulty='mixed',mode='learn') {
+    if(!['learn','assessment'].includes(mode))throw new Error('invalid-mode');
+    if(this.active())throw new Error('active-attempt');
+    const questions=generateQuestions(descendantIds(topicId),count,{difficulty,attempts:this.state.attempts});
+    return this.createAttempt(topicId,questions,mode);
   }
   review(questionId, version) {
     if(this.active()) throw new Error('active-attempt');

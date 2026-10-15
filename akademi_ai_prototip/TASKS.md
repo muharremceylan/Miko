@@ -1,5 +1,24 @@
 # AKADEMİ AI — Önceliklendirilmiş Görevler
 
+## Kaynak ve soru üretimi — güncel adım
+
+- [x] K01 — Kurum, URL, dil, kullanım amacı, konu kapsamı, inceleme ve hak alanlarıyla altı aday kaynak kaydet; erişim engelini açık tut.
+- [x] K02 — Matematik ana/konu ekranına kaynak kütüphanesi, amaç filtresi ve güvenli dış bağlantılar ekle.
+- [x] G01 — Sekiz hazır konu için 16 özgün matematik kalıbı ve 1706 sonlu parametre varyasyonu oluştur.
+- [x] G02 — Beş farklı seçenek/tek cevap, parametre ve bağımsız matematik kontrolü; sabit soru kimliği/sürümü sağla.
+- [x] G03 — 10/20/30 otomatik alıştırma, tahmini düzey, öğrenme/değerlendirme ve tekrar etmeyen varyasyon seçimini bağla.
+- [x] G04 — Üretilmiş soruları yarım test, sonuç, yanlış filtresi/defteri ve aynı sürümle tekrar akışına ekle; eski kayıtları koru.
+- [x] G05 — Editör için tohumlu ve sürümlü JSON taslağı çıkar; mevcut dosyayı değiştirme ve otomatik yayın yapma.
+- [ ] K03 — Kaynakların belirli bölümlerini erişilebilen ortamda incele; güncel lisans/izin kanıtlarını ve kazanım eşlemesini kaydet.
+- [ ] K04 — Doğrulanmış kaynaklarla mevcut anlatımları öğretmen incelemesiyle zenginleştir; kaynak bölümünü ve son kontrol tarihini bağla.
+- [ ] K05 — Yayınevleriyle dijital soru/içerik kullanım izni veya lisanslı API anlaşmasını hazırla.
+- [ ] G06 — Matematik öğretmeniyle kalıpları, açıklamaları ve çeldiricileri incele; yöntem çeşitliliği ve zor sorular ekle; düzeyleri öğrenci pilotuyla ölç.
+- [ ] G07 — FastAPI/PostgreSQL üretim işi, izinli kaynak deposu, kalıcı kota ve inceleme/publish kuyruğu kur.
+- [ ] G08 — Gerçek AI sağlayıcısını sunucudan bağla; kaynak destekli taslak, benzerlik, koşul ve tek doğru kontrolleriyle uzman değerlendirme pilotu yap.
+
+Çalışan özellik ve sonraki gerçek AI hattı: [CONTENT_PIPELINE.md](CONTENT_PIPELINE.md). Aşağıdaki bölümler önceki aşamaların durum geçmişidir.
+
+
 ## Sayılar ve yanlış defteri — tamamlanan yeni adım
 
 - [x] M08a — Sayıların yedi alt konusuna renkli anlatım, üç özet, formüller ve konuya özel hatırlama kartları ekle.

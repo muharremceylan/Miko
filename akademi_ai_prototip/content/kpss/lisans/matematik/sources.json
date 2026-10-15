@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "osym",
+      "title": "ÖSYM — resmî sınav duyuruları",
+      "owner": "Ölçme, Seçme ve Yerleştirme Merkezi",
+      "url": "https://www.osym.gov.tr/",
+      "uses": [
+        "exam",
+        "questions"
+      ],
+      "language": "tr",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Sınav duyuruları ve kurumun erişime açtığı soru/cevap sayfaları için resmî başlangıç adresi. Ücretsiz erişim, yeniden yayımlama izni anlamına gelmez.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    },
+    {
+      "id": "ogm",
+      "title": "OGM Materyal — matematik öğrenme kaynakları",
+      "owner": "Millî Eğitim Bakanlığı",
+      "url": "https://ogmmateryal.eba.gov.tr/",
+      "uses": [
+        "lesson",
+        "questions"
+      ],
+      "language": "tr",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Ortaöğretim matematik anlatımları ve alıştırmaları için aday başvuru portalı. KPSS’ye özel bir müfredat veya soru dağılımı kaynağı değildir.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    },
+    {
+      "id": "odsgm",
+      "title": "ÖDSGM — ölçme ve değerlendirme kaynakları",
+      "owner": "Millî Eğitim Bakanlığı",
+      "url": "https://odsgm.meb.gov.tr/",
+      "uses": [
+        "questions"
+      ],
+      "language": "tr",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Kurumun yayımladığı çalışma ve değerlendirme materyallerini aramak için başlangıç adresi. Belge, sınıf ve konu eşleşmesi ayrıca incelenmelidir.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    },
+    {
+      "id": "eba",
+      "title": "EBA — ders ve etkinlik kaynakları",
+      "owner": "Millî Eğitim Bakanlığı",
+      "url": "https://www.eba.gov.tr/",
+      "uses": [
+        "lesson"
+      ],
+      "language": "tr",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Konu anlatımı ve etkinlik aramak için aday portal. Bazı içerikler giriş gerektirebilir; uygulama hesabı bu portala giriş sağlamaz.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    },
+    {
+      "id": "openstax-prealgebra",
+      "title": "OpenStax — Prealgebra 2e",
+      "owner": "OpenStax",
+      "url": "https://openstax.org/details/books/prealgebra-2e",
+      "uses": [
+        "lesson",
+        "questions"
+      ],
+      "language": "en",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Temel aritmetik ve cebir için İngilizce aday kitap. KPSS’ye özel değildir; bölüm kapsamı ve güncel içerik lisansı bu ortamda doğrulanamadı.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    },
+    {
+      "id": "kitapsec-user",
+      "title": "Kitapseç — kullanıcının paylaştığı konu listesi",
+      "owner": "Kitapseç",
+      "url": "https://www.kitapsec.com/blog/2026-kpss-lisans-matematik-konulari-ve-soru-dagilimi-149.html",
+      "uses": [
+        "scope"
+      ],
+      "language": "tr",
+      "coverage": "general-reference",
+      "topicIds": [
+        "*"
+      ],
+      "note": "Kullanıcının paylaştığı konu/dağılım aktarımının bağlantısı. Resmî ÖSYM kapsamı değildir; mevcut toplam tutarsızlıkları korunur. Soru kaynağı olarak kaydedilmedi.",
+      "reviewStatus": "candidate",
+      "rights": {
+        "mode": "link-only",
+        "importAllowed": false,
+        "licenseStatus": "not-reviewed",
+        "permissionEvidence": null
+      },
+      "access": {
+        "attemptedOn": "2026-10-15",
+        "status": "blocked-in-environment",
+        "httpStatus": 403
+      }
+    }
+  ]
+}

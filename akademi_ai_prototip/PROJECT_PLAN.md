@@ -1,5 +1,16 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## Kaynak kütüphanesi ve otomatik alıştırma — 15 Ekim 2026
+
+Matematik ana ekranı ve konu ekranlarından altı aday kaynağa erişilir; kaynak türü süzülebilir, konuya geri dönülebilir. Katalog kurum/dil/amaç, kapsam, inceleme ve kullanım hakkını ayrı tutar. ÖSYM, OGM, ÖDSGM, EBA, OpenStax ve önceki Kitapseç bağlantısının içerikleri bu ortamda 403 nedeniyle incelenemedi; bağlantılar genel aday başvuru kaynağıdır. Belirli bölüm eşlemesi, lisans doğrulaması veya bu kaynaklarla anlatım zenginleştirmesi yapılmış sayılmaz. Kaynaklardan metin/soru aktarılmadı.
+
+Temel Kavramlar ve Sayıların yedi alt konusu için 16 özgün matematik kalıbı ve 1706 sonlu parametre varyasyonu hazırdır. Test Çöz ekranında kayıtlı havuz veya otomatik alıştırma seçilir; 10/20/30 soru, tahmini kolay/orta/karışık düzey ve öğrenme/değerlendirme modu desteklenir. Cevap/seçenekler üretimden ayrı kodla kontrol edilir; sayısal kontrol uzman onayı değildir. Otomatik sorular AI veya çıkmış soru diye gösterilmez. Yarım test, sürümlü tekrar, yanlış defteri ve eski kayıtlar korunur. Kayıtlı 100 sorunun sayısı değişmedi; varyasyonlar farklı soru türü gibi sayılmaz.
+
+Editör için komut satırından tekrarlanabilir JSON taslağı çıkarılabilir; mevcut dosya üzerine yazılmaz ve taslak kendiliğinden soru bankasına aktarılmaz. Gerçek AI üretimi, lisanslı kaynak deposu, kalıcı inceleme kuyruğu ve yayın akışı henüz uygulanmadı. Mimari, kaynaklar, çalışan kod ve sonraki görevler [CONTENT_PIPELINE.md](CONTENT_PIPELINE.md) içinde açıklanır.
+
+Doğrulama: 49 JavaScript testi (bütün 1706 varyasyonun matematik kontrolü ve CLI taslak korumaları dahil), 18 API testi, yeni kaynak/üretim tarayıcı testinde altı grup, önceki Matematik testinde sekiz grup ve yayın paketi testi geçti. 320–768 pikselde gündüz/gece görünümü, 10/20/30 üretim, sonlu havuzun tükenmesi, yarım testin korunması, değerlendirme çözümünün gizlenmesi ve yanlış tekrarları doğrulandı. Dış kaynakların gerçek içerikleri, ücretli AI üretimi ve fiziksel Android/iOS cihaz doğrulaması bu kapsama dahil değildir.
+
+
 ## Sayılar çalışma paketi ve yanlış defteri — 15 Ekim 2026
 
 Güncel web kapsamı: Temel Kavramlar + Sayı Kümeleri, Doğal Sayılar, Tam Sayılar, Faktöriyel, Sayma Sistemleri, Bölme ve Bölünebilme Kuralları. Yedi yeni alt konunun her birinde dört renkli anlatım/hatırlama kartı, tam metne geçiş, üç özet, formüller, iki ayrı çözümlü örnek ve 10 test sorusu vardır. Toplam havuz 100 test sorusu ve havuzdan ayrı 17 çözümlü örnektir. Sayılar ana ekranı alt konu rotası ve 70 soruluk havuz üzerinden 10/20/30 soruluk karma test sunar. Alt konu havuzu 10 olduğu için 20/30 düğmeleri açıkça pasiftir; içerik tamamlanmış gibi gösterilmez. Sonraki içerik adımı EBOB–EKOK ve Asal Çarpanlara Ayırma; ardından Denklemler paketidir.

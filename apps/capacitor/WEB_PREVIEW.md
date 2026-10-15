@@ -1,5 +1,12 @@
 # Web üzerinde mobil görünümle geliştirme
 
+## Kaynaklar ve otomatik alıştırma
+
+**KPSS → Lisans → Dersler → Matematik → Kaynakları incele** aday kaynakları açar. Konu içindeki **Bu konu için ek kaynaklar** düğmesi de kullanılabilir. İçerikler ağ engeli nedeniyle incelenemedi; kaynaklar yalnız bağlantı olarak sunulur.
+
+**Temel Kavramlar / Sayılar → Test Çöz → Çalışma kaynağı → Otomatik alıştırma üret** seçimi 10/20/30 yeni varyasyon oluşturur. Kalıp sayısı ve kalan varyasyon gösterilir; soru düzeyi tahminidir. Yarım test, yanlış defteri ve tekrar çalışır. API anahtarı gerekmez; bu özellik gerçek AI üretimi değildir. 16 kalıp / 1706 varyasyon, 1706 farklı soru türü anlamına gelmez. Ayrıntılar: [kaynak ve üretim planı](../../akademi_ai_prototip/CONTENT_PIPELINE.md).
+
+
 ## Güncel çalışma yolu — Sayılar ve yanlış defteri
 
 **KPSS → Lisans → Dersler → Matematik → Sayılar** içinde yedi alt konu açılır. Her biri renkli anlatım, üç özet, formüller, iki örnek, 10 soru ve seslendirme metni içerir. Sayılar ana ekranındaki **Test Çöz** bölümü 70 soruluk havuzdan 10/20/30 soru seçer. Temel Kavramlarla birlikte 100 test sorusu ve 17 ayrı örnek vardır; uzman onayı beklenir.
