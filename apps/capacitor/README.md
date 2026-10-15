@@ -1,8 +1,16 @@
 # Akademi AI — Capacitor mobil uygulama (v0.4)
 
-Aktif mobil geliştirme yolu **Capacitor 8 + mevcut HTML/CSS/JavaScript**. Flutter kullanılmaz. Uygulama web sayfasını uzaktan açmaz; dört örnek ders ve on soruluk içerik Android paketinin içine kopyalanır, temel ders/soru akışı çevrimdışı kullanılabilir.
+Aktif mobil geliştirme yolu **Capacitor 8 + mevcut HTML/CSS/JavaScript**. Flutter kullanılmaz. Uygulama web sayfasını uzaktan açmaz; web içerikleri derleme sırasında Android paketinin içine kopyalanır, temel ders/soru akışı çevrimdışı kullanılabilir.
 
-Kaynak web uygulaması `../../akademi_ai_prototip/index.html` dosyasıdır. `scripts/build.mjs` bu dosyayı değiştirmeden HTML/JavaScript varlıklarını `www/` içine çıkarır; `src/native.js` cihaz bağlantısını ve `src/mobile.css` mobil güvenli alanlarını ekler. `www/` ve native hostlara kopyalanan web dosyaları üretilmiş çıktıdır; doğrudan düzenlenmez. Flutter denemesi `../mobile` altında tarihsel kaynak olarak korunur; bu uygulamanın build adımlarına dahil değildir.
+Kaynak web uygulaması `../../akademi_ai_prototip/index.html` dosyasıdır. `scripts/build.mjs` bu dosyayı değiştirmeden HTML/JavaScript varlıklarını `www/` içine çıkarır; `src/native.js` cihaz bağlantısını ve `src/mobile.css` mobil güvenli alanlarını ekler. `src/math` modülü ve `../../akademi_ai_prototip/content` altındaki Matematik verileri aynı app.js/mobile.css varlıklarına paketlenir; içerik yüklemek için dış servis isteği yapılmaz. `www/` ve native hostlara kopyalanan web dosyaları üretilmiş çıktıdır; doğrudan düzenlenmez. Flutter denemesi `../mobile` altında tarihsel kaynak olarak korunur; bu uygulamanın build adımlarına dahil değildir.
+
+## Matematik — ilk çalışma paketi
+
+Web sürümünde KPSS → Lisans → Dersler → Matematik → Temel Kavramlar yolunu kullan. Ana ekran ilerleme, tamamlanan/kalan konu, matematik cevap sayısı/doğruluğu ve son çalışılan konuyu gösterir. Konu ekranı yedi sekmelidir. Temel Kavramlar dokuz anlatım bölümü, üç özet, sekiz formül kartı, üç çözümlü örnek, 30 farklı beş seçenekli test sorusu ve ses metni içerir. Matematiksel kontroller geçmiştir; uzman onayı beklenir. Diğer içerikler hazırmış gibi sunulmaz.
+
+10/20/30 ve rastgele tek soru, yanlış/çözülmemiş filtreleri, öğrenme/değerlendirme modu, boş bırakma/erken bitirme, sonuç ve yarım test kalıcılığı çalışır. Yeni kayıt anahtarı `akademi_math_v1_kpss_lisans`; eski istatistik anahtarları korunur. Yeni cevaplar genel günlük/analiz sayaçlarında yalnız bir kez sayılır. Sıfırlama cevap/denemeleri temizler; konu tamamlama ve tercihler kalır. Yerel veri silinirse kayıt kaybolur; hesap/eşitleme yoktur. Gerçek ses dosyası ve AI yokken bu sekmeler açıklama/metin sunar, sahte kontrol sunmaz.
+
+Kontroller (bu dizinde): `npm test` 25 motor/native mock testi; `python ../../scripts/content-validation/validate_math.py` 30 soru ve üç örnek; `python test/math_module_smoke.py` sekiz yeni tarayıcı grubu. Diğer ayar/web/KPSS/preview/export regresyonları da geçmiştir. Bu web değişikliğiyle Android APK veya iOS paketi yeniden derlenmedi; alttaki v0.4 APK sonucu önceki pakettir.
 
 ## Öncelik: web tarayıcısında mobil görünüm
 
@@ -10,7 +18,7 @@ Kullanıcının güncel tercihi önce web üzerinde telefon görünümüyle geli
 
 ## Ana ekran: sınav seçimi ve gündüz/gece görünümü
 
-Ana ekranda KPSS ve AGS seçilebilir. İlk ziyarette sınav seçilene kadar çalışma menüleri açılmaz. KPSS seçimi mevcut dört örnek ders/on soru alanını açar. AGS seçimi hatırlanır ancak hazırlık mesajı gösterir; KPSS dersleri, soruları ve istatistikleri AGS içeriği olarak sunulmaz. KPSS'ye dönüş önceki kayıtları korur. İçerikler henüz tam KPSS müfredatı veya uzman onaylı soru bankası değildir.
+Ana ekranda KPSS ve AGS seçilebilir. İlk ziyarette sınav seçilene kadar çalışma menüleri açılmaz. KPSS seçimi Lisans/Ön Lisans/Ortaöğretim düzeyini seçtirir. Lisans yeni Matematik paketini, diğer düzeyler şimdilik ortak dört örnek konu/on soru demosunu açar. AGS seçimi hatırlanır ancak hazırlık mesajı gösterir; KPSS dersleri, soruları ve istatistikleri AGS içeriği olarak sunulmaz. KPSS'ye dönüş önceki kayıtları korur. İçerikler henüz tam KPSS müfredatı veya uzman onaylı soru bankası değildir.
 
 Üstteki “Gece modu / Gündüz modu” düğmesi tüm mevcut uygulama ekranlarını beyaz/koyu arka plana geçirir. Sınav ve tema tercihleri `akademi_preferences_v1` kaydında saklanır; ilerleme sıfırlama bunları silmez. Depolama engelinde uygulama geçici seçimlerle çalışır ve hata bildirir. KPSS'nin eski `akademi_stats_v1` kayıtları korunmuştur.
 
@@ -25,7 +33,7 @@ Ek tarayıcı kontrolleri: `python test/home_settings_smoke.py` sınav/tema, kal
 Lacivert gradyan başlık, kırık beyaz arka plan, beyaz yuvarlak kartlar ve mor/indigo ana işlem butonları kullanılır. Tasarım mobilde tek sütun, ana sayfa kısayollarında iki sütundur. Alt gezinme: Ana sayfa, Dersler, Sorular, Dinle, Analiz. İçerik genişliği büyük ekranda 490 px ile sınırlandırılır.
 
 - **Ana sayfa:** günlük soru hedefi, doğru ve başarı oranı; ders/test/ses/fotoğraf kısayolları.
-- **Dersler:** dört ders kartı; konu detayında anlatım/kısa özet ve ilgili test.
+- **Dersler:** altı ders alanı; Geometri/Güncel Bilgiler hazırlanıyor. Lisans Matematikte ilerleme ve yedi konu sekmesi; diğer mevcut derslerde anlatım/özet ve test.
 - **Sorular:** ders filtresi, büyük şıklar, seçilen yanlış ve doğru cevapların renklendirilmesi, açıklama; son soruda sonuç kartı.
 - **Dinle:** konu seçimi, dinle/durdur ve ses durumu. Türkçe ses yoksa kullanıcıya metin alternatifi sunulur.
 - **Fotoğraf:** çek/galeriden seç; görsel önizlemesi ve açıkça etiketlenmiş sabit çözüm demosu.

@@ -43,6 +43,7 @@ async function initialize() {
   // Existing click listeners resolve navTo's global binding at click time.
   await App.addListener('appStateChange', ({ isActive }) => { if (!isActive) window.stopSpeech(); else drawHome(); });
   await App.addListener('backButton', () => {
+    if (window.AcademiMath?.back()) return;
     if (document.getElementById('lessons').classList.contains('active') && document.getElementById('lessonDetail').style.display !== 'none') {
       closeLesson();
     } else if (!document.getElementById('home').classList.contains('active')) {

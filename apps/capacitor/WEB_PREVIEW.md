@@ -11,6 +11,10 @@ GitHub Pages seçimi artık tamamdır; kullanıcıdan tekrar ayar veya parola is
 
 Bu aşamada hedef tarayıcıda çalışan web sürümünü telefon ekranında görerek geliştirmektir. Android ve iOS paketleri sonraki aşamadır; günlük arayüz çalışması için APK veya Flutter gerekmez. Uygulamanın ortak kaynağı `akademi_ai_prototip/index.html`, mobil bağlantıları `apps/capacitor/src` altındadır.
 
+## İlk Matematik çalışma paketi
+
+**KPSS → Lisans → Dersler → Matematik → Temel Kavramlar → Test Çöz** yolunda 10/20/30 soru veya rastgele tek soru seçilebilir. Yanlış/çözülmemiş filtreleri, sonuç analizi ve yarım teste dönüş çalışır. Konu içinde anlatım, üç özet, sekiz formül kartı, üç çözümlü örnek ve ses metni vardır. Ders ilerlemesi başarı oranından ayrıdır; 34 son düzey konudan yalnız ilk tam paket açılmıştır. Uzman incelemesi beklenir; gerçek ses/AI sekmeleri hazırlık durumudur. Yeni sekmeler ve paket, tek HTML sürümünde de çalışır. Android/iOS henüz bu güncellemeyle yeniden paketlenmedi.
+
 ## Son eklenenler — KPSS düzeyleri ve matematik
 
 Ana sayfada **KPSS → Lisans / Ön Lisans / Ortaöğretim** seçilir. Düzeylerin ilerlemesi ayrıdır. Dersler alanında Geometri ve Güncel Bilgiler hazırlık ekranları eklendi. **KPSS Lisans → Dersler → Matematik** içinde konu listesi (17 ana başlık), genel dağılım ve yıllara göre (2015–2024) görünüm vardır. Yıllık tabloda yıl seçimi veya tüm yılları yatay kaydırarak inceleme kullanılabilir; toplam uyuşmazlıkları açık gösterilir. Denklemler örneği ve üç demo soru korunur. Diğer anlatımlar henüz hazırlanmadı; kaynak/güncellik notları uygulamada ve `akademi_ai_prototip/CONTENT_SOURCES.md` içinde yer alır.

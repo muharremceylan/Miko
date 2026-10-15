@@ -1,5 +1,15 @@
 # AKADEMİ AI — Proje Planı ve Mevcut Durum Raporu
 
+## İlk Matematik çalışma paketi — uygulandı
+
+15 Ekim 2026: KPSS Lisans Matematik için modüler içerik verisi, kalıcı deneme motoru, Matematik ana ekranı ve 39 ana/alt konuda açılabilen yedi sekmeli konu ekranı eklendi. Temel Kavramlar; dokuz bölümlü anlatım, üç özet, sekiz formül kartı, üç kolay/orta/zor çözümlü örnek, özgün ses metni ve 30 ayrı beş seçenekli test sorusu içerir. İçerikler matematiksel kontrolden geçti; uzman incelemesi bekleyen çalışma/demodur, onaylı soru bankası değildir. Diğer başlıklarda hazırlık durumu gösterilir; önceki denklem örneği ve diğer dersler korunur.
+
+10/20/30, rastgele tek soru, son cevabı yanlış ve çözülmemiş filtreleri; yetersiz/boş havuz; öğrenme/değerlendirme modu; boş bırakma ve erken bitirme; sonuç/çözüm/kazanım analizi uygulandı. Soru sürümü ve cevap olayları `akademi_math_v1_kpss_lisans` içinde tek yerel kayıtta tutulur. Yenileme aynı soru sırası/cevaplarla devam eder. Önceki toplamlar korunur; eski sayaçlardan soru geçmişi uydurulmaz. Yeni cevaplar genel günlük/analiz ekranına eski sayaçları değiştirmeden eklenir. İstatistik sıfırlama yeni denemeleri de temizler, konu tamamlama ve tema korunur. Hesap/backend/cihazlar arası eşitleme yoktur; tarayıcı verisi silinirse ilerleme kaybolur.
+
+Ders ilerlemesi öğrenci işaretlemesine dayanır ve 34 son düzey konu üzerinden hesaplanır: Temel Kavramlar tamamlanınca %3; başarı oranı ayrı hesaplanır. Son konu/sekme ve okuma konumu kaydedilir. Ses ve AI sekmeleri açık hazırlık durumudur; gerçek medya/AI servisi ve kullanılmayan sahte oynatıcı/sohbet kontrolü eklenmedi. Kaynak dağılım tabloları ve tutarsızlık uyarıları korunur.
+
+Doğrulama: 30 test sorusu + 3 çözümlü örnek bağımsız Python hesaplarıyla kontrol edildi; 12 Matematik motoru ve 13 native mock testi geçti. Yerel Chromium'da sekiz yeni Matematik grubu, önceki dokuz ayar, 11 web ve yedi KPSS grubu; telefon önizlemesi ve tek HTML/export kontrolleri geçti. İki tema ve 320–768 piksel genişlikler kontrol edildi. Gerçek cihaz testi veya yeni Android/iOS paketi bu adımda yapılmadı. Yayın iş akışına içerik/motor kontrolleri eklendi; canlı yayın sonucu ayrıca doğrulanır.
+
 ## Matematik içerik ve ekran gereksinimleri — değerlendirme
 
 15 Ekim 2026: Kullanıcının ayrıntılı anlatım, üç özet seviyesi, beş seçenekli çözümlü örnekler, altı test seçeneği, sesli anlatım ve yedi konu sekmesi talebi [MATH_REQUIREMENTS.md](MATH_REQUIREMENTS.md) içinde değerlendirildi. Mevcut kodla farklar, içerik alanları, ekran akışı, ilerleme hesabı, soru geçmişi, kalite kontrolleri ve uygulama sırası tanımlandı. Bu adım dokümantasyon değerlendirmesidir; yeni ekranlar, 10/20/30 testleri veya yeni içerikler uygulanmış sayılmaz.

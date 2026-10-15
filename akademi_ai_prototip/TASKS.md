@@ -4,21 +4,21 @@ Bu liste 14 Ekim 2026 incelemesine dayanır. P0 ilk geliştirme öncesi karar/en
 
 ## Yeni Matematik gereksinimleri — uygulanacak işler
 
-Ayrıntılı kapsam ve kabul ölçütleri: [MATH_REQUIREMENTS.md](MATH_REQUIREMENTS.md). Aşağıdaki uygulama işleri henüz tamamlanmadı.
+Ayrıntılı kapsam ve kabul ölçütleri: [MATH_REQUIREMENTS.md](MATH_REQUIREMENTS.md). İşaretlenen maddeler ilk Temel Kavramlar çalışma paketi için uygulandı; tüm müfredat veya uzman onayı tamamlanmış sayılmaz.
 
 - [x] A–E içerik alanlarını ve Matematik ana sayfası/yedi sekmeyi mevcut kodla karşılaştır; içerik şemasını, ekran akışını ve bağımlılıkları belgele.
-- [ ] M01 — Konu kimlikleri, içerik sürümü/onay durumu, beş seçenekli soru ve ayrıntılı deneme/cevap modeli oluştur; eski toplamları koru, geçmiş cevap uydurma.
-- [ ] M02 — Matematik ana ekranına ilerleme, tamamlanan/kalan konu, matematik soru sayısı/doğruluğu ve gerçek son çalışılan konu ekle. İlerleme ile başarıyı ayrı hesapla; hazırlanan konuların eksikliği gizlenmesin.
-- [ ] M03 — Ana/alt konu için yedi sekmeli erişilebilir mobil ekran oluştur; özet içinde üç seviye; eksik içerik/ses/AI için açıklayıcı durum göster.
-- [ ] M04 — Temel Kavramlar paketini hazırla: tanım, kavram, kural, formül, gerekçeli örnek, bağlantı, KPSS tekniği, hata, hatırlatma; üç özet ve özgün ses metni.
-- [ ] M05 — Kolay/orta/zor çözümlü örnekleri ve 30 farklı test sorusunu beş seçenekle hazırla; sonuç/koşul/tek doğru kontrollerini kodla doğrula; editör/uzman inceleme durumunu kaydet.
-- [ ] M06 — Yeterli gerçek havuzda 10/20/30, rastgele, son cevabı yanlış ve çözülmemiş filtrelerini uygula; yetersiz/boş havuz, tekrarsızlık ve çift cevap kaydı kontrollerini tamamla.
-- [ ] M07 — Test sonucu ve tekrar bağlantıları: doğru/yanlış/boş, doğruluk, süre, konu analizi; yarım denemeyi sürdürme ve kayıt hatası yönetimini doğrula.
+- [x] M01 — Konu kimlikleri, içerik sürümü/onay durumu, beş seçenekli soru ve ayrıntılı deneme/cevap modeli oluştur; eski toplamları koru, geçmiş cevap uydurma.
+- [x] M02 — Matematik ana ekranına ilerleme, tamamlanan/kalan konu, matematik soru sayısı/doğruluğu ve gerçek son çalışılan konu ekle. İlerleme ile başarıyı ayrı hesapla; hazırlanan konuların eksikliği gizlenmesin.
+- [x] M03 — Ana/alt konu için yedi sekmeli erişilebilir mobil ekran oluştur; özet içinde üç seviye; eksik içerik/ses/AI için açıklayıcı durum göster.
+- [x] M04 — Temel Kavramlar paketini hazırla: tanım, kavram, kural, formül, gerekçeli örnek, bağlantı, KPSS tekniği, hata, hatırlatma; üç özet ve özgün ses metni.
+- [x] M05 — Kolay/orta/zor çözümlü örnekleri ve 30 farklı test sorusunu beş seçenekle hazırla; sonuç/koşul/tek doğru kontrollerini kodla doğrula; editör/uzman inceleme durumunu kaydet.
+- [x] M06 — Yeterli gerçek havuzda 10/20/30, rastgele, son cevabı yanlış ve çözülmemiş filtrelerini uygula; yetersiz/boş havuz, tekrarsızlık ve çift cevap kaydı kontrollerini tamamla.
+- [x] M07 — Test sonucu ve tekrar bağlantıları: doğru/yanlış/boş, doğruluk, süre, konu analizi; yarım denemeyi sürdürme ve kayıt hatası yönetimini doğrula.
 - [ ] M08 — Sayılar ve alt konularından başlayarak diğer içerik paketlerini aynı ölçütlerle genişlet; mevcut denklem örneklerini yeni konu/soru şemasına taşı.
 - [ ] M09 — Gerçek medya sağlandığında oynat/duraklat, sarma, hız ve dinleme konumunu uygula; cihaz TTS'sini ayrı etiketle; arka plan oynatmayı platformlarda doğrula.
 - [ ] M10 — Gerçek AI'ı FastAPI üzerinden konu bağlamı ve doğrulama durumuyla bağla; anahtarlar yalnız sunucuda. Hizmet yokken hazırlık durumu korunsun.
 
-Sıra: M01–M03 → M04–M05 → M06–M07 → M08. M09–M10 ilgili medya/hizmet hazır olduğunda ilerler. İlk kullanılabilir içerik örneği Temel Kavramlar; tüm müfredatın tamamlandığı iddia edilmez.
+Sıra: M01–M03 → M04–M05 → M06–M07 → M08. M09–M10 ilgili medya/hizmet hazır olduğunda ilerler. İlk kullanılabilir içerik örneği Temel Kavramlar tamamlandı; M08 kapsamında sonraki konu Sayılar ve alt konularıdır. Uzman incelemesi, gerçek ses/AI ve Android/iOS cihaz doğrulaması beklenir. Tüm müfredatın tamamlandığı iddia edilmez.
 
 ## Güncel adım — KPSS düzeyleri ve Lisans Matematik
 

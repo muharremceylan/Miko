@@ -97,3 +97,7 @@ test('hazırlık aşamasındaki sınavda cihaz seslendirmesi başlatılmaz', asy
   await d.context.startSpeech();
   assert.equal(d.calls.speak.length, 0);
 });
+test('Matematik konu geri dönüşü native çıkış veya eski ders kapatmayı tetiklemez',async()=>{
+ const d=await device();let count=0;d.context.AcademiMath={back(){count++;return true;}};
+ d.events.backButton();assert.equal(count,1);assert.equal(d.calls.exit,0);assert.equal(d.calls.close,0);
+});

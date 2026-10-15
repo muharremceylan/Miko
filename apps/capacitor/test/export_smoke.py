@@ -33,6 +33,14 @@ try:
             ('link[href^="mobile.css"]', 'href', 'mobile.css')]:
             url = frame.locator(element).get_attribute(attr)
             assert parse_qs(urlsplit(url).query)['v'][0] == hashlib.sha256((root / filename).read_bytes()).hexdigest()[:12]
+        frame.locator('.nav [data-tab="lessons"]').click()
+        frame.locator('#subjectList .subject').filter(has_text='Matematik').click()
+        assert frame.locator('#mathRemaining').inner_text() == '34'
+        frame.locator('[data-math-topic="temel"] [data-math-action="topic"]').click()
+        assert frame.get_by_role('tab').count() == 7
+        frame.locator('#math-tab-test').click()
+        frame.get_by_role('button', name='Rastgele bir soru çöz', exact=True).click()
+        assert frame.locator('#mathAnswers button').count() == 5
         page.reload()
         assert page.frame_locator('#appFrame').locator('#examTag').inner_text() == 'KPSS Lisans'
         assert page.frame_locator('#appFrame').locator('html').get_attribute('data-theme') == 'dark'
@@ -43,10 +51,15 @@ try:
         page.locator('.nav [data-tab="quiz"]').click()
         page.locator('#options button').first.click()
         assert page.locator('#explanation').is_visible()
+        page.evaluate("openLesson('matematik')")
+        page.locator('[data-math-action="resume-test"]').click()
+        page.locator('#mathAnswers button').first.click()
+        page.locator('[data-math-action="next"]').click()
+        assert page.locator('#mathTestResult').is_visible()
         assert not errors, errors
         browser.close()
 finally:
     server.shutdown()
     server.server_close()
     thread.join(timeout=5)
-print('Yayın paketi: telefon önizlemesi, tema/seçim kalıcılığı, içerik hashleri ve tek HTML soru akışı geçti.')
+print('Yayın paketi: telefon önizlemesi, tema/seçim kalıcılığı, içerik hashleri, Matematik sekmeleri ve iframe/tek HTML arasında yarım test akışı geçti.')

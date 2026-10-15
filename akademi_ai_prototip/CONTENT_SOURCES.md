@@ -1,12 +1,20 @@
 # KPSS içerik kaynakları ve doğrulama durumu
 
-15 Ekim 2026 itibarıyla kaynak verileri ve editör onaylı eğitim içeriği ayrı değerlendirilir. Bu adımda yeni tam ders anlatımları veya gerçek AI çıktısı üretilmedi.
+15 Ekim 2026 itibarıyla kaynak verileri ve editör onaylı eğitim içeriği ayrı değerlendirilir. Kaynak tablo aktarımı aşamasında yeni tam ders anlatımları üretilmedi. Sonraki Temel Kavramlar çalışma paketi aşağıda ayrıca belirtilmiştir; gerçek AI servisi bağlı değildir.
+
+## Temel Kavramlar özgün çalışma içeriği
+
+15 Ekim 2026: Ayrıntılı anlatım, üç özet, sekiz formül kartı, seslendirme metni, üç çözümlü örnek ve 30 test sorusu bu geliştirme sırasında asistan tarafından özgün taslak olarak yazıldı. Kitapseç veya ÖSYM soruları kopyalanmadı; eğitim içeriği “çıkmış soru” veya uzman onaylı ürün olarak sunulmaz. Yalnız KPSS Lisans içindeki Temel Kavramlar paketinde kullanılabilir.
+
+`scripts/content-validation/validate_math.py`; beş seçeneğin benzersizliğini, cevapları ve içerik alanlarını denetler. Tam sayı/rakam aralıklarında sayma, rasyonel hesaplarda Fraction, parite sınıfları ve polinom katsayıları kullanılır. Negatif sayı sıralaması gibi iki genel iddiada sayısal örnek kontrolü yapılır; genel cebirsel gerekçe çözüm metnindedir. Kod kontrolü pedagojik kalite, telif taraması, tam biçimsel ispat veya insan uzman onayı değildir. Tüm paket uzman incelemesi bekleyen çalışma/demodur; arayüz bu durumu belirtir. Formül kartı örnekleri editör incelemesinde ayrıca değerlendirilecektir.
+
+Çözümlü örnekler test havuzundan ayrı kimliklerle tutulur; çözülmemiş soru sayısını yapay biçimde artırmak için aynı sorular çoğaltılmaz. Geçmiş dağılım verileri özgün soru üretiminin doğruluğu veya 2026 kesin kapsamı için onay sayılmaz.
 
 ## Lisans Matematik konu listesi ve genel dağılım
 
 Kaynak: [Kitapseç — 2026 KPSS Lisans Matematik konuları ve soru dağılımı](https://www.kitapsec.com/blog/2026-kpss-lisans-matematik-konulari-ve-soru-dagilimi-149.html). URL bu bulut ortamında 403 ile engellendi. Kullanıcı yazının konu ve soru sayısı bilgilerini sohbet içinde metin olarak paylaştı; bu paylaşımdaki olgusal liste ve sayılar uygulamaya aktarıldı. Yazının tüm metni kopyalanmadı ve doğrudan erişilerek doğrulanmış gibi sunulmadı.
 
-17 ana başlık ve alt konuları korunur. Denklemler, mevcut Birinci Dereceden Denklemler örneği ve üç demo soruya bağlanır. Diğer konu başlıkları hazırlık durumundadır. Mevcut örnekler tam ders veya uzman onaylı müfredat sayılmaz.
+17 ana başlık ve alt konuları korunur. Denklemler, mevcut Birinci Dereceden Denklemler örneği ve üç demo soruya bağlanır. Temel Kavramlar çalışma paketi hariç diğer konu başlıkları hazırlık durumundadır. Mevcut örnekler tam ders veya uzman onaylı müfredat sayılmaz.
 
 Genel dağılım 16 gruptur; sayılar toplamı 26 eder. Paylaşılan metin dağılımın dayandığı sınav yılını belirtmez. 2026 için kesin ÖSYM soru sayısı olarak sunulmaz. “Bağıntı ve Fonksiyon” genel dağılımda bulunur, 17 ana konuda ayrı başlık değildir; sessizce yeni bir ana konu icat edilmedi. Resmî kapsam/uzman karşılaştırması gereklidir.
 

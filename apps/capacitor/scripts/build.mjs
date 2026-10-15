@@ -8,13 +8,15 @@ await mkdir(destination, { recursive: true });
 let html = await readFile(source, 'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/);
 if (!script) throw new Error('Prototip uygulama scripti bulunamadı.');
-await writeFile(new URL('app.js', destination), script[1]);
-const css = await readFile(new URL('../src/mobile.css', import.meta.url));
+const math = await build({ entryPoints: [new URL('../src/math/index.js', import.meta.url).pathname], bundle: true, write: false, format: 'iife', target: 'es2022' });
+const application = script[1] + '\n;' + math.outputFiles[0].text;
+await writeFile(new URL('app.js', destination), application);
+const css = (await readFile(new URL('../src/mobile.css', import.meta.url), 'utf8')) + '\n' + (await readFile(new URL('../src/math/math.css', import.meta.url), 'utf8'));
 await writeFile(new URL('mobile.css', destination), css);
 await build({ entryPoints: [new URL('../src/native.js', import.meta.url).pathname],
   bundle: true, outfile: new URL('native.js', destination).pathname, format: 'iife', target: 'es2022', minify: false });
 const native = await readFile(new URL('native.js', destination));
-html = html.replace(script[0], `<script src="app.js?v=${hash(script[1])}"></script><script src="native.js?v=${hash(native)}" defer></script>`);
+html = html.replace(script[0], `<script src="app.js?v=${hash(application)}"></script><script src="native.js?v=${hash(native)}" defer></script>`);
 html = html.replace('</head>', `<link rel="stylesheet" href="mobile.css?v=${hash(css)}"></head>`);
 await writeFile(new URL('index.html', destination), html);
 const previewScript = await readFile(new URL('../src/preview.js', import.meta.url));

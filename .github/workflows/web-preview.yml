@@ -6,6 +6,9 @@ on:
     branches: [main]
     paths:
       - 'akademi_ai_prototip/index.html'
+      - 'akademi_ai_prototip/content/**'
+      - 'scripts/content-validation/**'
+      - 'apps/capacitor/test/**'
       - 'apps/capacitor/package.json'
       - 'apps/capacitor/package-lock.json'
       - 'apps/capacitor/src/**'
@@ -44,6 +47,8 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Köprü davranışlarını test et
         run: npm test
+      - name: Matematik içeriğini doğrula
+        run: python3 ../../scripts/content-validation/validate_math.py
       - name: Web önizlemesini hazırla
         run: npm run export:web
       - name: Pages ayarlarını oku
@@ -77,7 +82,7 @@ jobs:
           import urllib.request
           from urllib.parse import urljoin
           base = os.environ['PREVIEW_URL'].rstrip('/') + '/'
-          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('preview.js', 'resizePreview')]
+          checks = [('', 'Mobil web önizlemesi'), ('app.html', 'KPSS düzeyini seç'), ('app.js', 'function selectKpssLevel'), ('app.js', 'const mathAnnualRows='), ('app.js', 'mathTopicScreen'), ('preview.js', 'resizePreview')]
           for path, expected in checks:
               url = urljoin(base, path) + '?build=' + os.environ['GITHUB_SHA']
               for attempt in range(6):

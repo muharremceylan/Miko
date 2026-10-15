@@ -1,0 +1,253 @@
+{
+  "topicId": "temel",
+  "version": 1,
+  "title": "Temel Kavramlar",
+  "learningReady": true,
+  "reviewStatus": "demo-math-checked",
+  "goals": [
+    "Rakam ile sayıyı ve basamak gösterimini ayırt etmek.",
+    "İşlem önceliğini ve negatif sayıların işaretlerini doğru kullanmak.",
+    "Tek–çift, ardışık sayı ve tam sayı koşullarını çözümde kullanmak.",
+    "En büyük/en küçük sorularında koşulları kontrol ederek çözümü doğrulamak."
+  ],
+  "prerequisites": "Dört işlemi bilmen yeterli. Kuvvet, mutlak değer ve denklem gösterimleri burada yalnız temel örneklerle açıklanır; ilgili konularda ayrıntılandırılacak.",
+  "sections": [
+    {
+      "title": "1. Tanım: Temel kavramlar ne işe yarar?",
+      "paragraphs": [
+        "Matematikte bir sorunun cevabını yalnız işlem yapmak değil, verilen koşulları doğru okumak belirler. “Tam sayı”, “pozitif”, “farklı”, “uçlar dahil” gibi sözcükler hangi değerleri kullanabileceğini söyler. Bu bölüm bu dili okumayı ve basit işlemleri güvenle yapmayı amaçlar.",
+        "Bir eşitlikte kullanılan harfler sayıları temsil eder. Soruda özel bir koşul verilmedikçe iki farklı harfin mutlaka farklı sayılar olduğunu varsayma. “a ve b farklıdır” denirse eşit değer kullanamazsın."
+      ]
+    },
+    {
+      "title": "2. Rakam, sayı ve basamak değeri",
+      "paragraphs": [
+        "Onluk sistemde rakamlar 0, 1, 2, 3, 4, 5, 6, 7, 8, 9’dur. Sayı, bir niceliği belirtir; bir veya birden fazla rakamla yazılabilir. Örneğin 7 hem tek basamaklı bir sayı hem bir rakamdır; 47 ise iki rakamla yazılan bir sayıdır.",
+        "İki basamaklı ab sayısında a onlar, b birler basamağıdır: ab = 10a + b. Burada ab, iki basamaklı sayı gösterimi olarak tanımlandığında çarpım değildir. İlk basamak sıfır olamaz; b sıfır olabilir. 05 iki basamaklı bir sayı değildir.",
+        "Örnek: a = 4 ve b = 7 ise ab = 47, ba = 74; fark 74 − 47 = 27’dir. Genel fark ab − ba = 9(a − b) olur. Sonucun işareti hangi sayıdan hangisini çıkardığına bağlıdır."
+      ]
+    },
+    {
+      "title": "3. Sayı koşullarını doğru okumak",
+      "paragraphs": [
+        "Tam sayılar …, −2, −1, 0, 1, 2, … biçimindedir. Pozitif tam sayılar 1’den başlar. Negatif olmayan tam sayılar 0’ı da içerir. Sıfır ne pozitif ne negatiftir; fakat çifttir. Doğal sayılar bu içerikte 0, 1, 2, … olarak kullanılır. Sayı kümelerinin ayrıntısı Sayılar bölümünde işlenecek.",
+        "Bir soruda a pozitif tam sayıysa a = 0 veya a = 1/2 kullanamazsın. a ile b farklı rakamlarsa ikisi de 0–9 aralığında olmalı ve eşit olmamalıdır. Önce koşulları küçük bir listeye yazmak çoğu yanlış seçeneği baştan eler."
+      ]
+    },
+    {
+      "title": "4. İşlem önceliği ve işaret kuralları",
+      "paragraphs": [
+        "Önce parantez içi, sonra kuvvet, sonra çarpma ve bölme, en son toplama ve çıkarma yapılır. Aynı öncelikteki işlemler soldan sağa yürütülür. Bölme çarpmadan önce geliyorsa önce bölme yapılır: 24 ÷ 3 × 2 = 8 × 2 = 16. Sonuç 4 değildir.",
+        "İki aynı işaretli sayının çarpımı pozitiftir; zıt işaretli sayının çarpımı negatiftir. Aynı işaretli sayıları toplarken büyüklükleri topla, ortak işareti koru. Zıt işaretli sayılarda büyük mutlak değerden küçüğü çıkar, büyük mutlak değerin işaretini kullan. Örneğin −9 + 4 = −5.",
+        "Örnek: −4 + 3(2 − 5) = −4 + 3(−3) = −4 − 9 = −13. Her satırda yalnız bir işlem adımını yaparak işaret değişimini izle.",
+        "Parantez kuvvetin tabanını belirler: (−3)² = 9, ancak −3² = −(3²) = −9. Bir sayıyı sıfıra bölmek tanımsızdır; sadeleştirmede bölünen ortak ifade sıfır olamaz."
+      ]
+    },
+    {
+      "title": "5. Tek ve çift tam sayılar",
+      "paragraphs": [
+        "Çift tam sayı 2k, tek tam sayı 2k + 1 olarak yazılır; k bir tam sayıdır. Bu tanım negatif sayılarda da geçerlidir: −3 = 2(−2) + 1. Sıfır = 2 × 0 olduğu için çifttir. Tek–çift sınıflaması bu bölümde tam sayılar içindir.",
+        "Çift + çift = çift; tek + tek = çift; tek + çift = tek. Çıkarmada da aynı parite ilişkisi geçerlidir. Çarpımın çift olması için en az bir çarpan çift olmalıdır. Bütün çarpanlar tekse çarpım tektir.",
+        "Örnek: n tekse n + 1 çifttir. n = 2k + 1 yazınca n + 1 = 2(k + 1) görülür. Tek sayının pozitif tam sayı kuvvetleri tektir. Ancak iki tek sayının bölümü için doğrudan tek denemez; örneğin 3/5 bir tam sayı değildir."
+      ]
+    },
+    {
+      "title": "6. Ardışık sayılar ve toplamları",
+      "paragraphs": [
+        "Ardışık tam sayılar x, x + 1, x + 2 biçiminde; ardışık çift veya tek tam sayılar x, x + 2, x + 4 biçiminde yazılır. Çift/tek dizide x’in uygun paritede olması gerekir. “Ardışık” demek her durumda fark 1 demek değildir.",
+        "Eşit aralıklı dizide terim sayısı = (son − ilk)/artış + 1. Bu kural, son terimin gerçekten dizinin bir terimi olması koşuluyla kullanılır. 7’den 27’ye tam sayılarda 21 terim vardır. Son − ilk = 20 yalnız aralık sayısıdır.",
+        "Toplam, terim sayısı ile ilk ve son terimin ortalamasının çarpımıdır. 7 + 8 + … + 27 = 21 × 17 = 357. Tek sayıda eşit aralıklı terim varsa ortadaki terim aynı zamanda ortalamadır.",
+        "İlk n pozitif tam sayının toplamı n(n + 1)/2’dir. İlk n pozitif tek sayının toplamı n²’dir. n bir pozitif tam sayı olmalıdır; sıfır terimli toplam ayrı olarak 0 kabul edilebilir."
+      ]
+    },
+    {
+      "title": "7. En küçük/en büyük değer soruları",
+      "paragraphs": [
+        "Önce değer kümesini belirle: rakam mı, tam sayı mı, pozitif mi, farklı mı? Toplamı sabit pozitif sayılarda sayılar birbirine yaklaştıkça çarpım büyür. a + b = 14 için 7 × 7 = 49; sayılar farklı istenirse 6 × 8 = 48 bulunur.",
+        "Bu kuralın gerekçesi ab = ((a + b)² − (a − b)²)/4 eşitliğidir. Toplam sabitken farkın karesini azaltmak çarpımı artırır. Tam sayı/farklılık koşulları izin verilen en küçük farkı belirler.",
+        "Çarpımı sabit pozitif sayılarda da en yakın çarpanlar en küçük toplamı verir. ab = 36 için 6 + 6 = 12. Küçük tam sayı aralıklarında sistemli tablo kurmak hem hızlı hem güvenilir bir yöntemdir. Negatif sayılar da varsa işaret durumlarını ayrıca incele."
+      ]
+    },
+    {
+      "title": "8. Konular arası bağlantı ve KPSS çözüm sırası",
+      "paragraphs": [
+        "Tek–çift bilgisi bölünebilme kurallarına; basamak değeri çözümlemeye; ardışık sayılar denklem kurma problemlerine temel olur. Bu bölümün ardından Sayılar, ardından Denklemler ve Problemler başlıklarıyla bağlantı kurabilirsin.",
+        "KPSS pratiğinde önce koşulları işaretle, sonra gösterim seç, gereksiz seçenekleri ele ve çözümü soruya geri koy. Bir eşitlikte bulduğun rakamları yerine koyarak hem eşitliği hem rakam/farklılık koşullarını kontrol et.",
+        "Bir ifadeye örnek değer vermek yanlış bir “her zaman” iddiasını çürütmek için işe yarar. Tek bir örneğin doğru çıkması ise iddiayı kanıtlamaz. Genel sonuç için tek–çift gösterimi veya cebirsel gerekçe kullan."
+      ]
+    },
+    {
+      "title": "9. Sık yapılan hatalar ve son kontrol",
+      "paragraphs": [
+        "ab gösterimini soru tanımına bakmadan a × b almak; negatif olmayan ifadede sıfırı unutmak; sıfırı tek saymak; −a² ile (−a)²’yi eşitlemek; ardışık toplamda +1’i unutmak yaygın hatalardır.",
+        "“Farklı” koşulu yokken sayıları zorla farklı seçme; “farklı” koşulu varken eşit sayılarla bulunan sınırı cevap verme. Bölmede paydanın sıfır olup olmadığını ve kesrin tam sayı olup olmadığını kontrol et.",
+        "Son kontrol: Cevap sayı aralığında mı? Pozitiflik, tam sayılık ve farklılık sağlanıyor mu? İşaret beklediğin gibi mi? Bir başka yöntemle veya doğrudan yerine koyarak doğrulayabiliyor musun?"
+      ]
+    }
+  ],
+  "summaries": {
+    "quick": {
+      "title": "1 dakikalık hızlı tekrar",
+      "paragraphs": [
+        "Rakamlar 0–9’dur; ab iki basamaklı sayı olarak verilirse 10a + b anlamındadır. İlk basamak sıfır olamaz. Pozitif tam sayı 1’den, negatif olmayan tam sayı 0’dan başlar.",
+        "İşlem sırası: parantez, kuvvet, çarpma/bölme, toplama/çıkarma. Eşit öncelikte soldan sağa git. (−3)² = 9 fakat −3² = −9.",
+        "Çift = 2k, tek = 2k + 1. Tek + tek çift, tek + çift tek; çift çarpan varsa çarpım çift. Sıfır çifttir.",
+        "Ardışık tam sayıda fark 1; ardışık tek/çiftte fark 2. Terim sayısında +1’i unutma. Önce koşulları oku, sonucu geri koyarak kontrol et."
+      ]
+    },
+    "standard": {
+      "title": "5 dakikalık standart özet",
+      "paragraphs": [
+        "1. Gösterim: Bir sayı rakamlardan oluşur. İki basamaklı ab = 10a + b; a 1–9, b 0–9 aralığındadır. a,b farklı denmedikçe eşit olabilir. ab − ba = 9(a − b) eşitliği basamak farkı sorularını kısaltır.",
+        "2. Değer kümesi: Pozitif tam sayılar 1, 2, 3, …; negatif olmayan tam sayılar 0, 1, 2, …; tam sayılar negatifleri de içerir. Doğal sayılar burada sıfırla başlar. Sıfır çift, fakat ne pozitif ne negatiftir. Sorunun bu sözcüklerini yazılı koşula çevir.",
+        "3. İşlem sırası: Parantez içini tamamla; kuvveti al; çarpma/bölmeyi soldan sağa, sonra toplama/çıkarmayı soldan sağa yap. −4 + 3(2 − 5) için önce −3, sonra −9, son olarak −13 bulunur. 24 ÷ 3 × 2 = 16’dır.",
+        "4. İşaret: Aynı işaretli çarpım pozitif, zıt işaretli çarpım negatif. Toplamda zıt işaret varsa büyük mutlak değerin işareti belirleyicidir. −8 + 5 = −3. Çift kuvvet kuralında negatif işaretin tabanın içinde olup olmadığına bak: (−2)² = 4, −2² = −4.",
+        "5. Tek–çift: 2k ve 2k + 1 gösterimi geneldir. Toplam tekse terimlerin pariteleri farklıdır; çarpımları çifttir. Çarpım tekse bütün tam sayı çarpanları tektir. Bölümün tam sayı olduğu bilinmeden tek–çift sonucu çıkarma.",
+        "6. Ardışık sayılar: Üç ardışık sayıyı x − 1, x, x + 1 yazmak toplamı 3x yapar. Beş ardışık çift sayı x − 4, x − 2, x, x + 2, x + 4 biçiminde yazılabilir. x’in çift olma koşulunu unutma.",
+        "7. Toplam: Terim sayısı (son − ilk)/artış + 1; toplam = terim sayısı × (ilk + son)/2. 7’den 27’ye 21 sayı vardır, toplam 357. İlk n pozitif tam sayı toplamı n(n + 1)/2; ilk n pozitif tek sayı toplamı n². Her formülde n’nin ne saydığını belirt.",
+        "8. En büyük/en küçük: Sabit pozitif toplamda en yakın sayılar en büyük çarpımı verir. Toplam 14 için 7–7; farklı pozitif tam sayılar için 6–8 seçilir. Sabit pozitif çarpımda en yakın çarpanlar en küçük toplamı verir. Negatif veya sıfırlı durumları bu kurala kontrol etmeden dahil etme.",
+        "9. Test tekniği: Önce koşullar, sonra model, sonra işlem, son olarak yerine koyma. Basit örnekle yanlış iddiayı ele; genel iddiayı cebir veya tüm olasılıkları kapsayan sınıflamayla gerekçelendir. Tek bir örnek genel ispat değildir."
+      ]
+    },
+    "detailed": {
+      "title": "Ayrıntılı tekrar notları",
+      "paragraphs": [
+        "Gösterim kontrolü: Harfler sayı mı, rakam mı? ab iki basamaklı sayı mı, çarpım mı? Rakam ise 0–9 sınırı var; baştaki rakam sıfır değil. Sayı farkını çözümleme ile cebire çevir. Örnek ab − ba = 27 ise 9(a − b) = 27, fark 3.",
+        "Değer kümesi kontrolü: Pozitif, negatif, negatif olmayan ve tam sayı koşullarını ayrı yaz. Pozitiflik a ≥ 1; negatif olmama a ≥ 0 anlamındadır, tam sayı koşulu ayrıca gereklidir. Eşitsizlikte açık/kapalı sınırlar uygun sayıları değiştirir.",
+        "İşlem kontrolü: Tüm çarpma ve bölmeler aynı önceliktedir; soldan sağa ilerlenir. Toplama ve çıkarma da kendi aralarında eşit önceliktedir. Negatif tabanın kuvveti için parantez gerekir. Sıfıra bölme ve sıfır olabilen ifadeyi koşulsuz sadeleştirme geçersizdir.",
+        "Parite tablosu: Ç + Ç = Ç, T + T = Ç, Ç + T = T. Ç × Ç = Ç, Ç × T = Ç, T × T = T. Çıkarma toplamayla aynı parite tablosuna sahiptir. Negatif tam sayılar bu tablodan istisna değildir.",
+        "Parite gerekçesi: a = 2k, b = 2m + 1 ise a + b = 2(k + m) + 1 tek, ab = 2k(2m + 1) çift. “Her zaman” sorusunda kullanılan gösterim tüm tam sayı olasılıklarını kapsar.",
+        "Ardışık model kontrolü: Tam sayıda x, x + 1, …; tek/çiftte x, x + 2, … kullan. Toplamı bilinen tek sayıda terimde ortadaki değişkeni seçmek işlemi azaltır. Sayı adedi çiftse ortalama terimlerden biri olmayabilir; dört ardışık tek sayının ortalaması çifttir.",
+        "Toplam türetimi: İlk ve sonu eşleştirince her çift aynı toplamı verir. Toplam = n(ilk + son)/2 buradan gelir. n tek olduğunda orta terim yarım çift yerine sayıldığı için formül yine doğrudur. Terim sayısında iki uç da dahilse +1 gerekir.",
+        "Optimizasyon gerekçesi: Sabit S = a + b için ab = (S² − (a − b)²)/4. Fark küçüldükçe çarpım büyür. Farklı tam sayılarda fark sıfır olamaz; toplamın tek/çift olması izin verilen farkı da etkiler.",
+        "Tam sayı denetimi: 3a + 2b = 17 ve a,b pozitifse a tek ve a ≤ 5’tir. Olası a değerlerini 1, 3, 5 olarak listeleyerek en küçük toplamı bul. Küçük sonlu aralıkta sistemli sayma, uygun çözümü atlamayı önler.",
+        "Son kontrol listesi: Eşitlik sağlandı mı? Seçilen sayılar izin verilen kümede mi? Sıfır veya eşitlik yasak mı? Sınırlar dahil mi? Elde edilen sonucun işareti ve büyüklüğü mantıklı mı? Çözüm ikinci bir yoldan kontrol edilebiliyor mu?"
+      ]
+    }
+  },
+  "formulas": [
+    {
+      "name": "İki basamaklı sayı",
+      "expression": "ab = 10a + b",
+      "conditions": "ab iki basamaklı sayı gösterimi; a ∈ {1,…,9}, b ∈ {0,…,9}.",
+      "example": "a = 6, b = 2 → 62."
+    },
+    {
+      "name": "Basamak ters çevirme farkı",
+      "expression": "ab − ba = 9(a − b)",
+      "conditions": "İki gösterim de iki basamaklıysa a ve b sıfır değildir.",
+      "example": "73 − 37 = 9 × (7 − 3) = 36."
+    },
+    {
+      "name": "Tek–çift gösterimi",
+      "expression": "Çift: 2k; tek: 2k + 1",
+      "conditions": "k bir tam sayıdır; negatifler ve sıfır da tanıma dahildir.",
+      "example": "−5 = 2(−3) + 1 tektir."
+    },
+    {
+      "name": "Eşit aralıklı dizide terim sayısı",
+      "expression": "n = (son − ilk)/artış + 1",
+      "conditions": "Artış pozitif; son terim gerçekten dizide olmalı.",
+      "example": "4, 6, …, 20 → (20 − 4)/2 + 1 = 9 terim."
+    },
+    {
+      "name": "Eşit aralıklı toplam",
+      "expression": "Toplam = n × (ilk + son)/2",
+      "conditions": "n terim sayısı; terimler eşit aralıklı.",
+      "example": "4 + 6 + … + 20 = 9 × 12 = 108."
+    },
+    {
+      "name": "İlk n pozitif tam sayının toplamı",
+      "expression": "n(n + 1)/2",
+      "conditions": "n pozitif tam sayı; başlangıç 1, artış 1.",
+      "example": "1 + … + 10 = 55."
+    },
+    {
+      "name": "İlk n pozitif tek sayının toplamı",
+      "expression": "n²",
+      "conditions": "n pozitif tam sayı; dizi 1, 3, …, 2n − 1.",
+      "example": "1 + 3 + 5 + 7 + 9 = 25."
+    },
+    {
+      "name": "Sabit toplamda çarpım",
+      "expression": "ab = ((a + b)² − (a − b)²)/4",
+      "conditions": "Özdeşlik gerçel sayılarda geçerli; en büyük çarpım için toplam sabit tutulur.",
+      "example": "Toplam 18; eşitlik serbestse 9 × 9 = 81 en büyük çarpım."
+    }
+  ],
+  "audioScript": "Temel kavramlara hoş geldin. Bu bölümde önce sorunun dilini okuyacağız. Rakam, onluk sistemde sıfırdan dokuza kadar kullanılan işaretlerden biridir. Kırk yedi sayısı iki rakamla yazılır. A ve B iki basamaklı bir sayı olarak verilirse, bu sayı on çarpı A artı B demektir. A sıfır olamaz.\n\nİkinci adımımız koşullar. Pozitif tam sayılar birden başlar. Negatif olmayan tam sayılar sıfırı da içerir. Sıfır ne pozitiftir ne negatiftir, ama çifttir. İki harfin farklı değer taşıması ancak soruda farklı oldukları söylenirse zorunludur.\n\nŞimdi işlem sırası. Önce parantez, sonra kuvvet, ardından çarpma ve bölme, en son toplama ve çıkarma. Aynı öncelikte soldan sağa ilerle. Eksi dört artı üç çarpı, parantez içinde iki eksi beş örneğinde önce parantezden eksi üç gelir. Üç ile çarparsan eksi dokuz. Eksi dört ile toplarsan sonuç eksi on üç.\n\nNegatif bir sayının karesini alırken paranteze dikkat et. Parantez içinde eksi üç, karesi dokuzdur. Eksi, üç üzeri iki ise önce üçü karesini alır, sonra önüne eksiyi koyarsın: eksi dokuz.\n\nTek ve çift sayılara geçelim. Çift sayı, bir tam sayının iki katıdır. Tek sayı bunun bir fazlasıdır. İki tek sayının toplamı çift; tek ile çiftin toplamı tektir. Çarpımda tek bir çift çarpan bulunması sonucu çift yapar. Bölümün tam sayı olduğunu bilmeden tek veya çift demeye çalışma.\n\nArdışık tam sayılar birer birer; ardışık tek veya çift sayılar ikişer ikişer ilerler. Yediden yirmi yediye, uçlar dahil kaç tam sayı vardır? Yirmi yediden yediyi çıkar, bir ekle: yirmi bir. Ortalama ilk ve sonun toplamının yarısıdır: on yedi. Toplam için yirmi bir ile on yediyi çarp: üç yüz elli yedi.\n\nEn büyük çarpım sorusunda toplam sabitse ve sayılar pozitifse birbirine en yakın değerleri düşün. Toplam on dört için yedi ile yedi çarpımı kırk dokuzdur. Ama sayılar farklı istenirse altı ile sekizi seçersin ve kırk sekiz bulursun. Koşulu okumak cevabı değiştirir.\n\nSon olarak çözüm sıramız: koşulları işaretle, uygun gösterimi kur, işlem önceliğini koru ve sonucu yerine koy. Tek bir örnek genel bir iddiayı kanıtlamaz; fakat yanlış bir iddiayı çürütmek için karşı örnek yeterlidir. Şimdi formül kartlarını gözden geçirip kolaydan zora çözümlü örneklerle devam edebilirsin.",
+  "examples": [
+    {
+      "id": "ornek-1",
+      "version": 1,
+      "topicId": "temel",
+      "skill": "İşlem önceliği",
+      "difficulty": "kolay",
+      "text": "5 − 2 × (3 − 7) işleminin sonucu kaçtır?",
+      "options": [
+        "−13",
+        "−3",
+        "3",
+        "9",
+        "13"
+      ],
+      "answer": 4,
+      "steps": [
+        "Parantez: 3 − 7 = −4.",
+        "Çarpma: 2 × (−4) = −8.",
+        "5 − (−8) = 13."
+      ],
+      "formula": "Parantez → çarpma → çıkarma.",
+      "alternative": "Dağıt: 5 − 6 + 14 = 13.",
+      "verification": "ornek-1"
+    },
+    {
+      "id": "ornek-2",
+      "version": 1,
+      "topicId": "temel",
+      "skill": "Ardışık sayılar",
+      "difficulty": "orta",
+      "text": "Ardışık üç çift tam sayının toplamı 84’tür. En küçük sayı kaçtır?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "answer": 1,
+      "steps": [
+        "Ortadaki sayı x olsun: x − 2, x, x + 2.",
+        "3x = 84 → x = 28.",
+        "En küçük sayı 28 − 2 = 26; 26 + 28 + 30 = 84."
+      ],
+      "formula": "Eşit aralıklı üç terimin ortalaması ortadaki terimdir.",
+      "alternative": "En küçük sayıya k de: 3k + 6 = 84, k = 26.",
+      "verification": "ornek-2"
+    },
+    {
+      "id": "ornek-3",
+      "version": 1,
+      "topicId": "temel",
+      "skill": "En büyük çarpım",
+      "difficulty": "zor",
+      "text": "a ve b farklı pozitif tam sayılar ve a + b = 18 ise ab en çok kaçtır?",
+      "options": [
+        "72",
+        "77",
+        "80",
+        "81",
+        "90"
+      ],
+      "answer": 2,
+      "steps": [
+        "Eşit değerler 9 ve 9’dur; farklılık koşulu nedeniyle kullanılamaz.",
+        "Toplamı 18 olan en yakın farklı değerler 8 ve 10’dur.",
+        "Çarpım 80; diğer çiftler daha küçük çarpım verir."
+      ],
+      "formula": "ab = ((a + b)² − (a − b)²)/4.",
+      "alternative": "(1,17), (2,16), …, (8,10) çiftlerini karşılaştır.",
+      "verification": "ornek-3"
+    }
+  ]
+}

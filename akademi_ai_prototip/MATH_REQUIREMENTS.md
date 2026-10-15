@@ -1,6 +1,12 @@
 # KPSS Lisans Matematik — İçerik ve Ekran Gereksinimleri
 
-15 Ekim 2026. Bu belge kullanıcının A–E içerik alanları ve Matematik mobil ekranı talebinin değerlendirmesidir. Uygulanmış özellikleri ve sonraki geliştirme işlerini ayırır. Bu değerlendirmeyle uygulama ekranları değiştirilmedi; tüm ders içeriklerinin üretildiği iddia edilmez.
+15 Ekim 2026. Bu belge kullanıcının A–E içerik alanları ve Matematik mobil ekranı standardını tanımlar. İlk değerlendirmeden sonra kullanıcı geliştirmeyi yetkilendirdi; güncel uygulama durumu aşağıdadır. Tüm ders içeriklerinin üretildiği iddia edilmez.
+
+## Uygulama durumu — ilk çalışma paketi
+
+Kullanıcının geliştirmeye başlama talebi sonrasında ortak Matematik ekranı, yedi konu sekmesi, yerel soru geçmişi ve Temel Kavramlar çalışma paketi uygulandı. Temel Kavramlar dokuz anlatım bölümü, üç özet, sekiz formül kartı, üç ayrı çözümlü örnek, 30 beş seçenekli test sorusu ve ses metni içerir. Hesaplanabilir cevaplar kodla kontrol edildi; uzman onayı beklenir. 10/20/30 testleri ve geçmiş filtreleri bu pakette çalışır; diğer konular henüz hazırlanmadı. Gerçek podcast/AI, backend ve senkronizasyon yoktur. Aşağıdaki mevcut durum tablosu değerlendirme anının tarihsel başlangıcıdır; güncel doğrulama PROJECT_PLAN.md içindedir.
+
+İçerik dosyaları `content/kpss/lisans/matematik/{curriculum.json,topics/temel.json,questions/temel.json}`; ses metni ders JSON'undaki `audioScript` alanıdır. Modül `apps/capacitor/src/math/` altında paketlenir. Kayıt bu ilk web sürümünde hata yönetimli localStorage ile tutulur; IndexedDB ve backend henüz eklenmedi.
 
 ## 1. Mevcut durum ve kapsam
 

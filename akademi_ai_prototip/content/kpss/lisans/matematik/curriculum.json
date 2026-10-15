@@ -1,0 +1,269 @@
+{
+  "version": "2026.1",
+  "examId": "kpss",
+  "levelId": "lisans",
+  "subjectId": "matematik",
+  "topics": [
+    {
+      "id": "temel",
+      "title": "Temel Kavramlar",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "sayilar",
+      "title": "Sayılar",
+      "parentId": null,
+      "children": [
+        "sayilar-sayi-kumeleri",
+        "sayilar-dogal-sayilar",
+        "sayilar-tam-sayilar",
+        "sayilar-faktoriyel",
+        "sayilar-sayma-sistemleri",
+        "sayilar-bolme",
+        "sayilar-bolunebilme-kurallari"
+      ]
+    },
+    {
+      "id": "ebob",
+      "title": "EBOB – EKOK",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "asal",
+      "title": "Asal Çarpanlara Ayırma",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "denklemler",
+      "title": "Denklemler",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "rasyonel",
+      "title": "Rasyonel Sayılar",
+      "parentId": null,
+      "children": [
+        "rasyonel-kesir-ve-kesir-turleri",
+        "rasyonel-rasyonel-sayilarda-dort-islem"
+      ]
+    },
+    {
+      "id": "esitsizlik",
+      "title": "Eşitsizlik – Mutlak Değer",
+      "parentId": null,
+      "children": [
+        "esitsizlik-basit-esitsizlikler",
+        "esitsizlik-mutlak-deger"
+      ]
+    },
+    {
+      "id": "uslu",
+      "title": "Üslü Sayılar",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "koklu",
+      "title": "Köklü Sayılar",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "carpanlar",
+      "title": "Çarpanlara Ayırma",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "oran",
+      "title": "Oran – Orantı",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "problemler",
+      "title": "Problemler",
+      "parentId": null,
+      "children": [
+        "problemler-denklem-kurma-problemleri",
+        "problemler-yas-problemleri",
+        "problemler-yuzde-problemleri",
+        "problemler-faiz-problemleri",
+        "problemler-kar-zarar-problemleri",
+        "problemler-karisim-problemleri",
+        "problemler-isci-problemleri",
+        "problemler-havuz-problemleri",
+        "problemler-hareket-problemleri"
+      ]
+    },
+    {
+      "id": "kumeler",
+      "title": "Kümeler",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "islem",
+      "title": "İşlem – Modüler Aritmetik",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "olasilik",
+      "title": "Permütasyon – Kombinasyon – Olasılık",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "grafikler",
+      "title": "Tablo ve Grafikler",
+      "parentId": null,
+      "children": [
+        "grafikler-tablo-ve-yorumlama",
+        "grafikler-grafik-ve-yorumlama"
+      ]
+    },
+    {
+      "id": "mantik",
+      "title": "Sayısal Mantık",
+      "parentId": null,
+      "children": []
+    },
+    {
+      "id": "sayilar-sayi-kumeleri",
+      "title": "Sayı Kümeleri",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-dogal-sayilar",
+      "title": "Doğal Sayılar",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-tam-sayilar",
+      "title": "Tam Sayılar",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-faktoriyel",
+      "title": "Faktöriyel",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-sayma-sistemleri",
+      "title": "Sayma Sistemleri",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-bolme",
+      "title": "Bölme",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "sayilar-bolunebilme-kurallari",
+      "title": "Bölünebilme Kuralları",
+      "parentId": "sayilar",
+      "children": []
+    },
+    {
+      "id": "rasyonel-kesir-ve-kesir-turleri",
+      "title": "Kesir ve Kesir Türleri",
+      "parentId": "rasyonel",
+      "children": []
+    },
+    {
+      "id": "rasyonel-rasyonel-sayilarda-dort-islem",
+      "title": "Rasyonel Sayılarda Dört İşlem",
+      "parentId": "rasyonel",
+      "children": []
+    },
+    {
+      "id": "esitsizlik-basit-esitsizlikler",
+      "title": "Basit Eşitsizlikler",
+      "parentId": "esitsizlik",
+      "children": []
+    },
+    {
+      "id": "esitsizlik-mutlak-deger",
+      "title": "Mutlak Değer",
+      "parentId": "esitsizlik",
+      "children": []
+    },
+    {
+      "id": "problemler-denklem-kurma-problemleri",
+      "title": "Denklem Kurma Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-yas-problemleri",
+      "title": "Yaş Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-yuzde-problemleri",
+      "title": "Yüzde Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-faiz-problemleri",
+      "title": "Faiz Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-kar-zarar-problemleri",
+      "title": "Kâr – Zarar Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-karisim-problemleri",
+      "title": "Karışım Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-isci-problemleri",
+      "title": "İşçi Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-havuz-problemleri",
+      "title": "Havuz Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "problemler-hareket-problemleri",
+      "title": "Hareket Problemleri",
+      "parentId": "problemler",
+      "children": []
+    },
+    {
+      "id": "grafikler-tablo-ve-yorumlama",
+      "title": "Tablo ve Yorumlama",
+      "parentId": "grafikler",
+      "children": []
+    },
+    {
+      "id": "grafikler-grafik-ve-yorumlama",
+      "title": "Grafik ve Yorumlama",
+      "parentId": "grafikler",
+      "children": []
+    }
+  ]
+}
